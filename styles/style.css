@@ -3524,7 +3524,7 @@ Teacher Register Area CSS
   padding: 45px;
   border-radius: 5px;
   background-color: #e9492a;
-  background-image: url(/images/register-shape.jpg);
+  background-image: url(/images/register-shape-02.jpg);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -3549,7 +3549,7 @@ Teacher Register Area CSS
   width: 100%;
   border: none;
   color: #ffffff;
-  background-color: rgb(139, 90, 80);
+  background-color: rgb(189, 74, 51);
   height: 50px;
   padding-left: 15px;
   border-radius: 5px;
@@ -4421,7 +4421,7 @@ Contact Area CSS
   margin-left: 15px;
   border-radius: 5px;
   background-color: #e9492a;
-  background-image: url(/images/register-shape.jpg);
+  background-image: url(/images/register-shape-02.jpg);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -4445,7 +4445,7 @@ Contact Area CSS
   width: 100%;
   border: none;
   color: #ffffff;
-  background-color: #006c5b;
+  background-color: rgb(189, 74, 51);
   height: 50px;
   padding-left: 15px;
   border-radius: 5px;
