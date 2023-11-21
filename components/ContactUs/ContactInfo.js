@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 const ContactInfo = () => {
   return (
@@ -29,7 +29,7 @@ const ContactInfo = () => {
               Mobile: <a href="tel:+44457895789">(+44) - 45789 - 5789</a>
             </p>
             <p>
-              Mail: <a href="mailto:hello@eLearniv.com">hello@eLearniv.com</a>
+              Mail: <a href="mailto:hello@subtubes.com">hello@subtubes.com</a>
             </p>
           </li>
           <li>
@@ -43,7 +43,7 @@ const ContactInfo = () => {
         </ul>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default ContactInfo
+export default ContactInfo;

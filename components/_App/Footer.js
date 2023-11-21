@@ -1,8 +1,8 @@
-import React from 'react'
-import Link from 'next/link'
+import React from "react";
+import Link from "next/link";
 
 const Footer = () => {
-  const currentYear = new Date().getFullYear()
+  const currentYear = new Date().getFullYear();
   return (
     <>
       <footer className="footer-area">
@@ -17,30 +17,50 @@ const Footer = () => {
                 </Link>
 
                 <p>
-                  Working to bring significant changes in online-based learning by
-                  doing extensive research for course curriculum preparation,
+                  Working to bring significant changes in online-based learning
+                  by doing extensive research for course curriculum preparation,
                   student engagements, and looking forward to the flexible
                   education!
                 </p>
 
                 <ul className="social-link">
                   <li>
-                    <a href="https://www.facebook.com/" className="d-block" target="_blank" rel="noreferrer">
+                    <a
+                      href="https://www.facebook.com/"
+                      className="d-block"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       <i className="bx bxl-facebook"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="https://www.twitter.com/" className="d-block" target="_blank" rel="noreferrer">
+                    <a
+                      href="https://www.twitter.com/"
+                      className="d-block"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       <i className="bx bxl-twitter"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="https://www.instagram.com/" className="d-block" target="_blank" rel="noreferrer">
+                    <a
+                      href="https://www.instagram.com/"
+                      className="d-block"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       <i className="bx bxl-instagram"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="https://www.linkedin.com/" className="d-block" target="_blank" rel="noreferrer">
+                    <a
+                      href="https://www.linkedin.com/"
+                      className="d-block"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       <i className="bx bxl-linkedin"></i>
                     </a>
                   </li>
@@ -80,7 +100,7 @@ const Footer = () => {
                 </ul>
               </div>
             </div>
- 
+
             <div className="col-lg-4 col-md-6 col-sm-6">
               <div className="single-footer-widget">
                 <h3>Address</h3>
@@ -95,7 +115,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <i className="bx bx-envelope"></i>
-                    <a href="mailto:hello@elearniv.com">hello@eLearniv.com</a>
+                    <a href="mailto:hello@subtubes.com">hello@subtubes.com</a>
                   </li>
                   <li>
                     <i className="bx bxs-inbox"></i>
@@ -111,8 +131,12 @@ const Footer = () => {
               <div className="col-lg-6 col-md-6">
                 <p>
                   <i className="bx bx-copyright"></i>
-                  {currentYear} eLearniv is Proudly Powered by{' '}
-                  <a target="_blank" href="https://envytheme.com/" rel="noreferrer">
+                  {currentYear} subtubes is Proudly Powered by{" "}
+                  <a
+                    target="_blank"
+                    href="https://envytheme.com/"
+                    rel="noreferrer"
+                  >
                     EnvyTheme
                   </a>
                 </p>
@@ -143,7 +167,7 @@ const Footer = () => {
         </div>
       </footer>
     </>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
