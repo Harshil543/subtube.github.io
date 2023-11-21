@@ -24,7 +24,7 @@ import "../styles/responsive.css";
 import "../styles/dashboard.css";
 
 // see-demo-account
-import "../styles/see-demo-account.css";
+// import "../styles/see-demo-account.css";
 
 import Layout from "../components/_App/Layout";
 
