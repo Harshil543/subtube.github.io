@@ -2,18 +2,18 @@ import baseUrl from "@/utils/baseUrl";
 import { transport } from "./config";
 
 export const instructorRequest = async (
-	admin_email,
-	instructor_first_name,
-	instructor_email,
-	instructor_subject,
-	instructor_description
+  admin_email,
+  instructor_first_name,
+  instructor_email,
+  instructor_subject,
+  instructor_description
 ) => {
-	// console.log(user.email)
-	const data = {
-		to: admin_email,
-		from: "eLearniv Online Courses <hello@envytheme.com>",
-		subject: "New Instructor Request",
-		html: `
+  // console.log(user.email)
+  const data = {
+    to: admin_email,
+    from: "subtubes Online Courses <hello@envytheme.com>",
+    subject: "New Instructor Request",
+    html: `
         <!DOCTYPE html>
         <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
         <head>
@@ -322,8 +322,8 @@ export const instructorRequest = async (
 
                                     <p>
                                         Regards, <br />
-                                        eLearniv Support Team <br />
-                                        All Rights Reserved by eLearniv.com
+                                        subtubes Support Team <br />
+                                        All Rights Reserved by subtubes.com
                                     </p>
                                 </div>
                             </td>
@@ -342,7 +342,7 @@ export const instructorRequest = async (
                             <tr>
                               <td style="text-align: center; padding-right: 0;">
                               <p style="text-align: center; margin-bottom: 0; margin-top: 5px">
-                                  <a href="http://eLearniv.com/" target="_blank" style="color: #3056de">www.eLearniv.com</a>
+                                  <a href="http://subtubes.com/" target="_blank" style="color: #3056de">www.subtubes.com</a>
                               </p>
                               </td>
                             </tr>
@@ -354,7 +354,7 @@ export const instructorRequest = async (
                 </tr>
                 <tr>
                   <td class="bg_light" style="text-align: center;">
-                    <p>&copy;2022 eLearniv Support</p>
+                    <p>&copy;2022 subtubes Support</p>
                   </td>
                 </tr>
               </table>
@@ -363,16 +363,16 @@ export const instructorRequest = async (
           </center>
         </body>
         </html>
-        `,
-	};
+        `
+  };
 
-	try {
-		await transport.sendMail(data);
-		// console.log("Email send successfully")
-		// res.status(200).send("Email send successfully")
-	} catch (error) {
-		console.log(error);
-		// res.status(500).send("Error proccessing charge");
-	}
-	transport.close();
+  try {
+    await transport.sendMail(data);
+    // console.log("Email send successfully")
+    // res.status(200).send("Email send successfully")
+  } catch (error) {
+    console.log(error);
+    // res.status(500).send("Error proccessing charge");
+  }
+  transport.close();
 };

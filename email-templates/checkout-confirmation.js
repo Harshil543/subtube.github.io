@@ -2,12 +2,12 @@ import baseUrl from "@/utils/baseUrl";
 import { transport } from "./config";
 
 export const checkoutConfirmation = async (cartItems, name, email) => {
-	// console.log(user.email)
-	const data = {
-		to: email,
-		from: "eLearniv Online Courses <hello@envytheme.com>",
-		subject: "Checkout Confirmation",
-		html: `
+  // console.log(user.email)
+  const data = {
+    to: email,
+    from: "subtubes Online Courses <hello@envytheme.com>",
+    subject: "Checkout Confirmation",
+    html: `
         <!DOCTYPE html>
             <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
             <head>
@@ -314,7 +314,7 @@ export const checkoutConfirmation = async (cartItems, name, email) => {
                         <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
                             <tr>
                                 <td class="logo" style="text-align: left;">
-                                    <h1><a href=${baseUrl}>eLearniv</a></h1>
+                                    <h1><a href=${baseUrl}>subtubes</a></h1>
                                 </td>
                             </tr>
                         </table>
@@ -341,40 +341,38 @@ export const checkoutConfirmation = async (cartItems, name, email) => {
                                 </tr>
 
                                 ${cartItems.map((cart) => (
-									<tr style="border-bottom: 1px solid rgba(0,0,0,.05);">
-										<td
-											valign="middle"
-											width="80%"
-											style="text-align:left; padding: 0 2.5em;"
-										>
-											<div class="product-entry">
-												<img
-													src={cart.image}
-													alt=""
-													style="width: 100px; max-width: 600px; height: auto; margin-bottom: 20px; display: block;"
-												/>
-												<div class="text">
-													<h3>{cart.title}</h3>
-													<span>
-														{cart.instructor}
-													</span>
-												</div>
-											</div>
-										</td>
-										<td
-											valign="middle"
-											width="20%"
-											style="text-align:left; padding: 0 2.5em;"
-										>
-											<span
-												class="price"
-												style="color: #000; font-size: 20px;"
-											>
-												${cart.price}
-											</span>
-										</td>
-									</tr>
-								))}
+                                  <tr style="border-bottom: 1px solid rgba(0,0,0,.05);">
+                                    <td
+                                      valign="middle"
+                                      width="80%"
+                                      style="text-align:left; padding: 0 2.5em;"
+                                    >
+                                      <div class="product-entry">
+                                        <img
+                                          src={cart.image}
+                                          alt=""
+                                          style="width: 100px; max-width: 600px; height: auto; margin-bottom: 20px; display: block;"
+                                        />
+                                        <div class="text">
+                                          <h3>{cart.title}</h3>
+                                          <span>{cart.instructor}</span>
+                                        </div>
+                                      </div>
+                                    </td>
+                                    <td
+                                      valign="middle"
+                                      width="20%"
+                                      style="text-align:left; padding: 0 2.5em;"
+                                    >
+                                      <span
+                                        class="price"
+                                        style="color: #000; font-size: 20px;"
+                                      >
+                                        ${cart.price}
+                                      </span>
+                                    </td>
+                                  </tr>
+                                ))}
                                 
 
                                 <tr>
@@ -391,16 +389,16 @@ export const checkoutConfirmation = async (cartItems, name, email) => {
             </center>
             </body>
             </html>
-        `,
-	};
+        `
+  };
 
-	try {
-		await transport.sendMail(data);
-		console.log("Email send successfully");
-		// res.status(200).send("Email send successfully")
-	} catch (error) {
-		console.log("########", error);
-		// res.status(500).send("Error proccessing charge");
-	}
-	transport.close();
+  try {
+    await transport.sendMail(data);
+    console.log("Email send successfully");
+    // res.status(200).send("Email send successfully")
+  } catch (error) {
+    console.log("########", error);
+    // res.status(500).send("Error proccessing charge");
+  }
+  transport.close();
 };

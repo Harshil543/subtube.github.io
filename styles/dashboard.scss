@@ -1,10 +1,10 @@
-$main-color: #1cab94;
-$main-color2: #6ba292;
+$main-color: #e9492a;
+$main-color2: rgb(139, 90, 80);
 $optional-color: #606060;
 $white-color: #ffffff;
 $black-color: #221638;
 $font-size: 16px;
-$transition: .5s;
+$transition: 0.5s;
 
 .bg-1cab94 {
   background-color: $main-color;
@@ -50,7 +50,7 @@ $transition: .5s;
 
 /* Admin side nav */
 .side-nav-wrapper {
-  background-color: #f7f9fa; 
+  background-color: #f7f9fa;
   height: 100%;
 
   .close {
@@ -101,7 +101,7 @@ $transition: .5s;
 .info-box-card {
   margin-bottom: 25px;
   padding: 30px 20px;
-  background-color: #f7f9fa; 
+  background-color: #f7f9fa;
   text-align: center;
   transition: $transition;
   border-radius: 10px;
@@ -125,11 +125,8 @@ $transition: .5s;
 }
 /* End info-box-card */
 
-
 /* End Admin Area Style 
 --------------------------------------*/
-
-
 
 /* Instructor Area Style 
 --------------------------------------*/
@@ -162,64 +159,62 @@ $transition: .5s;
   }
 }
 .action-dropdown {
-    position: absolute;
-    top: 10px;
-    right: 10px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
 
-    .icon {
-        background-color: #fff;
-        width: 40px;
-        height: 40px;
-        text-align: center;
-        line-height: 46px;
-        cursor: pointer;
-        font-size: 22px;
-        border-radius: 3px;
-        transition: $transition;
+  .icon {
+    background-color: #fff;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 46px;
+    cursor: pointer;
+    font-size: 22px;
+    border-radius: 3px;
+    transition: $transition;
 
-        &:hover {
-            background-color: $main-color;
-            color: $white-color;
-        }
-    }
-    .dropdown-menu {
-        display: block;
-        right: 0;
-        opacity: 0;
-        visibility: hidden;
-        transition: $transition;
-        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-        width: 150px;
-        border: 1px solid #eee;
-
-        .dropdown-item {
-            position: relative;
-            padding: 8px 15px 8px 40px;
-            font-size: 15px;
-
-            i {
-                position: absolute;
-                left: 15px;
-                top: 9px;
-                font-size: 18px;
-            }
-            &:active {
-                color: var(--bs-dropdown-link-hover-color);
-                background-color: var(--bs-dropdown-link-hover-bg);
-            }
-        }
-    }
     &:hover {
-        .dropdown-menu {
-            opacity: 1;
-            visibility: visible;
-        }
+      background-color: $main-color;
+      color: $white-color;
     }
+  }
+  .dropdown-menu {
+    display: block;
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: $transition;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 150px;
+    border: 1px solid #eee;
+
+    .dropdown-item {
+      position: relative;
+      padding: 8px 15px 8px 40px;
+      font-size: 15px;
+
+      i {
+        position: absolute;
+        left: 15px;
+        top: 9px;
+        font-size: 18px;
+      }
+      &:active {
+        color: var(--bs-dropdown-link-hover-color);
+        background-color: var(--bs-dropdown-link-hover-bg);
+      }
+    }
+  }
+  &:hover {
+    .dropdown-menu {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
 }
 /* End instructor Area Style 
 -----------------------------------------*/
-
-
 
 /* Create Course Style 
 --------------------------------------*/
@@ -231,7 +226,6 @@ $transition: .5s;
 }
 /* End Create Course Style 
 --------------------------------------*/
-
 
 /* Profile Style 
 --------------------------------------*/
@@ -254,7 +248,8 @@ $transition: .5s;
       border-bottom: 2px solid transparent;
       font-size: 16px;
 
-      &.active, &:hover {
+      &.active,
+      &:hover {
         border-bottom: 2px solid $main-color;
         color: $main-color;
       }
@@ -267,7 +262,6 @@ $transition: .5s;
 /* End Profile Style 
 --------------------------------------*/
 
- 
 /* Start Video Area Style 
 --------------------------------------*/
 .video-area {
@@ -293,14 +287,14 @@ $transition: .5s;
 
       li {
         padding: 10px 15px;
-        border-bottom: 1px solid #eee;  
+        border-bottom: 1px solid #eee;
         font-size: 15px;
         transition: $transition;
-        
+
         &:last-child {
           border-bottom: none;
         }
-        &:hover { 
+        &:hover {
           background-color: #f4f4f4;
         }
 
@@ -313,10 +307,6 @@ $transition: .5s;
 }
 /* End Video Area Style 
 --------------------------------------*/
- 
-
-
-
 
 /* Start Responsive Style 
 -----------------------------------------*/
@@ -334,7 +324,7 @@ $transition: .5s;
     padding-left: 0;
     padding-top: 25px;
   }
- 
+
   /* Side nav wrapper */
   .side-nav {
     ul {
@@ -364,10 +354,9 @@ $transition: .5s;
   }
   /* End Side nav wrapper */
 
-
   /* End Admin Area Style 
   --------------------------------------*/
- 
+
   /* Instructor Area Style */
   .instructor-header-content {
     padding: 40px 30px;
@@ -376,14 +365,14 @@ $transition: .5s;
       margin-bottom: 15px;
     }
     .text-end {
-      text-align: center!important;
+      text-align: center !important;
     }
   }
   .instructor-create-courses-card h3 {
     font-size: 20px;
-  } 
+  }
   /* End instructor Area Style */
- 
+
   /* Start Video Area Style 
   --------------------------------------*/
   .video-area {
@@ -404,15 +393,13 @@ $transition: .5s;
 
   .nav-style1 {
     margin-bottom: 20px;
-  } 
+  }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
-
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-
   /* Admin Area Style 
   --------------------------------------*/
   .main-content-box {
@@ -431,12 +418,12 @@ $transition: .5s;
   }
   /* End Admin Area Style 
   --------------------------------------*/
-  
+
   /* Instructor Area Style */
   .instructor-create-courses-card {
     h3 {
       font-size: 22px;
-    } 
+    }
   }
   /* End instructor Area Style */
 
@@ -453,7 +440,6 @@ $transition: .5s;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-
   /* Admin Area Style 
   --------------------------------------*/
   /* Side nav wrapper */
@@ -474,7 +460,7 @@ $transition: .5s;
   .instructor-create-courses-card {
     h3 {
       font-size: 22px;
-    } 
+    }
   }
   /* End instructor Area Style */
 
@@ -490,8 +476,6 @@ $transition: .5s;
   --------------------------------------*/
 }
 
-
-
 @media only screen and (min-width: 1920px) {
   /* Start Video Area Style 
   --------------------------------------*/
@@ -504,7 +488,6 @@ $transition: .5s;
   }
   /* End Video Area Style 
   --------------------------------------*/
- 
 
   /* Admin Area Style 
   --------------------------------------*/
@@ -516,10 +499,6 @@ $transition: .5s;
   }
   /* End Admin Area Style 
   --------------------------------------*/
-
 }
 /* End  Responsive Style 
 -----------------------------------------*/
-
-
-

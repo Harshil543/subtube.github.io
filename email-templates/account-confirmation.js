@@ -2,12 +2,12 @@ import baseUrl from "@/utils/baseUrl";
 import { transport } from "./config";
 
 export const confirmEmailAddress = async (user) => {
-	// console.log(user.email)
-	const data = {
-		to: user.email,
-		from: "eLearniv Online Courses <hello@envytheme.com>",
-		subject: "Confirm Your Email Address",
-		html: `
+  // console.log(user.email)
+  const data = {
+    to: user.email,
+    from: "subtubes Online Courses <hello@envytheme.com>",
+    subject: "Confirm Your Email Address",
+    html: `
         <!DOCTYPE html>
         <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
         <head>
@@ -308,13 +308,13 @@ export const confirmEmailAddress = async (user) => {
                             <td>
                                 <div class="text" style="padding: 0 2.5em; text-align: left;">
                                     <h4>Dear ${user.first_name},</h4>
-                                    <p>Thanks for registering on the eLearniv! Please click the below link to verify your email address and activate your account.</p>
+                                    <p>Thanks for registering on the subtubes! Please click the below link to verify your email address and activate your account.</p>
                                     <p><a href="${baseUrl}/confirm-email?token=${user.reset_password_token}&email=${user.email}" style="text-decoration: underline;">Confirm My Email Address</a></p>
 
                                     <p>
                                         Regards, <br />
-                                        eLearniv Support Team <br />
-                                        All Rights Reserved by eLearniv.com
+                                        subtubes Support Team <br />
+                                        All Rights Reserved by subtubes.com
                                     </p>
                                 </div>
                             </td>
@@ -333,7 +333,7 @@ export const confirmEmailAddress = async (user) => {
                             <tr>
                               <td style="text-align: center; padding-right: 0;">
                               <p style="text-align: center; margin-bottom: 0; margin-top: 5px">
-                                  <a href="http://eLearniv.com/" target="_blank" style="color: #3056de">www.eLearniv.com</a>
+                                  <a href="http://subtubes.com/" target="_blank" style="color: #3056de">www.subtubes.com</a>
                               </p>
                               </td>
                             </tr>
@@ -345,7 +345,7 @@ export const confirmEmailAddress = async (user) => {
                 </tr>
                 <tr>
                   <td class="bg_light" style="text-align: center;">
-                    <p>&copy;2022 eLearniv Support</p>
+                    <p>&copy;2022 subtubes Support</p>
                   </td>
                 </tr>
               </table>
@@ -354,16 +354,16 @@ export const confirmEmailAddress = async (user) => {
           </center>
         </body>
         </html>
-        `,
-	};
+        `
+  };
 
-	try {
-		await transport.sendMail(data);
-		// console.log("Email send successfully")
-		// res.status(200).send("Email send successfully")
-	} catch (error) {
-		console.log(error);
-		// res.status(500).send("Error proccessing charge");
-	}
-	transport.close();
+  try {
+    await transport.sendMail(data);
+    // console.log("Email send successfully")
+    // res.status(200).send("Email send successfully")
+  } catch (error) {
+    console.log(error);
+    // res.status(500).send("Error proccessing charge");
+  }
+  transport.close();
 };

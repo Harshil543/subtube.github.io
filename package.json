@@ -16,6 +16,7 @@
 	},
 	"dependencies": {
 		"@etchteam/next-pagination": "^3.5.4",
+		"@mantine/core": "^7.2.2",
 		"@mantine/rte": "^5.1.1",
 		"axios": "^0.27.2",
 		"bcrypt": "^5.0.1",
