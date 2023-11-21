@@ -80,7 +80,18 @@ p:last-child {
   outline: 0 !important;
 }
 
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: #221638;
   font-family: "Nunito", sans-serif;
   font-weight: 800;
@@ -415,7 +426,8 @@ a:hover {
 }
 
 /* form-control */
-.form-control, .form-select {
+.form-control,
+.form-select {
   height: 50px;
   color: #221638;
   box-shadow: unset !important;
@@ -432,18 +444,21 @@ a:hover {
   -moz-transition: 0.5s;
   transition: 0.5s;
 }
-.form-control::placeholder, .form-select::placeholder {
+.form-control::placeholder,
+.form-select::placeholder {
   color: #7e7e7e;
   transition: 0.5s;
 }
-.form-control:focus, .form-select:focus {
+.form-control:focus,
+.form-select:focus {
   border-color: #1cab94;
   background-color: transparent;
 }
 .form-control:focus::-moz-placeholder, .form-select:focus::-moz-placeholder {
   color: transparent;
 }
-.form-control:focus::placeholder, .form-select:focus::placeholder {
+.form-control:focus::placeholder,
+.form-select:focus::placeholder {
   color: transparent;
 }
 
@@ -474,6 +489,9 @@ Navbar Area CSS
   padding-bottom: 0;
   padding-left: 0;
   padding-right: 0;
+}
+.edemy-nav .navbar .navbar-brand img {
+  width: 140px;
 }
 .edemy-nav .navbar ul {
   padding-left: 0;
@@ -1000,7 +1018,7 @@ Main Banner Area CSS
 =================================================*/
 .main-banner {
   position: relative;
-  background: #EEE1D8;
+  background: #eee1d8;
   z-index: 1;
   padding-top: 100px;
   padding-bottom: 100px;
@@ -1398,7 +1416,10 @@ About Area CSS
   margin-top: 35px;
 }
 
-.swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
   bottom: 20px;
 }
 
@@ -1834,13 +1855,13 @@ Courses Details Area CSS
 .courses-details-desc .react-tabs__tab-panel .courses-reviews .bar-5 {
   width: 100%;
   height: 18px;
-  background-color: #4CAF50;
+  background-color: #4caf50;
   border-radius: 5px;
 }
 .courses-details-desc .react-tabs__tab-panel .courses-reviews .bar-4 {
   width: 75%;
   height: 18px;
-  background-color: #2196F3;
+  background-color: #2196f3;
   border-radius: 5px;
   border-radius: 5px;
 }
@@ -2531,13 +2552,13 @@ Courses Details Area CSS
 .courses-details-desc-style-two .courses-reviews .bar-5 {
   width: 100%;
   height: 18px;
-  background-color: #4CAF50;
+  background-color: #4caf50;
   border-radius: 5px;
 }
 .courses-details-desc-style-two .courses-reviews .bar-4 {
   width: 75%;
   height: 18px;
-  background-color: #2196F3;
+  background-color: #2196f3;
   border-radius: 5px;
   border-radius: 5px;
 }
@@ -2818,7 +2839,8 @@ Advisor Area CSS
   margin-left: 0;
   margin-right: 0;
 }
-.single-advisor-box .row .col-lg-4, .single-advisor-box .row .col-lg-8 {
+.single-advisor-box .row .col-lg-4,
+.single-advisor-box .row .col-lg-8 {
   padding-left: 0;
   padding-right: 0;
 }
@@ -2887,12 +2909,12 @@ Advisor Area CSS
 Funfacts Area CSS
 =================================================*/
 .bg-F6F1ED {
-  background: #F6F1ED;
+  background: #f6f1ed;
 }
 
 .funfacts-and-feedback-area {
   position: relative;
-  background: #F6F1ED;
+  background: #f6f1ed;
 }
 .funfacts-and-feedback-area .shape4 {
   right: 21%;
@@ -3355,7 +3377,8 @@ Get Instant Courses Area CSS
   margin-left: 0;
   margin-right: 0;
 }
-.get-instant-courses-inner-area .row .col-lg-8, .get-instant-courses-inner-area .row .col-lg-4 {
+.get-instant-courses-inner-area .row .col-lg-8,
+.get-instant-courses-inner-area .row .col-lg-4 {
   padding-left: 0;
   padding-right: 0;
 }
@@ -3494,7 +3517,7 @@ View All Courses Area CSS
 Teacher Register Area CSS
 =================================================*/
 .teacher-register-area {
-  background-color: #EEE1D8;
+  background-color: #eee1d8;
 }
 
 .teacher-register-box {
@@ -3520,7 +3543,8 @@ Teacher Register Area CSS
 .teacher-register-box form {
   margin-top: 25px;
 }
-.teacher-register-box form input, .teacher-register-box form textarea {
+.teacher-register-box form input,
+.teacher-register-box form textarea {
   display: block;
   width: 100%;
   border: none;
@@ -3537,14 +3561,16 @@ Teacher Register Area CSS
   -moz-transition: 0.5s;
   transition: 0.5s;
 }
-.teacher-register-box form input::placeholder, .teacher-register-box form textarea::placeholder {
+.teacher-register-box form input::placeholder,
+.teacher-register-box form textarea::placeholder {
   color: #cdcdcd;
   transition: 0.5s;
 }
 .teacher-register-box form input:focus::-moz-placeholder, .teacher-register-box form textarea:focus::-moz-placeholder {
   color: transparent;
 }
-.teacher-register-box form input:focus::placeholder, .teacher-register-box form textarea:focus::placeholder {
+.teacher-register-box form input:focus::placeholder,
+.teacher-register-box form textarea:focus::placeholder {
   color: transparent;
 }
 .teacher-register-box form textarea {
@@ -3891,28 +3917,34 @@ Privacy Policy Area CSS
   margin-top: 25px;
   font-size: 22px;
 }
-.privacy-policy-content .blockquote, .privacy-policy-content blockquote {
+.privacy-policy-content .blockquote,
+.privacy-policy-content blockquote {
   margin-bottom: 30px;
   background-color: #e6f2f5;
   text-align: left !important;
   padding: 25px !important;
 }
-.privacy-policy-content .blockquote p, .privacy-policy-content blockquote p {
+.privacy-policy-content .blockquote p,
+.privacy-policy-content blockquote p {
   margin-bottom: 0;
   line-height: 1.8;
   font-size: 16px !important;
   font-weight: normal;
 }
-.privacy-policy-content .blockquote::after, .privacy-policy-content blockquote::after {
+.privacy-policy-content .blockquote::after,
+.privacy-policy-content blockquote::after {
   display: none;
 }
-.privacy-policy-content .blockquote::before, .privacy-policy-content blockquote::before {
+.privacy-policy-content .blockquote::before,
+.privacy-policy-content blockquote::before {
   display: none;
 }
-.privacy-policy-content ol, .privacy-policy-content ul {
+.privacy-policy-content ol,
+.privacy-policy-content ul {
   margin-top: 20px;
 }
-.privacy-policy-content ol li, .privacy-policy-content ul li {
+.privacy-policy-content ol li,
+.privacy-policy-content ul li {
   margin-bottom: 10px;
   color: #606060;
   font-size: 16px;
@@ -3933,28 +3965,34 @@ Terms of Service Area CSS
   margin-top: 25px;
   font-size: 22px;
 }
-.terms-of-service-content .blockquote, .terms-of-service-content blockquote {
+.terms-of-service-content .blockquote,
+.terms-of-service-content blockquote {
   margin-bottom: 30px;
   background-color: #e6f2f5;
   text-align: left !important;
   padding: 25px !important;
 }
-.terms-of-service-content .blockquote p, .terms-of-service-content blockquote p {
+.terms-of-service-content .blockquote p,
+.terms-of-service-content blockquote p {
   margin-bottom: 0;
   line-height: 1.8;
   font-size: 16px !important;
   font-weight: normal;
 }
-.terms-of-service-content .blockquote::after, .terms-of-service-content blockquote::after {
+.terms-of-service-content .blockquote::after,
+.terms-of-service-content blockquote::after {
   display: none;
 }
-.terms-of-service-content .blockquote::before, .terms-of-service-content blockquote::before {
+.terms-of-service-content .blockquote::before,
+.terms-of-service-content blockquote::before {
   display: none;
 }
-.terms-of-service-content ol, .terms-of-service-content ul {
+.terms-of-service-content ol,
+.terms-of-service-content ul {
   margin-top: 20px;
 }
-.terms-of-service-content ol li, .terms-of-service-content ul li {
+.terms-of-service-content ol li,
+.terms-of-service-content ul li {
   margin-bottom: 10px;
   color: #606060;
   font-size: 16px;
@@ -3990,7 +4028,8 @@ Pagination CSS
   position: relative;
   top: 1.5px;
 }
-.pagination-area ._3bLAO ._2INQH, .pagination-area ._3bLAO ._6ZFVN {
+.pagination-area ._3bLAO ._2INQH,
+.pagination-area ._3bLAO ._6ZFVN {
   display: none;
 }
 
@@ -4155,10 +4194,12 @@ Profile Authentication Area CSS
 .login-form form .remember-me-wrap {
   margin-bottom: 0;
 }
-.login-form form .remember-me-wrap [type=checkbox]:checked, .login-form form .remember-me-wrap [type=checkbox]:not(:checked) {
+.login-form form .remember-me-wrap [type=checkbox]:checked,
+.login-form form .remember-me-wrap [type=checkbox]:not(:checked) {
   display: none;
 }
-.login-form form .remember-me-wrap [type=checkbox]:checked + label, .login-form form .remember-me-wrap [type=checkbox]:not(:checked) + label {
+.login-form form .remember-me-wrap [type=checkbox]:checked + label,
+.login-form form .remember-me-wrap [type=checkbox]:not(:checked) + label {
   position: relative;
   padding-left: 28px;
   cursor: pointer;
@@ -4168,7 +4209,8 @@ Profile Authentication Area CSS
   color: #606060;
   font-weight: 600;
 }
-.login-form form .remember-me-wrap [type=checkbox]:checked + label:before, .login-form form .remember-me-wrap [type=checkbox]:not(:checked) + label:before {
+.login-form form .remember-me-wrap [type=checkbox]:checked + label:before,
+.login-form form .remember-me-wrap [type=checkbox]:not(:checked) + label:before {
   content: "";
   position: absolute;
   left: 0;
@@ -4180,7 +4222,8 @@ Profile Authentication Area CSS
   border-radius: 3px;
   background: #f5f5f5;
 }
-.login-form form .remember-me-wrap [type=checkbox]:checked + label:after, .login-form form .remember-me-wrap [type=checkbox]:not(:checked) + label:after {
+.login-form form .remember-me-wrap [type=checkbox]:checked + label:after,
+.login-form form .remember-me-wrap [type=checkbox]:not(:checked) + label:after {
   content: "";
   width: 8px;
   height: 8px;
@@ -4396,7 +4439,8 @@ Contact Area CSS
 .contact-form form {
   margin-top: 25px;
 }
-.contact-form form input, .contact-form form textarea {
+.contact-form form input,
+.contact-form form textarea {
   display: block;
   width: 100%;
   border: none;
@@ -4413,14 +4457,16 @@ Contact Area CSS
   -moz-transition: 0.5s;
   transition: 0.5s;
 }
-.contact-form form input::placeholder, .contact-form form textarea::placeholder {
+.contact-form form input::placeholder,
+.contact-form form textarea::placeholder {
   color: #cdcdcd;
   transition: 0.5s;
 }
 .contact-form form input:focus::-moz-placeholder, .contact-form form textarea:focus::-moz-placeholder {
   color: transparent;
 }
-.contact-form form input:focus::placeholder, .contact-form form textarea:focus::placeholder {
+.contact-form form input:focus::placeholder,
+.contact-form form textarea:focus::placeholder {
   color: transparent;
 }
 .contact-form form textarea {
