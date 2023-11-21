@@ -56,15 +56,15 @@ This files table contents are outlined below>>>>>
 Default CSS
 =================================================*/
 
-$font-family: 'Nunito', sans-serif;
-$font-family2: 'Playfair Display', serif;
+$font-family: "Nunito", sans-serif;
+$font-family2: "Playfair Display", serif;
 $main-color: #1cab94;
 $main-color2: #6ba292;
 $optional-color: #606060;
 $white-color: #ffffff;
 $black-color: #221638;
 $font-size: 16px;
-$transition: .5s;
+$transition: 0.5s;
 
 body {
     padding: 0;
@@ -72,7 +72,7 @@ body {
     font: {
         size: $font-size;
         family: $font-family;
-    };
+    }
 }
 img {
     max-width: 100%;
@@ -91,7 +91,18 @@ p {
 :focus {
     outline: 0 !important;
 }
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: $black-color;
     font-family: $font-family;
     font-weight: 800;
@@ -159,7 +170,7 @@ p {
     padding: {
         top: 100px;
         bottom: 100px;
-    };
+    }
 }
 .pt-100 {
     padding-top: 100px;
@@ -171,7 +182,7 @@ p {
     padding: {
         top: 70px;
         bottom: 70px;
-    };
+    }
 }
 .pt-70 {
     padding-top: 70px;
@@ -190,7 +201,7 @@ p {
     margin: {
         top: 100px;
         bottom: 100px;
-    };
+    }
 }
 .fs-18 {
     font-size: 18px;
@@ -241,7 +252,7 @@ a {
         left: auto;
         right: auto;
         bottom: 55px;
-    };
+    }
     .sub-title {
         display: block;
         text-transform: uppercase;
@@ -250,7 +261,7 @@ a {
         font: {
             size: 14px;
             weight: 600;
-        };
+        }
     }
     h2 {
         max-width: 615px;
@@ -258,10 +269,10 @@ a {
             bottom: 0;
             left: auto;
             right: auto;
-        };
+        }
         font: {
-            size: 36px; 
-        };
+            size: 36px;
+        }
     }
     p {
         max-width: 615px;
@@ -269,7 +280,7 @@ a {
             left: auto;
             right: auto;
             top: 12px;
-        };
+        }
     }
 }
 
@@ -288,13 +299,13 @@ a {
     font: {
         weight: 700;
         size: $font-size;
-    };
+    }
     padding: {
         left: 55px;
         right: 30px;
         top: 11px;
         bottom: 11px;
-    };
+    }
     span {
         position: absolute;
         display: block;
@@ -302,7 +313,9 @@ a {
         height: 0;
         border-radius: 50%;
         background-color: $black-color;
-        transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+        transition:
+            width 0.5s ease-in-out,
+            height 0.5s ease-in-out;
         transform: translate(-50%, -50%);
         z-index: -1;
         border-radius: 5px;
@@ -343,20 +356,20 @@ a {
     font: {
         weight: 700;
         size: $font-size;
-    };
+    }
     padding: {
         left: 60px;
         right: 35px;
         top: 15px;
         bottom: 15px;
-    };
+    }
     i {
         position: absolute;
         left: 35px;
         top: 14px;
     }
     &::before {
-        content: '';
+        content: "";
         position: absolute;
         left: 0;
         right: 0;
@@ -366,7 +379,7 @@ a {
         z-index: -1;
         border-radius: 30px;
         margin: 4px;
-        transition: .3s;
+        transition: 0.3s;
     }
     &:hover {
         color: $white-color;
@@ -390,13 +403,13 @@ a {
     font: {
         weight: 700;
         size: $font-size;
-    };
+    }
     padding: {
         left: 30px;
-        right: 30px; 
+        right: 30px;
         top: 15px;
         bottom: 15px;
-    };
+    }
     span {
         position: absolute;
         display: block;
@@ -404,7 +417,9 @@ a {
         height: 0;
         border-radius: 50%;
         background-color: $black-color;
-        transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+        transition:
+            width 0.5s ease-in-out,
+            height 0.5s ease-in-out;
         transform: translate(-50%, -50%);
         z-index: -1;
         border-radius: 5px;
@@ -419,7 +434,8 @@ a {
     }
 }
 /* form-control */
-.form-control, .form-select {
+.form-control,
+.form-select {
     height: 50px;
     color: $black-color;
     box-shadow: unset !important;
@@ -431,7 +447,7 @@ a {
     font: {
         size: $font-size;
         weight: 400;
-    };
+    }
     &::placeholder {
         color: #7e7e7e;
         transition: $transition;
@@ -448,7 +464,7 @@ a {
 textarea.form-control {
     height: auto;
     padding-top: 15px;
-    padding-bottom: 15px; 
+    padding-bottom: 15px;
 }
 
 /*================================================
@@ -459,7 +475,7 @@ Navbar Area CSS
         padding: {
             left: 40px;
             right: 40px;
-        };
+        }
     }
     .navbar {
         position: inherit;
@@ -468,7 +484,7 @@ Navbar Area CSS
             right: 0;
             top: 0;
             bottom: 0;
-        };
+        }
         .navbar-brand {
             font-size: inherit;
             line-height: 1;
@@ -477,7 +493,10 @@ Navbar Area CSS
                 bottom: 0;
                 left: 0;
                 right: 0;
-            };
+            }
+            img {
+                width: 140px;
+            }
         }
         ul {
             padding-left: 0;
@@ -502,20 +521,20 @@ Navbar Area CSS
                 font: {
                     size: $font-size;
                     weight: 400;
-                };
+                }
                 padding: {
                     left: 15px;
                     top: 1px;
                     bottom: 0;
                     right: 0;
-                };
+                }
                 &::placeholder {
                     color: #848484;
                     transition: $transition;
                 }
                 &:focus {
                     border-color: $main-color;
-    
+
                     &::placeholder {
                         color: transparent;
                     }
@@ -536,7 +555,7 @@ Navbar Area CSS
         .navbar-nav {
             margin: {
                 left: auto;
-            };
+            }
             .nav-item {
                 position: relative;
 
@@ -545,17 +564,17 @@ Navbar Area CSS
                     font: {
                         size: 16.5px;
                         weight: 700;
-                    };
+                    }
                     padding: {
                         left: 0;
                         right: 0;
                         top: 25px;
                         bottom: 25px;
-                    };
+                    }
                     margin: {
                         left: 13px;
                         right: 13px;
-                    };
+                    }
                     i {
                         font-size: 18px;
                         position: relative;
@@ -564,9 +583,11 @@ Navbar Area CSS
                         margin: {
                             left: -4px;
                             right: -3px;
-                        };
+                        }
                     }
-                    &:hover, &:focus, &.active {
+                    &:hover,
+                    &:focus,
+                    &.active {
                         color: $main-color;
                     }
                 }
@@ -580,7 +601,8 @@ Navbar Area CSS
                         margin-left: 0;
                     }
                 }
-                &:hover, &.active {
+                &:hover,
+                &.active {
                     a {
                         color: $main-color;
                     }
@@ -613,7 +635,7 @@ Navbar Area CSS
                             font: {
                                 size: 16px;
                                 weight: 700;
-                            };
+                            }
                             i {
                                 margin: 0;
                                 position: absolute;
@@ -622,7 +644,9 @@ Navbar Area CSS
                                 transform: translateY(-50%);
                                 right: 15px;
                             }
-                            &:hover, &:focus, &.active {
+                            &:hover,
+                            &:focus,
+                            &.active {
                                 color: $main-color;
                             }
                         }
@@ -632,12 +656,14 @@ Navbar Area CSS
                             left: -100%;
                             margin-top: 15px;
                             visibility: hidden;
-                            
+
                             li {
                                 a {
                                     color: $black-color;
-                                    
-                                    &:hover, &:focus, &.active {
+
+                                    &:hover,
+                                    &:focus,
+                                    &.active {
                                         color: $main-color;
                                     }
                                 }
@@ -646,12 +672,14 @@ Navbar Area CSS
                                     opacity: 0;
                                     left: 100%;
                                     visibility: hidden;
-        
+
                                     li {
                                         a {
                                             color: $black-color;
-        
-                                            &:hover, &:focus, &.active {
+
+                                            &:hover,
+                                            &:focus,
+                                            &.active {
                                                 color: $main-color;
                                             }
                                         }
@@ -660,12 +688,14 @@ Navbar Area CSS
                                             opacity: 0;
                                             left: -100%;
                                             visibility: hidden;
-                
+
                                             li {
                                                 a {
                                                     color: $black-color;
-                
-                                                    &:hover, &:focus, &.active {
+
+                                                    &:hover,
+                                                    &:focus,
+                                                    &.active {
                                                         color: $main-color;
                                                     }
                                                 }
@@ -675,12 +705,14 @@ Navbar Area CSS
                                                     left: 100%;
                                                     visibility: hidden;
                                                     transform: scaleY(0);
-                        
+
                                                     li {
                                                         a {
                                                             color: $black-color;
-                
-                                                            &:hover, &:focus, &.active {
+
+                                                            &:hover,
+                                                            &:focus,
+                                                            &.active {
                                                                 color: $main-color;
                                                             }
                                                         }
@@ -690,12 +722,14 @@ Navbar Area CSS
                                                             left: -100%;
                                                             visibility: hidden;
                                                             transform: scaleY(0);
-                                
+
                                                             li {
                                                                 a {
                                                                     color: $black-color;
-                
-                                                                    &:hover, &:focus, &.active {
+
+                                                                    &:hover,
+                                                                    &:focus,
+                                                                    &.active {
                                                                         color: $main-color;
                                                                     }
                                                                 }
@@ -704,12 +738,14 @@ Navbar Area CSS
                                                                     opacity: 0;
                                                                     left: 100%;
                                                                     visibility: hidden;
-                                        
+
                                                                     li {
                                                                         a {
                                                                             color: $black-color;
-                
-                                                                            &:hover, &:focus, &.active {
+
+                                                                            &:hover,
+                                                                            &:focus,
+                                                                            &.active {
                                                                                 color: $main-color;
                                                                             }
                                                                         }
@@ -829,8 +865,9 @@ Navbar Area CSS
                                     font: {
                                         size: 16px;
                                         weight: 700;
-                                    };
-                                    &:hover, &.active {
+                                    }
+                                    &:hover,
+                                    &.active {
                                         color: $main-color;
                                     }
                                 }
@@ -847,7 +884,7 @@ Navbar Area CSS
                             padding-top: 30px;
                             margin: {
                                 top: 30px;
-                            };
+                            }
                             .icon {
                                 width: 70px;
                                 height: 70px;
@@ -863,7 +900,7 @@ Navbar Area CSS
                                     style: dashed;
                                     color: #eeeeee;
                                     radius: 50%;
-                                };
+                                }
                                 i {
                                     position: absolute;
                                     top: 50%;
@@ -875,8 +912,8 @@ Navbar Area CSS
                             h3 {
                                 margin-bottom: 0;
                                 font: {
-                                    size: 20px; 
-                                };
+                                    size: 20px;
+                                }
                             }
                             .sub-title {
                                 display: block;
@@ -885,7 +922,7 @@ Navbar Area CSS
                                 font: {
                                     weight: 600;
                                     size: 15px;
-                                };
+                                }
                             }
                             .link-btn {
                                 position: absolute;
@@ -994,7 +1031,7 @@ Navbar Area CSS
                         font: {
                             size: 10px;
                             weight: 600;
-                        };
+                        }
                     }
                     &:hover {
                         color: $main-color;
@@ -1003,8 +1040,8 @@ Navbar Area CSS
                 .dropdown {
                     position: relative;
                     cursor: pointer;
-              
-                    .dropdown-menu { 
+
+                    .dropdown-menu {
                         right: 0;
                         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
                         width: 335px;
@@ -1046,7 +1083,7 @@ Navbar Area CSS
     padding: {
         top: 5px;
         bottom: 5px;
-    };
+    }
     box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
     &.is-sticky {
         position: sticky;
@@ -1067,16 +1104,16 @@ Navbar Area CSS
 /* Navbar toggler */
 .navbar-toggler {
     border: none;
-	border-radius: 0;
-	padding: 0;
+    border-radius: 0;
+    padding: 0;
 
     .icon-bar {
         width: 35px;
         transition: all 0.3s;
         background: #221638;
         height: 4px;
-		display: block;
-		border-radius: 3px;
+        display: block;
+        border-radius: 3px;
     }
     .top-bar {
         transform: rotate(45deg);
@@ -1096,7 +1133,7 @@ Navbar Area CSS
     }
     &.collapsed {
         .top-bar {
-            transform: rotate(0);      
+            transform: rotate(0);
             left: 0;
         }
         .middle-bar {
@@ -1111,14 +1148,12 @@ Navbar Area CSS
 
 // Mobile and iPad Navbar
 @media only screen and (max-width: 1199px) {
-
     .navbar-area {
         padding: {
             top: 20px;
             bottom: 20px;
-        };
+        }
     }
-
 }
 
 /*================================================
@@ -1126,12 +1161,12 @@ Main Banner Area CSS
 =================================================*/
 .main-banner {
     position: relative;
-    background: #EEE1D8;
+    background: #eee1d8;
     z-index: 1;
     padding: {
         top: 100px;
         bottom: 100px;
-    };
+    }
     .container-fluid {
         max-width: 1395px;
     }
@@ -1144,8 +1179,8 @@ Main Banner Area CSS
     h1 {
         margin-bottom: 25px;
         font: {
-            size: 48px; 
-        };
+            size: 48px;
+        }
     }
     p {
         max-width: 450px;
@@ -1153,7 +1188,7 @@ Main Banner Area CSS
         font: {
             weight: 600;
             size: 17px;
-        };
+        }
     }
     .default-btn {
         margin-top: 10px;
@@ -1174,7 +1209,7 @@ Main Banner Area CSS
     bottom: 30px;
     z-index: -1;
     text-align: center;
-  
+
     img {
         animation: moveleftbounce 4s linear infinite;
         width: 120px;
@@ -1204,7 +1239,7 @@ Main Banner Area CSS
             duration: 50s;
             iteration-count: infinite;
             timing-function: linear;
-        };
+        }
     }
 }
 .banner-section {
@@ -1215,11 +1250,11 @@ Main Banner Area CSS
         position: center center;
         size: cover;
         repeat: no-repeat;
-    };
+    }
     padding: {
         top: 60px;
         bottom: 60px;
-    };
+    }
     .container-fluid {
         max-width: 1395px;
     }
@@ -1229,8 +1264,8 @@ Main Banner Area CSS
         color: $white-color;
         margin-bottom: 20px;
         font: {
-            size: 48px; 
-        };
+            size: 48px;
+        }
     }
     p {
         max-width: 450px;
@@ -1238,7 +1273,7 @@ Main Banner Area CSS
         font: {
             weight: 600;
             size: 17px;
-        };
+        }
     }
     .default-btn {
         margin-top: 15px;
@@ -1261,7 +1296,6 @@ Partner Area CSS
     }
 }
 
-  
 /*================================================
 Features Area CSS
 =================================================*/
@@ -1284,8 +1318,8 @@ Features Area CSS
     h3 {
         margin-bottom: 15px;
         font: {
-            size: 22px; 
-        };
+            size: 22px;
+        }
     }
     p {
         margin-bottom: 12px;
@@ -1296,7 +1330,7 @@ Features Area CSS
         font: {
             size: 15px;
             weight: 700;
-        };
+        }
         &:hover {
             color: $black-color;
         }
@@ -1337,15 +1371,15 @@ About Area CSS
         font: {
             size: 14px;
             weight: 600;
-        };
+        }
     }
     h2 {
         margin: {
             bottom: 15px;
-        };
+        }
         font: {
-            size: 36px; 
-        };
+            size: 36px;
+        }
     }
     .features-list {
         padding-left: 0;
@@ -1357,7 +1391,7 @@ About Area CSS
             top: -5px;
             left: -8px;
             right: -8px;
-        };
+        }
         li {
             flex: 0 0 50%;
             max-width: 50%;
@@ -1365,7 +1399,7 @@ About Area CSS
                 left: 8px;
                 right: 8px;
                 top: 16px;
-            };
+            }
             span {
                 display: block;
                 position: relative;
@@ -1373,12 +1407,12 @@ About Area CSS
                 font: {
                     size: 18px;
                     weight: 700;
-                };
+                }
                 padding: {
                     left: 50px;
                     top: 5px;
                     bottom: 5px;
-                };
+                }
                 i {
                     position: absolute;
                     left: 0;
@@ -1401,7 +1435,7 @@ About Area CSS
         margin-top: 30px;
     }
 }
- 
+
 .about-img {
     position: relative;
     z-index: 1;
@@ -1452,7 +1486,7 @@ About Area CSS
             duration: 100s;
             iteration-count: infinite;
             timing-function: linear;
-        };
+        }
     }
 }
 .shape4 {
@@ -1467,25 +1501,25 @@ About Area CSS
 }
 @keyframes movebounce {
     0% {
-        transform: translateY(0px); 
+        transform: translateY(0px);
     }
     50% {
-        transform: translateY(20px); 
+        transform: translateY(20px);
     }
     100% {
-        transform: translateY(0px); 
-    } 
+        transform: translateY(0px);
+    }
 }
 @keyframes moveleftbounce {
     0% {
-        transform: translateX(0px); 
+        transform: translateX(0px);
     }
     50% {
-        transform: translateX(20px); 
+        transform: translateX(20px);
     }
     100% {
-        transform: translateX(0px); 
-    } 
+        transform: translateX(0px);
+    }
 }
 @keyframes rotateme {
     from {
@@ -1497,14 +1531,14 @@ About Area CSS
 }
 @keyframes movescale {
     0% {
-        transform: scale(.9);
+        transform: scale(0.9);
     }
     50% {
-        transform: scale(.8);
+        transform: scale(0.8);
     }
     100% {
-        transform: scale(.9);
-    } 
+        transform: scale(0.9);
+    }
 }
 .about-content {
     .about-list {
@@ -1517,7 +1551,7 @@ About Area CSS
             top: -5px;
             left: -8px;
             right: -8px;
-        };
+        }
         li {
             flex: 0 0 50%;
             max-width: 50%;
@@ -1525,7 +1559,7 @@ About Area CSS
                 left: 8px;
                 right: 8px;
                 top: 16px;
-            };
+            }
             span {
                 display: block;
                 position: relative;
@@ -1533,7 +1567,7 @@ About Area CSS
                 padding: {
                     left: 40px;
                     top: 3px;
-                };
+                }
                 i {
                     position: absolute;
                     left: 0;
@@ -1548,9 +1582,9 @@ About Area CSS
                     border-radius: 50%;
                     font-size: 20px;
                     transition: $transition;
-    
+
                     &::after {
-                        content: '';
+                        content: "";
                         position: absolute;
                         left: 0;
                         right: 0;
@@ -1567,7 +1601,7 @@ About Area CSS
                     i {
                         background-color: $main-color;
                         color: $main-color;
-    
+
                         &::after {
                             background-color: $white-color;
                         }
@@ -1580,7 +1614,10 @@ About Area CSS
         margin-top: 35px;
     }
 }
-.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
     bottom: 20px;
 }
 
@@ -1640,7 +1677,7 @@ Courses Area CSS
             font: {
                 size: 16px;
                 weight: 800;
-            };
+            }
         }
         .discount-price {
             right: 100px;
@@ -1664,15 +1701,15 @@ Courses Area CSS
                 font: {
                     weight: 600;
                     size: 15px;
-                };
+                }
             }
         }
         h3 {
             margin-bottom: 12px;
             line-height: 1.3;
             font: {
-                size: 24px; 
-            };
+                size: 24px;
+            }
             a {
                 display: inline-block;
             }
@@ -1685,7 +1722,7 @@ Courses Area CSS
                 left: -7px;
                 right: -7px;
                 top: 20px;
-            };
+            }
             li {
                 color: $optional-color;
                 font-size: 15px;
@@ -1693,7 +1730,7 @@ Courses Area CSS
                 padding: {
                     left: 25px;
                     right: 7px;
-                };
+                }
                 i {
                     color: $main-color;
                     position: absolute;
@@ -1733,7 +1770,8 @@ Courses Area CSS
                 margin-bottom: 10px;
             }
         }
-        &:hover, &.active {
+        &:hover,
+        &.active {
             box-shadow: 0px 8px 16px 0px rgba(146, 184, 255, 0.2);
         }
     }
@@ -1746,7 +1784,7 @@ Courses Area CSS
             width: 100%;
             height: 100%;
             text-align: center;
-            background: rgba(0, 0, 0, .4);
+            background: rgba(0, 0, 0, 0.4);
             transform: scale(0);
             transition: $transition;
             i {
@@ -1792,7 +1830,7 @@ Courses Area CSS
             left: auto;
             right: auto;
             bottom: 0;
-        };
+        }
         a {
             color: $main-color;
 
@@ -1820,7 +1858,7 @@ Courses Area CSS
             repeat: no-repeat;
             position: center center;
             size: cover;
-        };
+        }
     }
 }
 
@@ -1840,12 +1878,12 @@ Courses Details Area CSS
         padding: {
             left: 30px;
             right: 30px;
-        };
+        }
         .react-tabs__tab {
             margin: {
                 bottom: 0;
                 right: 40px;
-            };
+            }
             border-radius: 0;
             border: none;
             padding: 0;
@@ -1857,9 +1895,9 @@ Courses Details Area CSS
             font: {
                 size: 18px;
                 weight: 800;
-            };
+            }
             &::before {
-                content: '';
+                content: "";
                 bottom: 1px;
                 height: 2px;
                 background-color: $main-color;
@@ -1869,14 +1907,15 @@ Courses Details Area CSS
                 width: 100%;
                 transform: scaleX(0);
             }
-            &:hover, &.react-tabs__tab--selected {
+            &:hover,
+            &.react-tabs__tab--selected {
                 color: $black-color;
 
                 &::before {
                     transform: scaleX(1);
                 }
             }
-            
+
             &:last-child {
                 margin-right: 0;
             }
@@ -1887,13 +1926,13 @@ Courses Details Area CSS
             left: 30px;
             right: 30px;
             top: 40px;
-        };
+        }
         .courses-overview {
             h3 {
                 margin-bottom: 12px;
                 font: {
-                    size: 24px; 
-                };
+                    size: 24px;
+                }
                 &:not(:first-child) {
                     margin-top: 30px;
                 }
@@ -1906,12 +1945,12 @@ Courses Details Area CSS
             margin: {
                 left: -30px;
                 right: -30px;
-            };
+            }
             h3 {
                 margin-bottom: 18px;
                 font: {
-                    size: 20px; 
-                };
+                    size: 20px;
+                }
                 &:not(:first-child) {
                     margin-top: 30px;
                 }
@@ -1933,11 +1972,11 @@ Courses Details Area CSS
                             right: 30px;
                             top: 14.5px;
                             bottom: 14.5px;
-                        };
+                        }
                         margin: {
                             left: -30px;
                             right: -30px;
-                        };
+                        }
                         &::before {
                             content: "\f104";
                             position: absolute;
@@ -1947,13 +1986,13 @@ Courses Details Area CSS
                             font: {
                                 size: 18px;
                                 family: Flaticon;
-                            };
+                            }
                         }
                         .courses-name {
                             font: {
                                 size: 14.5px;
                                 weight: 700;
-                            };
+                            }
                         }
                         .courses-meta {
                             text-align: right;
@@ -1969,7 +2008,7 @@ Courses Details Area CSS
                                 font: {
                                     size: 14px;
                                     weight: 700;
-                                };
+                                }
                             }
                             .duration {
                                 display: inline-block;
@@ -1981,7 +2020,7 @@ Courses Details Area CSS
                                 font: {
                                     size: 13px;
                                     weight: 600;
-                                };
+                                }
                                 text-transform: capitalize;
                             }
                             .status {
@@ -1994,7 +2033,7 @@ Courses Details Area CSS
                                 font: {
                                     size: 13px;
                                     weight: 600;
-                                };
+                                }
                                 text-transform: capitalize;
 
                                 &.locked {
@@ -2008,7 +2047,7 @@ Courses Details Area CSS
                                     font: {
                                         size: 18px;
                                         weight: normal;
-                                    };
+                                    }
                                 }
                             }
                         }
@@ -2016,7 +2055,56 @@ Courses Details Area CSS
                             color: $main-color;
                         }
                     }
-                    &:nth-child(2), &:nth-child(4), &:nth-child(6), &:nth-child(8), &:nth-child(10), &:nth-child(12), &:nth-child(14), &:nth-child(16), &:nth-child(18), &:nth-child(20), &:nth-child(22), &:nth-child(24), &:nth-child(26), &:nth-child(28), &:nth-child(30), &:nth-child(32), &:nth-child(34), &:nth-child(36), &:nth-child(38), &:nth-child(40), &:nth-child(42), &:nth-child(44), &:nth-child(46), &:nth-child(48), &:nth-child(50), &:nth-child(52), &:nth-child(54), &:nth-child(56), &:nth-child(58), &:nth-child(60), &:nth-child(62), &:nth-child(64), &:nth-child(66), &:nth-child(68), &:nth-child(70), &:nth-child(72), &:nth-child(74), &:nth-child(76), &:nth-child(78), &:nth-child(80), &:nth-child(82), &:nth-child(84), &:nth-child(86), &:nth-child(88), &:nth-child(90), &:nth-child(92), &:nth-child(94), &:nth-child(96), &:nth-child(98), &:nth-child(100) {
+                    &:nth-child(2),
+                    &:nth-child(4),
+                    &:nth-child(6),
+                    &:nth-child(8),
+                    &:nth-child(10),
+                    &:nth-child(12),
+                    &:nth-child(14),
+                    &:nth-child(16),
+                    &:nth-child(18),
+                    &:nth-child(20),
+                    &:nth-child(22),
+                    &:nth-child(24),
+                    &:nth-child(26),
+                    &:nth-child(28),
+                    &:nth-child(30),
+                    &:nth-child(32),
+                    &:nth-child(34),
+                    &:nth-child(36),
+                    &:nth-child(38),
+                    &:nth-child(40),
+                    &:nth-child(42),
+                    &:nth-child(44),
+                    &:nth-child(46),
+                    &:nth-child(48),
+                    &:nth-child(50),
+                    &:nth-child(52),
+                    &:nth-child(54),
+                    &:nth-child(56),
+                    &:nth-child(58),
+                    &:nth-child(60),
+                    &:nth-child(62),
+                    &:nth-child(64),
+                    &:nth-child(66),
+                    &:nth-child(68),
+                    &:nth-child(70),
+                    &:nth-child(72),
+                    &:nth-child(74),
+                    &:nth-child(76),
+                    &:nth-child(78),
+                    &:nth-child(80),
+                    &:nth-child(82),
+                    &:nth-child(84),
+                    &:nth-child(86),
+                    &:nth-child(88),
+                    &:nth-child(90),
+                    &:nth-child(92),
+                    &:nth-child(94),
+                    &:nth-child(96),
+                    &:nth-child(98),
+                    &:nth-child(100) {
                         a {
                             background-color: $white-color;
                         }
@@ -2043,19 +2131,19 @@ Courses Details Area CSS
                 display: inline-block;
                 margin-right: 15px;
                 font: {
-                    size: 21px; 
-                };
+                    size: 21px;
+                }
             }
             .rating {
                 display: inline-block;
                 position: relative;
                 top: 1px;
-                
+
                 span {
                     font-size: 19px;
                     color: #cecfd2;
                     margin-right: 2px;
-    
+
                     &.checked {
                         color: orange;
                     }
@@ -2065,7 +2153,7 @@ Courses Details Area CSS
                 margin: {
                     top: 10px;
                     bottom: 20px;
-                };
+                }
                 span {
                     display: block;
                     font-size: $font-size;
@@ -2077,7 +2165,7 @@ Courses Details Area CSS
                 margin: {
                     left: 0;
                     right: 0;
-                };
+                }
             }
             .side {
                 float: left;
@@ -2088,7 +2176,7 @@ Courses Details Area CSS
                     font: {
                         size: $font-size;
                         weight: 700;
-                    };
+                    }
                 }
             }
             .middle {
@@ -2109,13 +2197,13 @@ Courses Details Area CSS
             .bar-5 {
                 width: 100%;
                 height: 18px;
-                background-color: #4CAF50;
+                background-color: #4caf50;
                 border-radius: 5px;
             }
             .bar-4 {
                 width: 75%;
                 height: 18px;
-                background-color: #2196F3;
+                background-color: #2196f3;
                 border-radius: 5px;
                 border-radius: 5px;
             }
@@ -2140,22 +2228,22 @@ Courses Details Area CSS
         }
         .courses-review-comments {
             margin-top: 40px;
-        
+
             h3 {
                 border-bottom: 1px solid #f3f3f3;
                 padding-bottom: 12px;
                 margin: {
                     bottom: 8px;
-                };
+                }
                 font: {
-                    size: 21px; 
-                };
+                    size: 21px;
+                }
             }
             .user-review {
                 border-bottom: 1px solid #f3f3f3;
                 padding: 20px 0 20px 110px;
                 position: relative;
-        
+
                 img {
                     position: absolute;
                     left: 0;
@@ -2168,21 +2256,21 @@ Courses Details Area CSS
                     margin-bottom: 8px;
                     font: {
                         weight: 700;
-                    };
+                    }
                 }
                 .review-rating {
                     display: block;
                     margin-bottom: 8px;
-        
+
                     .review-stars {
                         display: inline-block;
-        
+
                         i {
                             color: #cecfd2;
                             font-size: 18px;
                             display: inline-block;
                             margin-right: 2px;
-            
+
                             &.checked {
                                 color: orange;
                             }
@@ -2207,7 +2295,7 @@ Courses Details Area CSS
     margin: {
         left: 15px;
         top: -248px;
-    };
+    }
     .image {
         text-align: center;
         position: relative;
@@ -2242,7 +2330,7 @@ Courses Details Area CSS
                     left: auto;
                     right: auto;
                     bottom: 15px;
-                };
+                }
             }
             span {
                 display: inline-block;
@@ -2253,11 +2341,11 @@ Courses Details Area CSS
                 font: {
                     size: 17px;
                     weight: 700;
-                };
+                }
             }
         }
         &::before {
-            content: '';
+            content: "";
             position: absolute;
             left: 0;
             top: 0;
@@ -2275,18 +2363,18 @@ Courses Details Area CSS
             left: 25px;
             right: 25px;
             top: 35px;
-        };
+        }
         li {
             border-bottom: 1px solid #e5e5e7;
             color: $optional-color;
             font: {
                 size: 17px;
                 weight: 600;
-            };
+            }
             padding: {
                 top: 15px;
                 bottom: 14px;
-            };
+            }
             span {
                 font-weight: 800;
                 color: $black-color;
@@ -2308,13 +2396,13 @@ Courses Details Area CSS
                 font: {
                     size: 28px;
                     weight: 800;
-                };
+                }
                 span {
                     color: $black-color;
                     font: {
                         size: 17px;
                         weight: 800;
-                    };
+                    }
                 }
             }
             &:first-child {
@@ -2327,7 +2415,7 @@ Courses Details Area CSS
         padding: {
             left: 25px;
             right: 25px;
-        };
+        }
         .default-btn {
             display: block;
             padding: {
@@ -2335,7 +2423,7 @@ Courses Details Area CSS
                 left: 30px;
                 top: 12px;
                 bottom: 12px;
-            };
+            }
             i {
                 position: relative;
                 left: 0;
@@ -2345,7 +2433,7 @@ Courses Details Area CSS
                 font: {
                     weight: normal;
                     size: 20px;
-                };
+                }
             }
             &:not(:first-child) {
                 margin-top: 15px;
@@ -2366,7 +2454,7 @@ Courses Details Area CSS
         padding: {
             left: 25px;
             right: 25px;
-        };
+        }
         .share-info {
             display: inline-block;
             position: relative;
@@ -2379,7 +2467,7 @@ Courses Details Area CSS
                 font: {
                     size: $font-size;
                     weight: 700;
-                };
+                }
                 i {
                     color: $black-color;
                 }
@@ -2396,11 +2484,11 @@ Courses Details Area CSS
                 transition: $transition;
                 margin: {
                     bottom: 0;
-                };
+                }
                 li {
                     display: inline-block;
                     margin-right: 3px;
-        
+
                     &:last-child {
                         margin-right: 0;
                     }
@@ -2413,7 +2501,7 @@ Courses Details Area CSS
                         color: $black-color;
                         position: relative;
                         border-radius: 2px;
-        
+
                         i {
                             position: absolute;
                             left: 0;
@@ -2448,7 +2536,7 @@ Courses Details Area CSS
     }
     .courses-meta {
         margin-top: 20px;
-        
+
         ul {
             padding-left: 0;
             margin-bottom: 0;
@@ -2462,11 +2550,11 @@ Courses Details Area CSS
                 font: {
                     weight: 800;
                     size: 17px;
-                };
+                }
                 padding: {
                     right: 20px;
                     left: 40px;
-                };
+                }
                 i {
                     font-size: 28px;
                     color: #cfcfcf;
@@ -2483,13 +2571,14 @@ Courses Details Area CSS
                     font: {
                         size: 13.5px;
                         weight: 700;
-                    };
+                    }
                 }
                 a {
                     display: inline-block;
                     color: $black-color;
 
-                    &:hover, &:focus {
+                    &:hover,
+                    &:focus {
                         color: $main-color;
                     }
                 }
@@ -2513,7 +2602,7 @@ Courses Details Area CSS
             font: {
                 size: 36px;
                 weight: 800;
-            };
+            }
         }
         .courses-review {
             display: block;
@@ -2554,8 +2643,8 @@ Courses Details Area CSS
     h3 {
         margin-bottom: 15px;
         font: {
-            size: 24px; 
-        };
+            size: 24px;
+        }
         &:not(first-child) {
             margin-top: 30px;
         }
@@ -2572,7 +2661,7 @@ Courses Details Area CSS
                 left: -10px;
                 right: -10px;
                 bottom: -12px;
-            };
+            }
             li {
                 flex: 0 0 50%;
                 max-width: 50%;
@@ -2580,7 +2669,7 @@ Courses Details Area CSS
                     left: 10px;
                     right: 10px;
                     bottom: 12px;
-                };
+                }
                 span {
                     display: block;
                     color: $black-color;
@@ -2589,7 +2678,7 @@ Courses Details Area CSS
                     line-height: 1.7;
                     font: {
                         weight: 500;
-                    };
+                    }
                     i {
                         position: absolute;
                         left: 0;
@@ -2607,15 +2696,15 @@ Courses Details Area CSS
         padding: 30px;
         margin: {
             top: 20px;
-        };
+        }
         h3 {
             margin: {
                 top: 0;
                 bottom: 18px;
-            };
+            }
             font: {
-                size: 18px; 
-            };
+                size: 18px;
+            }
             &:not(:first-child) {
                 margin-top: 30px;
             }
@@ -2634,11 +2723,11 @@ Courses Details Area CSS
                     right: 30px;
                     top: 14.5px;
                     bottom: 14.5px;
-                };
+                }
                 margin: {
                     left: -30px;
                     right: -30px;
-                };
+                }
                 &::before {
                     content: "\f104";
                     position: absolute;
@@ -2648,13 +2737,13 @@ Courses Details Area CSS
                     font: {
                         size: 18px;
                         family: Flaticon;
-                    };
+                    }
                 }
                 .courses-name {
                     font: {
                         size: 14.5px;
                         weight: 700;
-                    };
+                    }
                 }
                 .courses-meta {
                     text-align: right;
@@ -2670,7 +2759,7 @@ Courses Details Area CSS
                         font: {
                             size: 14px;
                             weight: 700;
-                        };
+                        }
                     }
                     .duration {
                         display: inline-block;
@@ -2682,7 +2771,7 @@ Courses Details Area CSS
                         font: {
                             size: 13px;
                             weight: 600;
-                        };
+                        }
                         text-transform: capitalize;
                     }
                     .status {
@@ -2696,7 +2785,7 @@ Courses Details Area CSS
                         font: {
                             size: 13px;
                             weight: 600;
-                        };
+                        }
                         text-transform: capitalize;
 
                         &.locked {
@@ -2710,7 +2799,7 @@ Courses Details Area CSS
                             font: {
                                 size: 18px;
                                 weight: normal;
-                            };
+                            }
                         }
                     }
                 }
@@ -2718,8 +2807,56 @@ Courses Details Area CSS
                     color: $main-color;
                 }
 
-                
-                &:nth-child(2), &:nth-child(4), &:nth-child(6), &:nth-child(8), &:nth-child(10), &:nth-child(12), &:nth-child(14), &:nth-child(16), &:nth-child(18), &:nth-child(20), &:nth-child(22), &:nth-child(24), &:nth-child(26), &:nth-child(28), &:nth-child(30), &:nth-child(32), &:nth-child(34), &:nth-child(36), &:nth-child(38), &:nth-child(40), &:nth-child(42), &:nth-child(44), &:nth-child(46), &:nth-child(48), &:nth-child(50), &:nth-child(52), &:nth-child(54), &:nth-child(56), &:nth-child(58), &:nth-child(60), &:nth-child(62), &:nth-child(64), &:nth-child(66), &:nth-child(68), &:nth-child(70), &:nth-child(72), &:nth-child(74), &:nth-child(76), &:nth-child(78), &:nth-child(80), &:nth-child(82), &:nth-child(84), &:nth-child(86), &:nth-child(88), &:nth-child(90), &:nth-child(92), &:nth-child(94), &:nth-child(96), &:nth-child(98), &:nth-child(100) {
+                &:nth-child(2),
+                &:nth-child(4),
+                &:nth-child(6),
+                &:nth-child(8),
+                &:nth-child(10),
+                &:nth-child(12),
+                &:nth-child(14),
+                &:nth-child(16),
+                &:nth-child(18),
+                &:nth-child(20),
+                &:nth-child(22),
+                &:nth-child(24),
+                &:nth-child(26),
+                &:nth-child(28),
+                &:nth-child(30),
+                &:nth-child(32),
+                &:nth-child(34),
+                &:nth-child(36),
+                &:nth-child(38),
+                &:nth-child(40),
+                &:nth-child(42),
+                &:nth-child(44),
+                &:nth-child(46),
+                &:nth-child(48),
+                &:nth-child(50),
+                &:nth-child(52),
+                &:nth-child(54),
+                &:nth-child(56),
+                &:nth-child(58),
+                &:nth-child(60),
+                &:nth-child(62),
+                &:nth-child(64),
+                &:nth-child(66),
+                &:nth-child(68),
+                &:nth-child(70),
+                &:nth-child(72),
+                &:nth-child(74),
+                &:nth-child(76),
+                &:nth-child(78),
+                &:nth-child(80),
+                &:nth-child(82),
+                &:nth-child(84),
+                &:nth-child(86),
+                &:nth-child(88),
+                &:nth-child(90),
+                &:nth-child(92),
+                &:nth-child(94),
+                &:nth-child(96),
+                &:nth-child(98),
+                &:nth-child(100) {
                     background-color: $white-color;
                 }
             }
@@ -2739,7 +2876,7 @@ Courses Details Area CSS
             &::before {
                 position: absolute;
                 left: 0;
-                content: '';
+                content: "";
                 top: 7px;
                 width: 7px;
                 height: 7px;
@@ -2771,7 +2908,7 @@ Courses Details Area CSS
             &::before {
                 position: absolute;
                 left: 0;
-                content: '';
+                content: "";
                 top: 10px;
                 width: 7px;
                 height: 7px;
@@ -2801,7 +2938,7 @@ Courses Details Area CSS
             &::before {
                 position: absolute;
                 left: 0;
-                content: '';
+                content: "";
                 top: 10px;
                 width: 7px;
                 height: 7px;
@@ -2830,7 +2967,7 @@ Courses Details Area CSS
                 position: center center;
                 size: cover;
                 repeat: no-repeat;
-            };
+            }
         }
         .author-profile {
             padding: 0 25px 25px;
@@ -2841,7 +2978,7 @@ Courses Details Area CSS
                 margin: {
                     bottom: 15px;
                     top: -45px;
-                };
+                }
                 img {
                     display: inline-block;
                     border: 3px solid $white-color;
@@ -2855,8 +2992,8 @@ Courses Details Area CSS
                         h4 {
                             margin-bottom: 5px;
                             font: {
-                                size: 22px; 
-                            };
+                                size: 22px;
+                            }
                         }
                         span {
                             color: $optional-color;
@@ -2872,14 +3009,14 @@ Courses Details Area CSS
             display: inline-block;
             margin-right: 15px;
             font: {
-                size: 24px; 
-            };
+                size: 24px;
+            }
         }
         .rating {
             display: inline-block;
             position: relative;
             top: 2px;
-            
+
             span {
                 font-size: 17px;
                 color: #cecfd2;
@@ -2894,7 +3031,7 @@ Courses Details Area CSS
             margin: {
                 top: 10px;
                 bottom: 20px;
-            };
+            }
             span {
                 display: block;
                 font-size: $font-size;
@@ -2906,7 +3043,7 @@ Courses Details Area CSS
             margin: {
                 left: 0;
                 right: 0;
-            };
+            }
         }
         .side {
             float: left;
@@ -2917,7 +3054,7 @@ Courses Details Area CSS
                 font: {
                     size: $font-size;
                     weight: 700;
-                };
+                }
             }
         }
         .middle {
@@ -2938,13 +3075,13 @@ Courses Details Area CSS
         .bar-5 {
             width: 100%;
             height: 18px;
-            background-color: #4CAF50;
+            background-color: #4caf50;
             border-radius: 5px;
         }
         .bar-4 {
             width: 75%;
             height: 18px;
-            background-color: #2196F3;
+            background-color: #2196f3;
             border-radius: 5px;
             border-radius: 5px;
         }
@@ -2977,7 +3114,7 @@ Courses Details Area CSS
         margin: {
             top: 0;
             bottom: 10px;
-        };
+        }
     }
     .user-review {
         border-bottom: 1px solid #f3f3f3;
@@ -2996,7 +3133,7 @@ Courses Details Area CSS
             margin-bottom: 8px;
             font: {
                 weight: 700;
-            };
+            }
         }
         .review-rating {
             display: block;
@@ -3010,7 +3147,7 @@ Courses Details Area CSS
                     font-size: 18px;
                     display: inline-block;
                     margin-right: 2px;
-    
+
                     &.checked {
                         color: orange;
                     }
@@ -3032,32 +3169,32 @@ Courses Details Area CSS
     h3 {
         margin-bottom: 20px;
         font: {
-            size: 24px; 
-        };
+            size: 24px;
+        }
     }
 }
 .courses-sidebar-information {
     background-color: $white-color;
     box-shadow: 0px 8px 16px 0px rgba(146, 184, 255, 0.2);
     padding: 30px;
-    
+
     .info {
         margin-bottom: 0;
         list-style-type: none;
         padding: {
             left: 0;
-        };
+        }
         li {
             border-bottom: 1px dashed #eeeeee;
             color: $optional-color;
             font: {
                 size: 17px;
                 weight: 600;
-            };
+            }
             padding: {
                 top: 15px;
                 bottom: 13px;
-            };
+            }
             span {
                 font-weight: 800;
                 color: $black-color;
@@ -3079,13 +3216,13 @@ Courses Details Area CSS
                 font: {
                     size: 28px;
                     weight: 800;
-                };
+                }
                 span {
                     color: $black-color;
                     font: {
                         size: 17px;
                         weight: 800;
-                    };
+                    }
                 }
             }
             &:first-child {
@@ -3095,7 +3232,7 @@ Courses Details Area CSS
     }
     .btn-box {
         margin-top: 20px;
-        
+
         .default-btn {
             display: block;
             width: 100%;
@@ -3104,7 +3241,7 @@ Courses Details Area CSS
                 left: 30px;
                 top: 12px;
                 bottom: 12px;
-            };
+            }
             i {
                 position: relative;
                 left: 0;
@@ -3114,7 +3251,7 @@ Courses Details Area CSS
                 font: {
                     weight: normal;
                     size: 20px;
-                };
+                }
             }
             &:not(:first-child) {
                 margin-top: 15px;
@@ -3132,7 +3269,7 @@ Courses Details Area CSS
     .courses-share {
         text-align: center;
         margin-top: 25px;
-        
+
         .share-info {
             display: inline-block;
             position: relative;
@@ -3145,7 +3282,7 @@ Courses Details Area CSS
                 font: {
                     size: $font-size;
                     weight: 700;
-                };
+                }
                 i {
                     color: $black-color;
                 }
@@ -3156,11 +3293,11 @@ Courses Details Area CSS
                 margin: {
                     bottom: 0;
                     top: 12px;
-                };
+                }
                 li {
                     display: inline-block;
                     margin-right: 3px;
-        
+
                     &:last-child {
                         margin-right: 0;
                     }
@@ -3173,7 +3310,7 @@ Courses Details Area CSS
                         color: $black-color;
                         position: relative;
                         border-radius: 2px;
-        
+
                         i {
                             position: absolute;
                             left: 0;
@@ -3216,20 +3353,20 @@ Courses Details Area CSS
                 font: {
                     size: $font-size;
                     weight: 400;
-                };
+                }
                 padding: {
                     left: 15px;
                     top: 1px;
                     bottom: 0;
                     right: 0;
-                };
+                }
                 &::placeholder {
                     color: #848484;
                     transition: $transition;
                 }
                 &:focus {
                     border-color: $main-color;
-    
+
                     &::placeholder {
                         color: transparent;
                     }
@@ -3261,12 +3398,13 @@ Advisor Area CSS
         margin: {
             left: 0;
             right: 0;
-        };
-        .col-lg-4, .col-lg-8 {
+        }
+        .col-lg-4,
+        .col-lg-8 {
             padding: {
                 left: 0;
                 right: 0;
-            };
+            }
         }
     }
     .advisor-image {
@@ -3284,8 +3422,8 @@ Advisor Area CSS
         h3 {
             margin-bottom: 0;
             font: {
-                size: 22px; 
-            };
+                size: 22px;
+            }
         }
         .sub-title {
             display: block;
@@ -3294,13 +3432,13 @@ Advisor Area CSS
             font: {
                 size: 15px;
                 weight: 600;
-            };
+            }
         }
         p {
             margin: {
                 bottom: 0;
                 top: 13px;
-            };
+            }
         }
         .social-link {
             padding-left: 0;
@@ -3308,11 +3446,11 @@ Advisor Area CSS
             margin: {
                 top: 17px;
                 bottom: 0;
-            };
+            }
             li {
                 display: inline-block;
                 margin-right: 5px;
-    
+
                 &:last-child {
                     margin-right: 0;
                 }
@@ -3325,7 +3463,7 @@ Advisor Area CSS
                     color: $black-color;
                     position: relative;
                     border-radius: 2px;
-    
+
                     i {
                         position: absolute;
                         left: 0;
@@ -3347,11 +3485,11 @@ Advisor Area CSS
 Funfacts Area CSS
 =================================================*/
 .bg-F6F1ED {
-    background: #F6F1ED;
+    background: #f6f1ed;
 }
 .funfacts-and-feedback-area {
     position: relative;
-    background: #F6F1ED;
+    background: #f6f1ed;
     .shape4 {
         right: 21%;
         bottom: 41%;
@@ -3371,7 +3509,7 @@ Funfacts Area CSS
         background-color: #fff;
         border: none;
         border-radius: 10px;
-        margin-bottom: 25px ;
+        margin-bottom: 25px;
     }
 }
 .single-funfacts-box {
@@ -3388,13 +3526,13 @@ Funfacts Area CSS
         bottom: 100px;
         left: 40px;
         right: 40px;
-    };
+    }
     h3 {
         margin-bottom: 0;
         color: $main-color;
         font: {
-            size: 44px; 
-        };
+            size: 44px;
+        }
         span {
             font-size: 48px;
         }
@@ -3411,10 +3549,10 @@ Funfacts Area CSS
         font: {
             weight: 700;
             size: 15px;
-        };
+        }
     }
     &::before {
-        content: '';
+        content: "";
         position: absolute;
         left: 0;
         top: 0;
@@ -3428,13 +3566,13 @@ Funfacts Area CSS
             position: center center;
             size: contain;
             repeat: no-repeat;
-        };
+        }
         animation: {
             name: rotateme;
             duration: 50s;
             iteration-count: infinite;
             timing-function: linear;
-        };
+        }
     }
     &:hover {
         border-color: $main-color;
@@ -3445,13 +3583,13 @@ Funfacts Area CSS
     padding: {
         top: 100px;
         bottom: 100px;
-    };
+    }
     h3 {
         margin-bottom: 0;
         color: $main-color;
         font: {
-            size: 44px; 
-        };
+            size: 44px;
+        }
         span {
             font-size: 48px;
         }
@@ -3468,7 +3606,7 @@ Funfacts Area CSS
         font: {
             weight: 700;
             size: 16px;
-        };
+        }
     }
 }
 .funfacts-area {
@@ -3499,26 +3637,26 @@ Funfacts Area CSS
     padding: {
         top: 100px;
         bottom: 100px;
-    };
+    }
     img {
         position: absolute;
         left: 0;
         right: 0;
-        opacity: .80;
+        opacity: 0.8;
         top: 50%;
         transform: translateY(-50%);
         z-index: -1;
         margin: {
             left: auto;
             right: auto;
-        };
+        }
     }
     h3 {
         margin-bottom: 0;
         color: $main-color;
         font: {
-            size: 44px; 
-        };
+            size: 44px;
+        }
         span {
             font-size: 48px;
         }
@@ -3535,7 +3673,7 @@ Funfacts Area CSS
         font: {
             weight: 700;
             size: 16px;
-        };
+        }
     }
 }
 
@@ -3551,31 +3689,31 @@ Feedback Area CSS
         font: {
             size: 14px;
             weight: 600;
-        };
+        }
     }
     h2 {
         margin: {
             bottom: 0;
-        };
+        }
         font: {
-            size: 36px; 
-        };
+            size: 36px;
+        }
     }
     p {
         margin: {
             top: 12px;
-        };
+        }
     }
     .feedback-info {
         p {
             font-weight: 600;
             margin: {
                 bottom: 0;
-            };
+            }
             a {
                 color: $main-color;
                 font-weight: 700;
-    
+
                 &:hover {
                     text-decoration: underline;
                     color: $black-color;
@@ -3587,7 +3725,7 @@ Feedback Area CSS
         margin: {
             top: 30px;
             bottom: 30px;
-        };
+        }
 
         .swiper-pagination-bullet {
             &.swiper-pagination-bullet-active {
@@ -3610,11 +3748,11 @@ Feedback Area CSS
         font: {
             size: $font-size;
             weight: 600;
-        };
+        }
         margin: {
             top: 0;
             bottom: 0;
-        };
+        }
     }
     .client-info {
         margin-top: 25px;
@@ -3632,7 +3770,7 @@ Feedback Area CSS
                 font: {
                     size: 17px;
                     weight: 700;
-                };
+                }
             }
             span {
                 display: block;
@@ -3645,7 +3783,7 @@ Feedback Area CSS
     &::after {
         width: 75px;
         height: 75px;
-        content: '';
+        content: "";
         border-radius: 50%;
         background-color: $main-color;
         position: absolute;
@@ -3670,7 +3808,7 @@ Feedback Area CSS
     margin: {
         left: auto;
         right: auto;
-    };
+    }
 }
 .single-testimonials-item {
     margin-bottom: 30px;
@@ -3694,22 +3832,22 @@ Feedback Area CSS
         font: {
             size: 20px;
             weight: 600;
-        };
+        }
         margin: {
             top: 0;
             bottom: 0;
-        };
+        }
     }
     h3 {
         color: $main-color;
         margin: {
             top: 18px;
             bottom: 0;
-        };
+        }
         font: {
             size: 20px;
             weight: 700;
-        };
+        }
     }
     span {
         display: block;
@@ -3728,7 +3866,7 @@ Feedback Area CSS
         font: {
             family: Flaticon;
             size: 100px;
-        };
+        }
     }
     .shape-img {
         img {
@@ -3752,7 +3890,7 @@ Feedback Area CSS
                     duration: 100s;
                     iteration-count: infinite;
                     timing-function: linear;
-                };
+                }
             }
             &.shape-3 {
                 left: 20px;
@@ -3766,7 +3904,7 @@ Feedback Area CSS
 .feedback-area {
     position: relative;
     z-index: 1;
-    
+
     .shape2 {
         bottom: 2%;
     }
@@ -3776,7 +3914,7 @@ Feedback Area CSS
         top: 15%;
     }
 }
-  
+
 /*================================================
 Video Area CSS
 =================================================*/
@@ -3789,7 +3927,7 @@ Video Area CSS
         left: auto;
         right: auto;
         top: 100px;
-    };
+    }
     .image {
         overflow: hidden;
         border-radius: 5px;
@@ -3816,9 +3954,10 @@ Video Area CSS
         i {
             padding-left: 3px;
         }
-    
-        &::after, &::before {
-            content: '';
+
+        &::after,
+        &::before {
+            content: "";
             display: block;
             position: absolute;
             top: 0;
@@ -3839,8 +3978,9 @@ Video Area CSS
         &:hover {
             color: $white-color;
             background-color: $black-color;
-    
-            &::before, &::after {
+
+            &::before,
+            &::after {
                 border-color: $black-color;
             }
         }
@@ -3848,7 +3988,7 @@ Video Area CSS
     &:hover {
         .image {
             img {
-                transform: scale3d(1.1,1.1,1.1);
+                transform: scale3d(1.1, 1.1, 1.1);
             }
         }
     }
@@ -3891,12 +4031,13 @@ Get Instant Courses Area CSS
         margin: {
             left: 0;
             right: 0;
-        };
-        .col-lg-8, .col-lg-4 {
+        }
+        .col-lg-8,
+        .col-lg-4 {
             padding: {
                 left: 0;
                 right: 0;
-            };
+            }
         }
     }
 }
@@ -3906,7 +4047,7 @@ Get Instant Courses Area CSS
         right: 70px;
         top: 70px;
         bottom: 30px;
-    };
+    }
     .sub-title {
         display: block;
         text-transform: uppercase;
@@ -3915,15 +4056,15 @@ Get Instant Courses Area CSS
         font: {
             size: 14px;
             weight: 600;
-        };
+        }
     }
     h2 {
         margin: {
             bottom: 12px;
-        };
+        }
         font: {
-            size: 36px; 
-        };
+            size: 36px;
+        }
     }
     .default-btn {
         margin-top: 5px;
@@ -3959,7 +4100,7 @@ Get Instant Courses Area CSS
             duration: 100s;
             iteration-count: infinite;
             timing-function: linear;
-        };
+        }
     }
 }
 .shape7 {
@@ -3972,7 +4113,6 @@ Get Instant Courses Area CSS
     }
 }
 
-  
 /*================================================
 View All Courses Area CSS
 =================================================*/
@@ -3990,20 +4130,20 @@ View All Courses Area CSS
         font: {
             size: 14px;
             weight: 600;
-        };
+        }
     }
     h2 {
         margin: {
             bottom: 0;
-        };
+        }
         font: {
-            size: 36px; 
-        };
+            size: 36px;
+        }
     }
     p {
         margin: {
             top: 12px;
-        };
+        }
     }
     .default-btn {
         margin-top: 10px;
@@ -4024,7 +4164,7 @@ View All Courses Area CSS
             duration: 10s;
             iteration-count: infinite;
             timing-function: linear;
-        };
+        }
     }
 }
 .shape11 {
@@ -4039,7 +4179,7 @@ View All Courses Area CSS
             duration: 10s;
             iteration-count: infinite;
             timing-function: linear;
-        };
+        }
     }
 }
 .shape12 {
@@ -4052,13 +4192,12 @@ View All Courses Area CSS
         animation: movescale 4s linear infinite;
     }
 }
-   
-  
+
 /*================================================
 Teacher Register Area CSS
 =================================================*/
 .teacher-register-area {
-    background-color: #EEE1D8;
+    background-color: #eee1d8;
 }
 .teacher-register-box {
     padding: 45px;
@@ -4069,26 +4208,27 @@ Teacher Register Area CSS
         position: center center;
         size: cover;
         repeat: no-repeat;
-    };
+    }
     h2 {
         margin-bottom: 0;
         color: $white-color;
         font: {
-            size: 33px; 
-        };
+            size: 33px;
+        }
     }
     p {
         color: $white-color;
         margin: {
             top: 10px;
             bottom: 0;
-        };
+        }
         font-size: 15px;
     }
     form {
         margin-top: 25px;
 
-        input, textarea {
+        input,
+        textarea {
             display: block;
             width: 100%;
             border: none;
@@ -4100,7 +4240,7 @@ Teacher Register Area CSS
             font: {
                 size: $font-size;
                 weight: 600;
-            };
+            }
             &::placeholder {
                 color: #cdcdcd;
                 transition: $transition;
@@ -4132,7 +4272,7 @@ Teacher Register Area CSS
         color: #fff;
     }
 }
- 
+
 /*================================================
 Apply Instructor Area CSS
 =================================================*/
@@ -4140,8 +4280,8 @@ Apply Instructor Area CSS
     h2 {
         margin-bottom: 18px;
         font: {
-            size: 36px; 
-        };
+            size: 36px;
+        }
     }
     img {
         border-radius: 5px;
@@ -4161,7 +4301,7 @@ Apply Instructor Area CSS
             margin: {
                 right: 50px;
                 bottom: -1.5px;
-            };
+            }
             background-color: transparent;
             color: $optional-color;
             border: none;
@@ -4170,9 +4310,9 @@ Apply Instructor Area CSS
             font: {
                 size: 18px;
                 weight: 800;
-            };
+            }
             &::before {
-                content: '';
+                content: "";
                 position: absolute;
                 left: 0;
                 bottom: 0;
@@ -4181,7 +4321,8 @@ Apply Instructor Area CSS
                 height: 1.5px;
                 background-color: $main-color;
             }
-            &:hover, &.react-tabs__tab--selected {
+            &:hover,
+            &.react-tabs__tab--selected {
                 color: $black-color;
 
                 &::before {
@@ -4196,8 +4337,8 @@ Apply Instructor Area CSS
     h3 {
         margin-bottom: 13px;
         font: {
-            size: 24px; 
-        };
+            size: 24px;
+        }
         &:not(:first-child) {
             margin-top: 30px;
         }
@@ -4214,7 +4355,7 @@ Page Title Area CSS
     padding: {
         top: 20px;
         bottom: 80px;
-    };
+    }
 }
 .page-title-content {
     text-align: center;
@@ -4232,9 +4373,9 @@ Page Title Area CSS
             font: {
                 size: $font-size;
                 weight: 600;
-            };
+            }
             &::before {
-                content: '';
+                content: "";
                 position: absolute;
                 right: -10px;
                 top: 5px;
@@ -4269,10 +4410,10 @@ Page Title Area CSS
             bottom: 0;
             left: auto;
             right: auto;
-        };
+        }
         font: {
-            size: 36px; 
-        };
+            size: 36px;
+        }
     }
     .rating {
         text-align: center;
@@ -4284,7 +4425,7 @@ Page Title Area CSS
             display: inline-block;
             margin: {
                 right: 3px;
-            };
+            }
         }
         .rating-count {
             display: inline-block;
@@ -4293,7 +4434,7 @@ Page Title Area CSS
             font: {
                 size: $font-size;
                 weight: 600;
-            };
+            }
         }
     }
 }
@@ -4317,7 +4458,7 @@ Subscribe Area CSS
     margin: {
         left: auto;
         right: auto;
-    };
+    }
     .sub-title {
         display: block;
         text-transform: uppercase;
@@ -4326,7 +4467,7 @@ Subscribe Area CSS
         font: {
             size: 14px;
             weight: 600;
-        };
+        }
     }
     h2 {
         max-width: 615px;
@@ -4334,10 +4475,10 @@ Subscribe Area CSS
             bottom: 0;
             left: auto;
             right: auto;
-        };
+        }
         font: {
-            size: 36px; 
-        };
+            size: 36px;
+        }
     }
     p {
         max-width: 615px;
@@ -4345,7 +4486,7 @@ Subscribe Area CSS
             left: auto;
             right: auto;
             top: 12px;
-        };
+        }
     }
     .newsletter-form {
         position: relative;
@@ -4354,7 +4495,7 @@ Subscribe Area CSS
             top: 30px;
             left: auto;
             right: auto;
-        };
+        }
         .input-newsletter {
             display: block;
             width: 100%;
@@ -4367,7 +4508,7 @@ Subscribe Area CSS
             font: {
                 size: 16px;
                 weight: 400;
-            };
+            }
             &::placeholder {
                 color: #999999;
                 transition: $transition;
@@ -4413,7 +4554,7 @@ Subscribe Area CSS
             duration: 50s;
             iteration-count: infinite;
             timing-function: linear;
-        };
+        }
     }
 }
 .subscribe-content {
@@ -4422,31 +4563,31 @@ Subscribe Area CSS
         margin: {
             left: 0;
             right: 0;
-        };
+        }
         h2 {
             max-width: 100%;
             margin: {
                 left: 0;
                 right: 0;
-            };
+            }
         }
         p {
             max-width: 100%;
             margin: {
                 left: 0;
                 right: 0;
-            };
+            }
         }
         .newsletter-form {
             max-width: 100%;
             margin: {
                 left: 0;
                 right: 0;
-            };
+            }
         }
     }
 }
- 
+
 /*================================================
 Checkout Area CSS
 =================================================*/
@@ -4495,7 +4636,7 @@ Checkout Area CSS
         }
     }
 }
- 
+
 /*================================================
 Privacy Policy Area CSS
 =================================================*/
@@ -4510,12 +4651,13 @@ Privacy Policy Area CSS
         margin: {
             bottom: 15px;
             top: 25px;
-        };
+        }
         font: {
-            size: 22px; 
-        };
+            size: 22px;
+        }
     }
-    .blockquote, blockquote {
+    .blockquote,
+    blockquote {
         margin-bottom: 30px;
         background-color: #e6f2f5;
         text-align: left !important;
@@ -4527,7 +4669,7 @@ Privacy Policy Area CSS
             font: {
                 size: $font-size !important;
                 weight: normal;
-            };
+            }
         }
         &::after {
             display: none;
@@ -4536,7 +4678,8 @@ Privacy Policy Area CSS
             display: none;
         }
     }
-    ol, ul {
+    ol,
+    ul {
         margin-top: 20px;
 
         li {
@@ -4562,12 +4705,13 @@ Terms of Service Area CSS
         margin: {
             bottom: 15px;
             top: 25px;
-        };
+        }
         font: {
-            size: 22px; 
-        };
+            size: 22px;
+        }
     }
-    .blockquote, blockquote {
+    .blockquote,
+    blockquote {
         margin-bottom: 30px;
         background-color: #e6f2f5;
         text-align: left !important;
@@ -4579,7 +4723,7 @@ Terms of Service Area CSS
             font: {
                 size: $font-size !important;
                 weight: normal;
-            };
+            }
         }
         &::after {
             display: none;
@@ -4588,7 +4732,8 @@ Terms of Service Area CSS
             display: none;
         }
     }
-    ol, ul {
+    ol,
+    ul {
         margin-top: 20px;
 
         li {
@@ -4619,12 +4764,13 @@ Pagination CSS
         margin: {
             left: 3px;
             right: 3px;
-        };
+        }
         font: {
             size: $font-size;
             weight: 800;
-        };
-        &:hover, &.current {
+        }
+        &:hover,
+        &.current {
             color: $white-color;
             background-color: $main-color;
         }
@@ -4635,7 +4781,8 @@ Pagination CSS
     }
 
     ._3bLAO {
-        ._2INQH, ._6ZFVN {
+        ._2INQH,
+        ._6ZFVN {
             display: none;
         }
     }
@@ -4656,19 +4803,19 @@ Pagination CSS
         margin: {
             bottom: 20px;
             top: 45px;
-        };
+        }
         font: {
-            size: 40px; 
-        };
+            size: 40px;
+        }
     }
     p {
-        color: rgba(255, 255, 255, .7);
+        color: rgba(255, 255, 255, 0.7);
         max-width: 550px;
         margin: {
             left: auto;
             right: auto;
             bottom: 0;
-        };
+        }
     }
     .btn-box {
         margin-top: 30px;
@@ -4677,7 +4824,7 @@ Pagination CSS
             margin: {
                 left: 7px;
                 right: 7px;
-            };
+            }
             span {
                 background-color: $white-color;
             }
@@ -4703,22 +4850,22 @@ FAQ Area CSS
             margin: {
                 left: 10px;
                 right: 10px;
-            };
+            }
             display: inline-block;
             color: $black-color;
             text-decoration: none;
             border-radius: 5px;
             padding: 20px;
-            box-shadow: 2px 8px 20px 0 rgba(25, 42, 70, .13)!important;
+            box-shadow: 2px 8px 20px 0 rgba(25, 42, 70, 0.13) !important;
             font: {
                 size: $font-size;
                 weight: 800;
-            };
+            }
             i {
                 font: {
                     size: 30px;
                     weight: 400;
-                };
+                }
             }
             span {
                 display: block;
@@ -4728,7 +4875,7 @@ FAQ Area CSS
                 background-color: $main-color;
                 color: $white-color;
             }
-         
+
             &.react-tabs__tab--selected {
                 background-color: $main-color;
                 color: $white-color;
@@ -4743,7 +4890,7 @@ FAQ Area CSS
         border: none;
         margin: {
             bottom: 0;
-        };
+        }
         .accordion__item {
             border-radius: 5px;
             display: block;
@@ -4768,7 +4915,7 @@ FAQ Area CSS
             font: {
                 size: 17px;
                 weight: 800;
-            };
+            }
             i {
                 position: absolute;
                 left: 25px;
@@ -4798,7 +4945,7 @@ FAQ Area CSS
 .tab {
     .tabs-item {
         display: none;
-        
+
         &:first-child {
             display: block;
         }
@@ -4812,14 +4959,14 @@ Profile Authentication Area CSS
     padding: 40px 50px;
     border-radius: 5px;
     background-color: $white-color;
-    box-shadow: 0 0 10px rgba(51,51,51,.1);
+    box-shadow: 0 0 10px rgba(51, 51, 51, 0.1);
     margin-right: 30px;
 
     h2 {
         margin-bottom: 25px;
         font: {
-            size: 36px; 
-        };
+            size: 36px;
+        }
     }
     form {
         .form-group {
@@ -4835,10 +4982,12 @@ Profile Authentication Area CSS
         .remember-me-wrap {
             margin-bottom: 0;
 
-            [type="checkbox"]:checked, [type="checkbox"]:not(:checked) {
+            [type="checkbox"]:checked,
+            [type="checkbox"]:not(:checked) {
                 display: none;
             }
-            [type="checkbox"]:checked + label, [type="checkbox"]:not(:checked) + label {
+            [type="checkbox"]:checked + label,
+            [type="checkbox"]:not(:checked) + label {
                 position: relative;
                 padding-left: 28px;
                 cursor: pointer;
@@ -4848,10 +4997,11 @@ Profile Authentication Area CSS
                 color: $optional-color;
                 font: {
                     weight: 600;
-                };
+                }
             }
-            [type="checkbox"]:checked + label:before, [type="checkbox"]:not(:checked) + label:before {
-                content: '';
+            [type="checkbox"]:checked + label:before,
+            [type="checkbox"]:not(:checked) + label:before {
+                content: "";
                 position: absolute;
                 left: 0;
                 top: 0;
@@ -4862,8 +5012,9 @@ Profile Authentication Area CSS
                 border-radius: 3px;
                 background: #f5f5f5;
             }
-            [type="checkbox"]:checked + label:after, [type="checkbox"]:not(:checked) + label:after {
-                content: '';
+            [type="checkbox"]:checked + label:after,
+            [type="checkbox"]:not(:checked) + label:after {
+                content: "";
                 width: 8px;
                 height: 8px;
                 background: $main-color;
@@ -4908,7 +5059,7 @@ Profile Authentication Area CSS
                     position: absolute;
                     left: 0;
                     bottom: 0;
-                    content: '';
+                    content: "";
                     transition: $transition;
                     background-color: #eeeeee;
                 }
@@ -4919,7 +5070,7 @@ Profile Authentication Area CSS
                     left: 0;
                     transition: $transition;
                     bottom: 0;
-                    content: '';
+                    content: "";
                     background-color: $main-color;
                 }
                 &:hover {
@@ -4947,7 +5098,7 @@ Profile Authentication Area CSS
             font: {
                 weight: 700;
                 size: $font-size;
-            };
+            }
             &:hover {
                 background-color: $black-color;
                 color: $white-color;
@@ -4959,12 +5110,12 @@ Profile Authentication Area CSS
     padding: {
         top: 30px;
         left: 30px;
-    };
+    }
     h2 {
         margin-bottom: 25px;
         font: {
-            size: 36px; 
-        };
+            size: 36px;
+        }
     }
     form {
         .form-group {
@@ -4983,7 +5134,7 @@ Profile Authentication Area CSS
             margin: {
                 top: -10px;
                 bottom: 0;
-            };
+            }
         }
         button {
             margin-top: 22px;
@@ -5000,7 +5151,7 @@ Profile Authentication Area CSS
             font: {
                 weight: 700;
                 size: $font-size;
-            };
+            }
             &:hover {
                 background-color: $black-color;
                 color: $white-color;
@@ -5023,15 +5174,15 @@ Contact Area CSS
         font: {
             size: 14px;
             weight: 600;
-        };
+        }
     }
     h2 {
         margin: {
             bottom: 12px;
-        };
+        }
         font: {
-            size: 36px; 
-        };
+            size: 36px;
+        }
     }
     ul {
         padding-left: 0;
@@ -5039,13 +5190,13 @@ Contact Area CSS
         margin: {
             top: 35px;
             bottom: 0;
-        };
+        }
         li {
             position: relative;
             margin-bottom: 35px;
             padding: {
                 left: 100px;
-            };
+            }
             .icon {
                 width: 75px;
                 height: 85px;
@@ -5070,8 +5221,8 @@ Contact Area CSS
             h3 {
                 margin-bottom: 8px;
                 font: {
-                    size: 24px; 
-                };
+                    size: 24px;
+                }
             }
             p {
                 font-weight: 600;
@@ -5079,7 +5230,7 @@ Contact Area CSS
                 margin: {
                     bottom: 0;
                     top: 2px;
-                };
+                }
             }
             &:hover {
                 .icon {
@@ -5104,25 +5255,26 @@ Contact Area CSS
         position: center center;
         size: cover;
         repeat: no-repeat;
-    };
+    }
     h2 {
         margin-bottom: 0;
         color: $white-color;
         font: {
-            size: 33px; 
-        };
+            size: 33px;
+        }
     }
     p {
         color: $white-color;
         margin: {
             top: 10px;
             bottom: 0;
-        };
+        }
     }
     form {
         margin-top: 25px;
 
-        input, textarea {
+        input,
+        textarea {
             display: block;
             width: 100%;
             border: none;
@@ -5134,7 +5286,7 @@ Contact Area CSS
             font: {
                 size: $font-size;
                 weight: 600;
-            };
+            }
             &::placeholder {
                 color: #cdcdcd;
                 transition: $transition;
@@ -5196,8 +5348,8 @@ Footer Area CSS
         position: relative;
         color: $white-color;
         font: {
-            size: 24px; 
-        };
+            size: 24px;
+        }
     }
     p {
         color: #ededed;
@@ -5214,7 +5366,7 @@ Footer Area CSS
             a {
                 color: #ededed;
                 display: inline-block;
-                
+
                 &:hover {
                     color: $main-color;
                 }
@@ -5230,7 +5382,7 @@ Footer Area CSS
         margin: {
             top: 20px;
             bottom: 0;
-        };
+        }
         li {
             display: inline-block;
             margin-right: 10px;
@@ -5280,7 +5432,7 @@ Footer Area CSS
             a {
                 color: #ededed;
                 display: inline-block;
-                
+
                 &:hover {
                     color: $main-color;
                 }
@@ -5306,7 +5458,7 @@ Footer Area CSS
     padding: {
         top: 25px;
         bottom: 25px;
-    };
+    }
     p {
         color: #ededed;
 
@@ -5343,7 +5495,7 @@ Footer Area CSS
                 }
             }
             &::before {
-                content: '';
+                content: "";
                 position: absolute;
                 right: -11px;
                 top: 5.5px;
@@ -5434,7 +5586,7 @@ Go Top CSS
     height: 45px;
     border-radius: 50%;
     font-size: 40px;
-    transition: .9s;
+    transition: 0.9s;
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
 
     i {
@@ -5447,7 +5599,7 @@ Go Top CSS
         margin: {
             left: auto;
             right: auto;
-        };
+        }
     }
     &:hover {
         background-color: $main-color;
@@ -5456,7 +5608,6 @@ Go Top CSS
         transform: translateY(-10px);
     }
 }
-
 
 .modal {
     display: block;
@@ -5496,7 +5647,7 @@ Go Top CSS
 }
 
 @media only screen and (max-width: 767px) {
-    .modal {    
+    .modal {
         .modal-dialog {
             max-width: 100%;
         }
@@ -5512,7 +5663,7 @@ Go Top CSS
 }
 
 .get-certificate {
-    .content{
+    .content {
         position: absolute;
         left: 0;
         right: 0;
@@ -5526,7 +5677,7 @@ Go Top CSS
     .certificate-img {
         position: relative;
     }
-    .caption{
+    .caption {
         text-align: right;
         margin-top: -50px;
         position: relative;
@@ -5534,7 +5685,7 @@ Go Top CSS
         opacity: 0;
         transition: $transition;
         z-index: 2;
-        .download-btn{
+        .download-btn {
             width: 40px;
             height: 40px;
             line-height: 42px;
@@ -5544,14 +5695,14 @@ Go Top CSS
             font-size: 40px;
             border-radius: 5px;
             color: #f44336;
-            &:nth-child(1){
+            &:nth-child(1) {
                 color: #3100f3;
             }
         }
     }
-    .col-lg-8{
-        &:hover{
-            .caption{
+    .col-lg-8 {
+        &:hover {
+            .caption {
                 opacity: 1;
             }
         }
@@ -5568,9 +5719,10 @@ Go Top CSS
     border-radius: 50%;
     position: relative;
     top: 4px;
-    
-    &::after, &::before {
-        content: '';
+
+    &::after,
+    &::before {
+        content: "";
         display: block;
         position: absolute;
         top: 0;
