@@ -17,6 +17,9 @@ const nextConfig = {
     AWS_SES_PASSWORD: "BHNvcl65QPok7up3Fc+yl6a6oOvLK5SiABP8QD5fxiMz",
     CLOUD_NAME: "sub-tube",
     UPLOAD_PRESETS: "ml_default",
+    CLOUD_IMAGE_DIRECTORY: "images",
+    CLOUD_VIDEO_DIRECTORY: "videos",
+    CLOUD_ZIP_DIRECTORY: "zip",
     CLOUDINARY_URL: "https://api.cloudinary.com/v1_1/sub-tube/image/upload",
     CLOUDINARY_VIDEO_URL:
       "https://api.cloudinary.com/v1_1/sub-tube/video/upload",
