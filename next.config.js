@@ -27,6 +27,14 @@ const nextConfig = {
     STRIPE_SECRET_KEY: "sk_test_2DqyjEwaU0Nq0PpEMVQ3qSAw00zgrbnfPk",
     STRIPE_PUBLISHABLE_KEY: "pk_test_ZaZZWZGlvdIn12yFleIqyjSI00G4e18Kf7",
   },
+  async rewrites() {
+    return [
+      {
+        source: "/api/:path*",
+        destination: "https://subtubes.vercel.app/:path*",
+      },
+    ];
+  },
 };
 
 module.exports = nextConfig;
