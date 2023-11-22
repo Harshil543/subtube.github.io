@@ -4,21 +4,21 @@ import PageBanner from "@/components/Common/PageBanner";
 import ForgotPasswordForm from "@/components/Authentication/ForgotPasswordForm";
 import Footer from "@/components/_App/Footer";
 
-export default function ForgotPasswordPage() {
-	return (
-		<>
-			<Navbar user={user} />
+export default function ForgotPasswordPage({ user }) {
+  return (
+    <>
+      <Navbar user={user} />
 
-			<PageBanner
-				pageTitle="Forgot Password"
-				homePageUrl="/"
-				homePageText="Home"
-				activePageText="Forgot Password"
-			/>
+      <PageBanner
+        pageTitle="Forgot Password"
+        homePageUrl="/"
+        homePageText="Home"
+        activePageText="Forgot Password"
+      />
 
-			<ForgotPasswordForm />
+      <ForgotPasswordForm />
 
-			<Footer />
-		</>
-	);
+      <Footer />
+    </>
+  );
 }

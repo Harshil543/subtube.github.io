@@ -2,12 +2,13 @@ import baseUrl from "@/utils/baseUrl";
 import { transport } from "./config";
 
 export const confirmEmailAddress = async (user) => {
-	// console.log(user.email)
-	const data = {
-		to: user.email,
-		from: "eLearniv Online Courses <hello@envytheme.com>",
-		subject: "Confirm Your Email Address",
-		html: `
+  const email = btoa(user.email);
+  // console.log(user.email)
+  const data = {
+    to: user.email,
+    from: "eLearniv Online Courses <hello@envytheme.com>",
+    subject: "Confirm Your Email Address",
+    html: `
         <!DOCTYPE html>
         <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
         <head>
@@ -309,7 +310,7 @@ export const confirmEmailAddress = async (user) => {
                                 <div class="text" style="padding: 0 2.5em; text-align: left;">
                                     <h4>Dear ${user.first_name},</h4>
                                     <p>Thanks for registering on the eLearniv! Please click the below link to verify your email address and activate your account.</p>
-                                    <p><a href="${baseUrl}/confirm-email?token=${user.reset_password_token}&email=${user.email}" style="text-decoration: underline;">Confirm My Email Address</a></p>
+                                    <p><a href="${baseUrl}/confirm-email?token=${user.reset_password_token}&email=${email}" style="text-decoration: underline;">Confirm My Email Address</a></p>
 
                                     <p>
                                         Regards, <br />
@@ -355,15 +356,15 @@ export const confirmEmailAddress = async (user) => {
         </body>
         </html>
         `,
-	};
+  };
 
-	try {
-		await transport.sendMail(data);
-		// console.log("Email send successfully")
-		// res.status(200).send("Email send successfully")
-	} catch (error) {
-		console.log(error);
-		// res.status(500).send("Error proccessing charge");
-	}
-	transport.close();
+  try {
+    await transport.sendMail(data);
+    console.log("Email send successfully");
+    // res.status(200).send("Email send successfully")
+  } catch (error) {
+    console.log(error);
+    // res.status(500).send("Error proccessing charge");
+  }
+  transport.close();
 };
