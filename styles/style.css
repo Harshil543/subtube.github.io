@@ -3524,7 +3524,7 @@ Teacher Register Area CSS
   padding: 45px;
   border-radius: 5px;
   background-color: #e9492a;
-  background-image: url(/images/register-shape-02.jpg);
+  background-image: url(/images/MicrosoftTeams-image.png);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -3549,21 +3549,22 @@ Teacher Register Area CSS
   width: 100%;
   border: none;
   color: #ffffff;
-  background-color: #b61b16;
+  background-color: #e9492a;
   height: 50px;
   padding-left: 15px;
   border-radius: 5px;
+  padding-right: 15px;
   font-size: 16px;
   font-weight: 600;
 }
 .teacher-register-box form input::-moz-placeholder, .teacher-register-box form textarea::-moz-placeholder {
-  color: #cdcdcd;
+  color: #e7cec9;
   -moz-transition: 0.5s;
   transition: 0.5s;
 }
 .teacher-register-box form input::placeholder,
 .teacher-register-box form textarea::placeholder {
-  color: #cdcdcd;
+  color: #e7cec9;
   transition: 0.5s;
 }
 .teacher-register-box form input:focus::-moz-placeholder, .teacher-register-box form textarea:focus::-moz-placeholder {

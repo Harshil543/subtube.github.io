@@ -4200,7 +4200,9 @@ Teacher Register Area CSS
   border-radius: 5px;
   background: {
     color: $main-color;
-    image: url(/images/register-shape-02.jpg);
+    // image: url(/images/register-shape-02.jpg);
+    image: url(/images/MicrosoftTeams-image.png);
+
     position: center center;
     size: cover;
     repeat: no-repeat;
@@ -4229,16 +4231,18 @@ Teacher Register Area CSS
       width: 100%;
       border: none;
       color: $white-color;
-      background-color: #b61b16;
+      background-color: #e9492a;
       height: 50px;
       padding-left: 15px;
       border-radius: 5px;
+      padding-right: 15px;
       font: {
         size: $font-size;
         weight: 600;
       }
       &::placeholder {
-        color: #cdcdcd;
+        // color: #cdcdcd;
+        color: #e7cec9;
         transition: $transition;
       }
       &:focus {
