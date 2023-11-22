@@ -108,11 +108,16 @@ const LoginForm = () => {
                 </a>
               </Link>
             </div>
+            <div className="col-lg-12 col-md-12 col-sm-12 remember-me-wrap">
+              <Link href="/forgot-password">
+                <a className="lost-your-password">Forgot Password?</a>
+              </Link>
+            </div>
           </div>
 
           <motion.button
             type="submit"
-            disabled={loading}
+            disabled={disabled}
             whileTap={{ scale: 0.9 }}
           >
             Log In

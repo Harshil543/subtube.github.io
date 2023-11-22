@@ -13,8 +13,8 @@ const nextConfig = {
   },
   env: {
     JWT_SECRET: "asdfghjklnbvcxzqwertyuiopmkioprewqasderfgnujm",
-    AWS_SES_USER: "AKIA4QP4RTHI5CZNU65N",
-    AWS_SES_PASSWORD: "BHNvcl65QPok7up3Fc+yl6a6oOvLK5SiABP8QD5fxiMz",
+    AWS_SES_USER: "hardik.anuvadiya@gmail.com",
+    AWS_SES_PASSWORD: "xqzcyfrzmyqzvpqj",
     CLOUD_NAME: "sub-tube",
     UPLOAD_PRESETS: "ml_default",
     CLOUD_IMAGE_DIRECTORY: "images",

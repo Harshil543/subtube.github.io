@@ -308,7 +308,7 @@ export const confirmEmailAddress = async (user) => {
                             <td>
                                 <div class="text" style="padding: 0 2.5em; text-align: left;">
                                     <h4>Dear ${user.first_name},</h4>
-                                    <p>Thanks for registering on the subtubes! Please click the below link to verify your email address and activate your account.</p>
+                                    <p>Thanks for registering on the eLearniv! Please click the below link to verify your email address and activate your account.</p>
                                     <p><a href="${baseUrl}/confirm-email?token=${user.reset_password_token}&email=${user.email}" style="text-decoration: underline;">Confirm My Email Address</a></p>
 
                                     <p>
