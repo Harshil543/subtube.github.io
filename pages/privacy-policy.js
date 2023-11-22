@@ -3,7 +3,7 @@ import Navbar from "@/components/_App/Navbar";
 import PageBanner from "@/components/Common/PageBanner";
 import Footer from "@/components/_App/Footer";
 
-export default function PrivacyPolicyPage() {
+export default function PrivacyPolicyPage({ user }) {
   return (
     <>
       <Navbar user={user} />
