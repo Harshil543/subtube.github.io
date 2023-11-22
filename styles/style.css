@@ -1,5 +1,5 @@
 /*
-@File: eLearniv Template Styles
+@File: subtubes Template Styles
 
 * This file contains the styling for the actual template, this
 is the file you need to edit to change the look of the
@@ -80,7 +80,18 @@ p:last-child {
   outline: 0 !important;
 }
 
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: #221638;
   font-family: "Nunito", sans-serif;
   font-weight: 800;
@@ -95,7 +106,7 @@ p:last-child {
 }
 
 .bg-fe4a55 {
-  background-color: #1cab94;
+  background-color: #e9492a;
 }
 
 .bg-f5f1ed {
@@ -135,7 +146,7 @@ p:last-child {
 }
 
 .bg-6ba292 {
-  background-color: #6ba292;
+  background-color: rgb(139, 90, 80);
 }
 
 .bg-f5f7fa {
@@ -240,7 +251,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: #1cab94;
+  color: #e9492a;
   text-decoration: none;
 }
 
@@ -263,7 +274,7 @@ a:hover {
 .section-title .sub-title {
   display: block;
   text-transform: uppercase;
-  color: #1cab94;
+  color: #e9492a;
   margin-bottom: 10px;
   font-size: 14px;
   font-weight: 600;
@@ -291,7 +302,7 @@ a:hover {
   overflow: hidden;
   z-index: 1;
   color: #ffffff;
-  background-color: #1cab94;
+  background-color: #e9492a;
   transition: 0.5s;
   border-radius: 5px;
   font-weight: 700;
@@ -343,7 +354,7 @@ a:hover {
   background-color: transparent;
   transition: 0.5s;
   border-radius: 30px;
-  border: 1px dashed #1cab94;
+  border: 1px dashed #e9492a;
   font-weight: 700;
   font-size: 16px;
   padding-left: 60px;
@@ -363,7 +374,7 @@ a:hover {
   right: 0;
   top: 0;
   bottom: 0;
-  background-color: #1cab94;
+  background-color: #e9492a;
   z-index: -1;
   border-radius: 30px;
   margin: 4px;
@@ -384,7 +395,7 @@ a:hover {
   overflow: hidden;
   z-index: 1;
   color: #ffffff;
-  background-color: #1cab94;
+  background-color: #e9492a;
   transition: 0.5s;
   border-radius: 5px;
   font-weight: 700;
@@ -415,7 +426,8 @@ a:hover {
 }
 
 /* form-control */
-.form-control, .form-select {
+.form-control,
+.form-select {
   height: 50px;
   color: #221638;
   box-shadow: unset !important;
@@ -432,18 +444,21 @@ a:hover {
   -moz-transition: 0.5s;
   transition: 0.5s;
 }
-.form-control::placeholder, .form-select::placeholder {
+.form-control::placeholder,
+.form-select::placeholder {
   color: #7e7e7e;
   transition: 0.5s;
 }
-.form-control:focus, .form-select:focus {
-  border-color: #1cab94;
+.form-control:focus,
+.form-select:focus {
+  border-color: #e9492a;
   background-color: transparent;
 }
 .form-control:focus::-moz-placeholder, .form-select:focus::-moz-placeholder {
   color: transparent;
 }
-.form-control:focus::placeholder, .form-select:focus::placeholder {
+.form-control:focus::placeholder,
+.form-select:focus::placeholder {
   color: transparent;
 }
 
@@ -474,6 +489,9 @@ Navbar Area CSS
   padding-bottom: 0;
   padding-left: 0;
   padding-right: 0;
+}
+.edemy-nav .navbar .navbar-brand img {
+  width: 140px;
 }
 .edemy-nav .navbar ul {
   padding-left: 0;
@@ -512,7 +530,7 @@ Navbar Area CSS
   transition: 0.5s;
 }
 .edemy-nav .navbar .search-box .input-search:focus {
-  border-color: #1cab94;
+  border-color: #e9492a;
 }
 .edemy-nav .navbar .search-box .input-search:focus::-moz-placeholder {
   color: transparent;
@@ -527,7 +545,7 @@ Navbar Area CSS
   height: 48px;
   background-color: transparent;
   border: none;
-  color: #1cab94;
+  color: #e9492a;
   border-radius: 5px;
   padding: 0 15px;
 }
@@ -557,7 +575,7 @@ Navbar Area CSS
   margin-right: -3px;
 }
 .edemy-nav .navbar .navbar-nav .nav-item a:hover, .edemy-nav .navbar .navbar-nav .nav-item a:focus, .edemy-nav .navbar .navbar-nav .nav-item a.active {
-  color: #1cab94;
+  color: #e9492a;
 }
 .edemy-nav .navbar .navbar-nav .nav-item:last-child a {
   margin-right: 0;
@@ -566,7 +584,7 @@ Navbar Area CSS
   margin-left: 0;
 }
 .edemy-nav .navbar .navbar-nav .nav-item:hover a, .edemy-nav .navbar .navbar-nav .nav-item.active a {
-  color: #1cab94;
+  color: #e9492a;
 }
 .edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu {
   border: none;
@@ -583,7 +601,7 @@ Navbar Area CSS
   visibility: hidden;
   background: #ffffff;
   transition: all 0.2s ease-in-out;
-  border-top: 3px solid #1cab94;
+  border-top: 3px solid #e9492a;
   box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
 }
 .edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li a {
@@ -604,7 +622,7 @@ Navbar Area CSS
   right: 15px;
 }
 .edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li a:hover, .edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li a:focus, .edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li a.active {
-  color: #1cab94;
+  color: #e9492a;
 }
 .edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu {
   top: 0;
@@ -617,7 +635,7 @@ Navbar Area CSS
   color: #221638;
 }
 .edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a:hover, .edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a:focus, .edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a.active {
-  color: #1cab94;
+  color: #e9492a;
 }
 .edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu {
   top: 0;
@@ -629,7 +647,7 @@ Navbar Area CSS
   color: #221638;
 }
 .edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
-  color: #1cab94;
+  color: #e9492a;
 }
 .edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu {
   top: 0;
@@ -641,7 +659,7 @@ Navbar Area CSS
   color: #221638;
 }
 .edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
-  color: #1cab94;
+  color: #e9492a;
 }
 .edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu {
   top: 0;
@@ -654,7 +672,7 @@ Navbar Area CSS
   color: #221638;
 }
 .edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
-  color: #1cab94;
+  color: #e9492a;
 }
 .edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu {
   top: 0;
@@ -667,7 +685,7 @@ Navbar Area CSS
   color: #221638;
 }
 .edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
-  color: #1cab94;
+  color: #e9492a;
 }
 .edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu {
   top: 0;
@@ -679,45 +697,45 @@ Navbar Area CSS
   color: #221638;
 }
 .edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
-  color: #1cab94;
+  color: #e9492a;
 }
 .edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li.active a {
-  color: #1cab94;
+  color: #e9492a;
 }
 .edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li:hover .dropdown-menu {
   opacity: 1;
   visibility: visible;
 }
 .edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li.active a {
-  color: #1cab94;
+  color: #e9492a;
 }
 .edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li:hover .dropdown-menu {
   opacity: 1;
   visibility: visible;
 }
 .edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li.active a {
-  color: #1cab94;
+  color: #e9492a;
 }
 .edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li:hover .dropdown-menu {
   opacity: 1;
   visibility: visible;
 }
 .edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li.active a {
-  color: #1cab94;
+  color: #e9492a;
 }
 .edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li:hover .dropdown-menu {
   opacity: 1;
   visibility: visible;
 }
 .edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li.active a {
-  color: #1cab94;
+  color: #e9492a;
 }
 .edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li:hover .dropdown-menu {
   opacity: 1;
   visibility: visible;
 }
 .edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li.active a {
-  color: #1cab94;
+  color: #e9492a;
 }
 .edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li:hover .dropdown-menu {
   opacity: 1;
@@ -756,7 +774,7 @@ Navbar Area CSS
   font-weight: 700;
 }
 .edemy-nav .navbar .navbar-nav .nav-item.megamenu .dropdown-menu .megamenu-submenu li a:hover, .edemy-nav .navbar .navbar-nav .nav-item.megamenu .dropdown-menu .megamenu-submenu li a.active {
-  color: #1cab94;
+  color: #e9492a;
 }
 .edemy-nav .navbar .navbar-nav .nav-item.megamenu .dropdown-menu .megamenu-submenu li:first-child a {
   margin-top: 0;
@@ -796,7 +814,7 @@ Navbar Area CSS
 .edemy-nav .navbar .navbar-nav .nav-item.megamenu .dropdown-menu .single-category-widget .sub-title {
   display: block;
   margin-top: 5px;
-  color: #1cab94;
+  color: #e9492a;
   font-weight: 600;
   font-size: 15px;
 }
@@ -810,7 +828,7 @@ Navbar Area CSS
   z-index: 2;
 }
 .edemy-nav .navbar .navbar-nav .nav-item.megamenu .dropdown-menu .single-category-widget:hover .icon {
-  background-color: #1cab94;
+  background-color: #e9492a;
   border-color: #ffffff;
   color: #ffffff;
 }
@@ -887,12 +905,12 @@ Navbar Area CSS
   line-height: 20px;
   border-radius: 50%;
   color: #ffffff;
-  background-color: #1cab94;
+  background-color: #e9492a;
   font-size: 10px;
   font-weight: 600;
 }
 .edemy-nav .navbar .others-option .cart-btn .cart-link:hover {
-  color: #1cab94;
+  color: #e9492a;
 }
 .edemy-nav .navbar .others-option .cart-btn .dropdown {
   position: relative;
@@ -1000,7 +1018,7 @@ Main Banner Area CSS
 =================================================*/
 .main-banner {
   position: relative;
-  background: #EEE1D8;
+  background: #eee1d8;
   z-index: 1;
   padding-top: 100px;
   padding-bottom: 100px;
@@ -1143,7 +1161,7 @@ Features Area CSS
 }
 .single-features-box .link-btn {
   display: inline-block;
-  color: #1cab94;
+  color: #e9492a;
   font-size: 15px;
   font-weight: 700;
 }
@@ -1181,7 +1199,7 @@ About Area CSS
 .about-content .sub-title {
   display: block;
   text-transform: uppercase;
-  color: #1cab94;
+  color: #e9492a;
   margin-bottom: 10px;
   font-size: 14px;
   font-weight: 600;
@@ -1227,7 +1245,7 @@ About Area CSS
   text-align: center;
   font-weight: 500;
   line-height: 40px;
-  color: #1cab94;
+  color: #e9492a;
   font-size: 25px;
   background: #fff;
   border-radius: 30px;
@@ -1381,15 +1399,15 @@ About Area CSS
   right: 0;
   top: 0;
   bottom: 0;
-  background-color: #6ba292;
+  background-color: rgb(139, 90, 80);
   border-radius: 50%;
   z-index: -1;
   margin: 2px 1px 1px 2px;
   transition: 0.5s;
 }
 .about-content .about-list li span:hover i {
-  background-color: #1cab94;
-  color: #1cab94;
+  background-color: #e9492a;
+  color: #e9492a;
 }
 .about-content .about-list li span:hover i::after {
   background-color: #ffffff;
@@ -1398,7 +1416,10 @@ About Area CSS
   margin-top: 35px;
 }
 
-.swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
   bottom: 20px;
 }
 
@@ -1444,7 +1465,7 @@ Courses Area CSS
 }
 .single-courses-box .courses-image .price {
   display: inline-block;
-  background-color: #1cab94;
+  background-color: #e9492a;
   color: #ffffff;
   width: 65px;
   height: 65px;
@@ -1474,7 +1495,7 @@ Courses Area CSS
   margin-right: 10px;
 }
 .single-courses-box .courses-content .course-author span {
-  color: #1cab94;
+  color: #e9492a;
   font-weight: 600;
   font-size: 15px;
 }
@@ -1502,7 +1523,7 @@ Courses Area CSS
   padding-right: 7px;
 }
 .single-courses-box .courses-content .courses-box-footer li i {
-  color: #1cab94;
+  color: #e9492a;
   position: absolute;
   left: 7px;
   top: 0;
@@ -1557,7 +1578,7 @@ Courses Area CSS
   cursor: pointer;
 }
 .single-courses-box.style-2 .video_box i:hover {
-  background-color: #1cab94;
+  background-color: #e9492a;
   color: #fff;
 }
 .single-courses-box.style-2:hover .video_box {
@@ -1584,7 +1605,7 @@ Courses Area CSS
   margin-bottom: 0;
 }
 .courses-info p a {
-  color: #1cab94;
+  color: #e9492a;
 }
 .courses-info p a:hover {
   text-decoration: underline;
@@ -1592,7 +1613,7 @@ Courses Area CSS
 }
 
 .single-courses-box .courses-image .price.bg-45a393 {
-  background-color: #6ba292;
+  background-color: rgb(139, 90, 80);
 }
 
 .courses-area.bg-image {
@@ -1637,7 +1658,7 @@ Courses Details Area CSS
   content: "";
   bottom: 1px;
   height: 2px;
-  background-color: #1cab94;
+  background-color: #e9492a;
   position: absolute;
   transition: 0.5s;
   left: 0;
@@ -1702,7 +1723,7 @@ Courses Details Area CSS
   content: "\f104";
   position: absolute;
   left: 30px;
-  color: #1cab94;
+  color: #e9492a;
   top: 14px;
   font-size: 18px;
   font-family: Flaticon;
@@ -1728,7 +1749,7 @@ Courses Details Area CSS
 .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li a .courses-meta .duration {
   display: inline-block;
   background: #f7e7e8;
-  color: #1cab94;
+  color: #e9492a;
   text-transform: lowercase;
   border-radius: 3px;
   padding: 2px 10px 1.5px;
@@ -1759,7 +1780,7 @@ Courses Details Area CSS
   font-weight: normal;
 }
 .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li a:hover {
-  color: #1cab94;
+  color: #e9492a;
 }
 .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(2) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(4) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(6) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(8) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(10) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(12) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(14) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(16) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(18) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(20) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(22) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(24) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(26) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(28) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(30) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(32) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(34) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(36) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(38) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(40) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(42) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(44) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(46) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(48) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(50) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(52) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(54) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(56) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(58) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(60) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(62) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(64) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(66) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(68) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(70) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(72) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(74) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(76) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(78) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(80) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(82) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(84) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(86) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(88) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(90) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(92) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(94) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(96) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(98) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(100) a {
   background-color: #ffffff;
@@ -1834,13 +1855,13 @@ Courses Details Area CSS
 .courses-details-desc .react-tabs__tab-panel .courses-reviews .bar-5 {
   width: 100%;
   height: 18px;
-  background-color: #4CAF50;
+  background-color: #4caf50;
   border-radius: 5px;
 }
 .courses-details-desc .react-tabs__tab-panel .courses-reviews .bar-4 {
   width: 75%;
   height: 18px;
-  background-color: #2196F3;
+  background-color: #2196f3;
   border-radius: 5px;
   border-radius: 5px;
 }
@@ -1944,7 +1965,7 @@ Courses Details Area CSS
   display: block;
   width: 60px;
   height: 60px;
-  background-color: #1cab94;
+  background-color: #e9492a;
   color: #ffffff;
   border-radius: 50%;
   line-height: 60px;
@@ -1995,7 +2016,7 @@ Courses Details Area CSS
   padding-left: 28px;
 }
 .courses-details-info .info li span i {
-  color: #1cab94;
+  color: #e9492a;
   position: absolute;
   left: 0;
   font-weight: normal;
@@ -2004,7 +2025,7 @@ Courses Details Area CSS
 }
 .courses-details-info .info li.price {
   padding-bottom: 10px;
-  color: #1cab94;
+  color: #e9492a;
   font-size: 28px;
   font-weight: 800;
 }
@@ -2060,7 +2081,7 @@ Courses Details Area CSS
 }
 .courses-details-info .courses-share .share-info span {
   display: inline-block;
-  color: #1cab94;
+  color: #e9492a;
   line-height: 1;
   font-size: 16px;
   font-weight: 700;
@@ -2105,7 +2126,7 @@ Courses Details Area CSS
   transform: translateY(-48%);
 }
 .courses-details-info .courses-share .share-info .social-link li a:hover {
-  background-color: #1cab94;
+  background-color: #e9492a;
   color: #ffffff;
 }
 .courses-details-info .courses-share .share-info:hover .social-link {
@@ -2148,7 +2169,7 @@ Courses Details Area CSS
 }
 .courses-details-header .courses-meta ul li span {
   display: block;
-  color: #1cab94;
+  color: #e9492a;
   text-transform: uppercase;
   margin-bottom: 1px;
   font-size: 13.5px;
@@ -2159,7 +2180,7 @@ Courses Details Area CSS
   color: #221638;
 }
 .courses-details-header .courses-meta ul li a:hover, .courses-details-header .courses-meta ul li a:focus {
-  color: #1cab94;
+  color: #e9492a;
 }
 .courses-details-header .courses-meta ul li:last-child {
   padding-right: 0;
@@ -2249,7 +2270,7 @@ Courses Details Area CSS
   position: absolute;
   left: 0;
   top: 3px;
-  color: #1cab94;
+  color: #e9492a;
   font-size: 13px;
 }
 .courses-details-desc-style-two .courses-curriculum {
@@ -2286,7 +2307,7 @@ Courses Details Area CSS
   content: "\f104";
   position: absolute;
   left: 30px;
-  color: #1cab94;
+  color: #e9492a;
   top: 14px;
   font-size: 18px;
   font-family: Flaticon;
@@ -2312,7 +2333,7 @@ Courses Details Area CSS
 .courses-details-desc-style-two .courses-curriculum ul li .courses-meta .duration {
   display: inline-block;
   background: #f7e7e8;
-  color: #1cab94;
+  color: #e9492a;
   text-transform: lowercase;
   border-radius: 3px;
   padding: 2px 10px 1.5px;
@@ -2344,7 +2365,7 @@ Courses Details Area CSS
   font-weight: normal;
 }
 .courses-details-desc-style-two .courses-curriculum ul li:hover {
-  color: #1cab94;
+  color: #e9492a;
 }
 .courses-details-desc-style-two .courses-curriculum ul li:nth-child(2), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(4), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(6), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(8), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(10), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(12), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(14), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(16), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(18), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(20), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(22), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(24), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(26), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(28), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(30), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(32), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(34), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(36), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(38), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(40), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(42), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(44), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(46), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(48), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(50), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(52), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(54), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(56), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(58), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(60), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(62), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(64), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(66), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(68), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(70), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(72), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(74), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(76), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(78), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(80), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(82), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(84), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(86), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(88), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(90), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(92), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(94), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(96), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(98), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(100) {
   background-color: #ffffff;
@@ -2440,7 +2461,7 @@ Courses Details Area CSS
 .courses-details-desc-style-two .courses-author .author-profile-header {
   height: 115px;
   border-radius: 5px 5px 0 0;
-  background-color: #1cab94;
+  background-color: #e9492a;
   background-image: url(/images/bg.jpg);
   background-position: center center;
   background-size: cover;
@@ -2531,13 +2552,13 @@ Courses Details Area CSS
 .courses-details-desc-style-two .courses-reviews .bar-5 {
   width: 100%;
   height: 18px;
-  background-color: #4CAF50;
+  background-color: #4caf50;
   border-radius: 5px;
 }
 .courses-details-desc-style-two .courses-reviews .bar-4 {
   width: 75%;
   height: 18px;
-  background-color: #2196F3;
+  background-color: #2196f3;
   border-radius: 5px;
   border-radius: 5px;
 }
@@ -2643,7 +2664,7 @@ Courses Details Area CSS
   padding-left: 28px;
 }
 .courses-sidebar-information .info li span i {
-  color: #1cab94;
+  color: #e9492a;
   position: absolute;
   left: 0;
   font-weight: normal;
@@ -2652,7 +2673,7 @@ Courses Details Area CSS
 }
 .courses-sidebar-information .info li.price {
   padding-bottom: 10px;
-  color: #1cab94;
+  color: #e9492a;
   font-size: 28px;
   font-weight: 800;
 }
@@ -2704,7 +2725,7 @@ Courses Details Area CSS
 }
 .courses-sidebar-information .courses-share .share-info span {
   display: inline-block;
-  color: #1cab94;
+  color: #e9492a;
   line-height: 1;
   font-size: 16px;
   font-weight: 700;
@@ -2743,7 +2764,7 @@ Courses Details Area CSS
   transform: translateY(-48%);
 }
 .courses-sidebar-information .courses-share .share-info .social-link li a:hover {
-  background-color: #1cab94;
+  background-color: #e9492a;
   color: #ffffff;
 }
 .courses-sidebar-information .coupon {
@@ -2787,7 +2808,7 @@ Courses Details Area CSS
   transition: 0.5s;
 }
 .courses-sidebar-information .coupon form .input-search:focus {
-  border-color: #1cab94;
+  border-color: #e9492a;
 }
 .courses-sidebar-information .coupon form .input-search:focus::-moz-placeholder {
   color: transparent;
@@ -2818,7 +2839,8 @@ Advisor Area CSS
   margin-left: 0;
   margin-right: 0;
 }
-.single-advisor-box .row .col-lg-4, .single-advisor-box .row .col-lg-8 {
+.single-advisor-box .row .col-lg-4,
+.single-advisor-box .row .col-lg-8 {
   padding-left: 0;
   padding-right: 0;
 }
@@ -2839,7 +2861,7 @@ Advisor Area CSS
 }
 .single-advisor-box .advisor-content .sub-title {
   display: block;
-  color: #1cab94;
+  color: #e9492a;
   margin-top: 7px;
   font-size: 15px;
   font-weight: 600;
@@ -2879,7 +2901,7 @@ Advisor Area CSS
   transform: translateY(-48%);
 }
 .single-advisor-box .advisor-content .social-link li a:hover {
-  background-color: #1cab94;
+  background-color: #e9492a;
   color: #ffffff;
 }
 
@@ -2887,12 +2909,12 @@ Advisor Area CSS
 Funfacts Area CSS
 =================================================*/
 .bg-F6F1ED {
-  background: #F6F1ED;
+  background: #f6f1ed;
 }
 
 .funfacts-and-feedback-area {
   position: relative;
-  background: #F6F1ED;
+  background: #f6f1ed;
 }
 .funfacts-and-feedback-area .shape4 {
   right: 21%;
@@ -2931,7 +2953,7 @@ Funfacts Area CSS
 }
 .single-funfacts-box h3 {
   margin-bottom: 0;
-  color: #1cab94;
+  color: #e9492a;
   font-size: 44px;
 }
 .single-funfacts-box h3 span {
@@ -2969,7 +2991,7 @@ Funfacts Area CSS
   animation-timing-function: linear;
 }
 .single-funfacts-box:hover {
-  border-color: #1cab94;
+  border-color: #e9492a;
 }
 
 .single-funfacts-item {
@@ -2979,7 +3001,7 @@ Funfacts Area CSS
 }
 .single-funfacts-item h3 {
   margin-bottom: 0;
-  color: #1cab94;
+  color: #e9492a;
   font-size: 44px;
 }
 .single-funfacts-item h3 span {
@@ -3037,7 +3059,7 @@ Funfacts Area CSS
 }
 .single-funfacts h3 {
   margin-bottom: 0;
-  color: #1cab94;
+  color: #e9492a;
   font-size: 44px;
 }
 .single-funfacts h3 span {
@@ -3062,7 +3084,7 @@ Feedback Area CSS
 .feedback-content .sub-title {
   display: block;
   text-transform: uppercase;
-  color: #1cab94;
+  color: #e9492a;
   margin-bottom: 8px;
   font-size: 14px;
   font-weight: 600;
@@ -3079,7 +3101,7 @@ Feedback Area CSS
   margin-bottom: 0;
 }
 .feedback-content .feedback-info p a {
-  color: #1cab94;
+  color: #e9492a;
   font-weight: 700;
 }
 .feedback-content .feedback-info p a:hover {
@@ -3091,7 +3113,7 @@ Feedback Area CSS
   margin-bottom: 30px;
 }
 .feedback-content .feedback-slides .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  background-color: #1cab94;
+  background-color: #e9492a;
 }
 
 .single-feedback-item {
@@ -3122,7 +3144,7 @@ Feedback Area CSS
 }
 .single-feedback-item .client-info .title h3 {
   margin-bottom: 0;
-  color: #1cab94;
+  color: #e9492a;
   font-size: 17px;
   font-weight: 700;
 }
@@ -3137,7 +3159,7 @@ Feedback Area CSS
   height: 75px;
   content: "";
   border-radius: 50%;
-  background-color: #1cab94;
+  background-color: #e9492a;
   position: absolute;
   left: -25px;
   top: -25px;
@@ -3186,7 +3208,7 @@ Feedback Area CSS
   margin-bottom: 0;
 }
 .single-testimonials-item h3 {
-  color: #1cab94;
+  color: #e9492a;
   margin-top: 18px;
   margin-bottom: 0;
   font-size: 20px;
@@ -3281,7 +3303,7 @@ Video Area CSS
   top: 50%;
   z-index: 1;
   transform: translateY(-50%) translateX(-50%);
-  background-color: #1cab94;
+  background-color: #e9492a;
   border-radius: 50%;
   color: #ffffff;
 }
@@ -3299,7 +3321,7 @@ Video Area CSS
   left: 0;
   transition: 0.5s;
   border-radius: 50%;
-  border: 1px solid #1cab94;
+  border: 1px solid #e9492a;
 }
 .video-box .video-btn::before {
   animation: ripple 2s linear infinite;
@@ -3355,7 +3377,8 @@ Get Instant Courses Area CSS
   margin-left: 0;
   margin-right: 0;
 }
-.get-instant-courses-inner-area .row .col-lg-8, .get-instant-courses-inner-area .row .col-lg-4 {
+.get-instant-courses-inner-area .row .col-lg-8,
+.get-instant-courses-inner-area .row .col-lg-4 {
   padding-left: 0;
   padding-right: 0;
 }
@@ -3369,7 +3392,7 @@ Get Instant Courses Area CSS
 .get-instant-courses-content .sub-title {
   display: block;
   text-transform: uppercase;
-  color: #1cab94;
+  color: #e9492a;
   margin-bottom: 10px;
   font-size: 14px;
   font-weight: 600;
@@ -3434,7 +3457,7 @@ View All Courses Area CSS
 .view-all-courses-content .sub-title {
   display: block;
   text-transform: uppercase;
-  color: #1cab94;
+  color: #e9492a;
   margin-bottom: 8px;
   font-size: 14px;
   font-weight: 600;
@@ -3494,14 +3517,14 @@ View All Courses Area CSS
 Teacher Register Area CSS
 =================================================*/
 .teacher-register-area {
-  background-color: #EEE1D8;
+  background-color: #eee1d8;
 }
 
 .teacher-register-box {
   padding: 45px;
   border-radius: 5px;
-  background-color: #1cab94;
-  background-image: url(/images/register-shape.jpg);
+  background-color: #e9492a;
+  background-image: url(/images/register-shape-02.jpg);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -3520,12 +3543,13 @@ Teacher Register Area CSS
 .teacher-register-box form {
   margin-top: 25px;
 }
-.teacher-register-box form input, .teacher-register-box form textarea {
+.teacher-register-box form input,
+.teacher-register-box form textarea {
   display: block;
   width: 100%;
   border: none;
   color: #ffffff;
-  background-color: #006c5b;
+  background-color: #b61b16;
   height: 50px;
   padding-left: 15px;
   border-radius: 5px;
@@ -3537,14 +3561,16 @@ Teacher Register Area CSS
   -moz-transition: 0.5s;
   transition: 0.5s;
 }
-.teacher-register-box form input::placeholder, .teacher-register-box form textarea::placeholder {
+.teacher-register-box form input::placeholder,
+.teacher-register-box form textarea::placeholder {
   color: #cdcdcd;
   transition: 0.5s;
 }
 .teacher-register-box form input:focus::-moz-placeholder, .teacher-register-box form textarea:focus::-moz-placeholder {
   color: transparent;
 }
-.teacher-register-box form input:focus::placeholder, .teacher-register-box form textarea:focus::placeholder {
+.teacher-register-box form input:focus::placeholder,
+.teacher-register-box form textarea:focus::placeholder {
   color: transparent;
 }
 .teacher-register-box form textarea {
@@ -3560,7 +3586,7 @@ Teacher Register Area CSS
   background-color: #ffffff;
 }
 .teacher-register-box form .default-btn:hover {
-  color: #1cab94;
+  color: #e9492a;
 }
 .teacher-register-box .invalid-feedback {
   color: #fff;
@@ -3606,7 +3632,7 @@ Apply Instructor Area CSS
   width: 0;
   transition: 0.5s;
   height: 1.5px;
-  background-color: #1cab94;
+  background-color: #e9492a;
 }
 .apply-instructor-content .react-tabs__tab-list .react-tabs__tab:hover, .apply-instructor-content .react-tabs__tab-list .react-tabs__tab.react-tabs__tab--selected {
   color: #221638;
@@ -3669,7 +3695,7 @@ Page Title Area CSS
   font-weight: 500;
 }
 .page-title-content ul li a:hover {
-  color: #1cab94;
+  color: #e9492a;
 }
 .page-title-content ul li:last-child {
   margin-right: 0;
@@ -3726,7 +3752,7 @@ Subscribe Area CSS
 .subscribe-content .sub-title {
   display: block;
   text-transform: uppercase;
-  color: #1cab94;
+  color: #e9492a;
   margin-bottom: 8px;
   font-size: 14px;
   font-weight: 600;
@@ -3866,7 +3892,7 @@ Checkout Area CSS
   font-size: 14px;
 }
 .shopping-cart-list .action-button .wishlist {
-  color: #1cab94;
+  color: #e9492a;
   font-size: 14px;
 }
 .shopping-cart-list hr {
@@ -3891,28 +3917,34 @@ Privacy Policy Area CSS
   margin-top: 25px;
   font-size: 22px;
 }
-.privacy-policy-content .blockquote, .privacy-policy-content blockquote {
+.privacy-policy-content .blockquote,
+.privacy-policy-content blockquote {
   margin-bottom: 30px;
   background-color: #e6f2f5;
   text-align: left !important;
   padding: 25px !important;
 }
-.privacy-policy-content .blockquote p, .privacy-policy-content blockquote p {
+.privacy-policy-content .blockquote p,
+.privacy-policy-content blockquote p {
   margin-bottom: 0;
   line-height: 1.8;
   font-size: 16px !important;
   font-weight: normal;
 }
-.privacy-policy-content .blockquote::after, .privacy-policy-content blockquote::after {
+.privacy-policy-content .blockquote::after,
+.privacy-policy-content blockquote::after {
   display: none;
 }
-.privacy-policy-content .blockquote::before, .privacy-policy-content blockquote::before {
+.privacy-policy-content .blockquote::before,
+.privacy-policy-content blockquote::before {
   display: none;
 }
-.privacy-policy-content ol, .privacy-policy-content ul {
+.privacy-policy-content ol,
+.privacy-policy-content ul {
   margin-top: 20px;
 }
-.privacy-policy-content ol li, .privacy-policy-content ul li {
+.privacy-policy-content ol li,
+.privacy-policy-content ul li {
   margin-bottom: 10px;
   color: #606060;
   font-size: 16px;
@@ -3933,28 +3965,34 @@ Terms of Service Area CSS
   margin-top: 25px;
   font-size: 22px;
 }
-.terms-of-service-content .blockquote, .terms-of-service-content blockquote {
+.terms-of-service-content .blockquote,
+.terms-of-service-content blockquote {
   margin-bottom: 30px;
   background-color: #e6f2f5;
   text-align: left !important;
   padding: 25px !important;
 }
-.terms-of-service-content .blockquote p, .terms-of-service-content blockquote p {
+.terms-of-service-content .blockquote p,
+.terms-of-service-content blockquote p {
   margin-bottom: 0;
   line-height: 1.8;
   font-size: 16px !important;
   font-weight: normal;
 }
-.terms-of-service-content .blockquote::after, .terms-of-service-content blockquote::after {
+.terms-of-service-content .blockquote::after,
+.terms-of-service-content blockquote::after {
   display: none;
 }
-.terms-of-service-content .blockquote::before, .terms-of-service-content blockquote::before {
+.terms-of-service-content .blockquote::before,
+.terms-of-service-content blockquote::before {
   display: none;
 }
-.terms-of-service-content ol, .terms-of-service-content ul {
+.terms-of-service-content ol,
+.terms-of-service-content ul {
   margin-top: 20px;
 }
-.terms-of-service-content ol li, .terms-of-service-content ul li {
+.terms-of-service-content ol li,
+.terms-of-service-content ul li {
   margin-bottom: 10px;
   color: #606060;
   font-size: 16px;
@@ -3984,13 +4022,14 @@ Pagination CSS
 }
 .pagination-area .page-numbers:hover, .pagination-area .page-numbers.current {
   color: #ffffff;
-  background-color: #1cab94;
+  background-color: #e9492a;
 }
 .pagination-area .page-numbers i {
   position: relative;
   top: 1.5px;
 }
-.pagination-area ._3bLAO ._2INQH, .pagination-area ._3bLAO ._6ZFVN {
+.pagination-area ._3bLAO ._2INQH,
+.pagination-area ._3bLAO ._6ZFVN {
   display: none;
 }
 
@@ -4063,11 +4102,11 @@ FAQ Area CSS
   margin-top: 8px;
 }
 .faq-accordion-tab .react-tabs__tab-list .react-tabs__tab:hover {
-  background-color: #1cab94;
+  background-color: #e9492a;
   color: #ffffff;
 }
 .faq-accordion-tab .react-tabs__tab-list .react-tabs__tab.react-tabs__tab--selected {
-  background-color: #1cab94;
+  background-color: #e9492a;
   color: #ffffff;
 }
 
@@ -4155,10 +4194,12 @@ Profile Authentication Area CSS
 .login-form form .remember-me-wrap {
   margin-bottom: 0;
 }
-.login-form form .remember-me-wrap [type=checkbox]:checked, .login-form form .remember-me-wrap [type=checkbox]:not(:checked) {
+.login-form form .remember-me-wrap [type=checkbox]:checked,
+.login-form form .remember-me-wrap [type=checkbox]:not(:checked) {
   display: none;
 }
-.login-form form .remember-me-wrap [type=checkbox]:checked + label, .login-form form .remember-me-wrap [type=checkbox]:not(:checked) + label {
+.login-form form .remember-me-wrap [type=checkbox]:checked + label,
+.login-form form .remember-me-wrap [type=checkbox]:not(:checked) + label {
   position: relative;
   padding-left: 28px;
   cursor: pointer;
@@ -4168,7 +4209,8 @@ Profile Authentication Area CSS
   color: #606060;
   font-weight: 600;
 }
-.login-form form .remember-me-wrap [type=checkbox]:checked + label:before, .login-form form .remember-me-wrap [type=checkbox]:not(:checked) + label:before {
+.login-form form .remember-me-wrap [type=checkbox]:checked + label:before,
+.login-form form .remember-me-wrap [type=checkbox]:not(:checked) + label:before {
   content: "";
   position: absolute;
   left: 0;
@@ -4180,11 +4222,12 @@ Profile Authentication Area CSS
   border-radius: 3px;
   background: #f5f5f5;
 }
-.login-form form .remember-me-wrap [type=checkbox]:checked + label:after, .login-form form .remember-me-wrap [type=checkbox]:not(:checked) + label:after {
+.login-form form .remember-me-wrap [type=checkbox]:checked + label:after,
+.login-form form .remember-me-wrap [type=checkbox]:not(:checked) + label:after {
   content: "";
   width: 8px;
   height: 8px;
-  background: #1cab94;
+  background: #e9492a;
   position: absolute;
   top: 5.5px;
   left: 6px;
@@ -4199,10 +4242,10 @@ Profile Authentication Area CSS
   transform: scale(1);
 }
 .login-form form .remember-me-wrap [type=checkbox]:hover + label:before {
-  border-color: #1cab94;
+  border-color: #e9492a;
 }
 .login-form form .remember-me-wrap [type=checkbox]:checked + label:before {
-  border-color: #1cab94;
+  border-color: #e9492a;
 }
 .login-form form .remember-me-wrap a {
   color: #0000cd;
@@ -4234,7 +4277,7 @@ Profile Authentication Area CSS
   transition: 0.5s;
   bottom: 0;
   content: "";
-  background-color: #1cab94;
+  background-color: #e9492a;
 }
 .login-form form .lost-your-password-wrap a:hover::before {
   width: 0;
@@ -4249,7 +4292,7 @@ Profile Authentication Area CSS
   text-align: center;
   overflow: hidden;
   color: #ffffff;
-  background-color: #1cab94;
+  background-color: #e9492a;
   transition: 0.5s;
   width: 100%;
   border-radius: 5px;
@@ -4292,7 +4335,7 @@ Profile Authentication Area CSS
   text-align: center;
   overflow: hidden;
   color: #ffffff;
-  background-color: #1cab94;
+  background-color: #e9492a;
   transition: 0.5s;
   width: 100%;
   border-radius: 5px;
@@ -4314,7 +4357,7 @@ Contact Area CSS
 .contact-info .sub-title {
   display: block;
   text-transform: uppercase;
-  color: #1cab94;
+  color: #e9492a;
   margin-bottom: 8px;
   font-size: 14px;
   font-weight: 600;
@@ -4343,7 +4386,7 @@ Contact Area CSS
   text-align: center;
   left: 0;
   font-size: 40px;
-  color: #1cab94;
+  color: #e9492a;
   transition: 0.5s;
   top: 0;
 }
@@ -4365,7 +4408,7 @@ Contact Area CSS
   margin-top: 2px;
 }
 .contact-info ul li:hover .icon {
-  background-color: #1cab94;
+  background-color: #e9492a;
   color: #ffffff;
 }
 .contact-info ul li:last-child {
@@ -4377,8 +4420,8 @@ Contact Area CSS
   padding: 35px;
   margin-left: 15px;
   border-radius: 5px;
-  background-color: #1cab94;
-  background-image: url(/images/register-shape.jpg);
+  background-color: #e9492a;
+  background-image: url(/images/register-shape-02.jpg);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -4396,12 +4439,13 @@ Contact Area CSS
 .contact-form form {
   margin-top: 25px;
 }
-.contact-form form input, .contact-form form textarea {
+.contact-form form input,
+.contact-form form textarea {
   display: block;
   width: 100%;
   border: none;
   color: #ffffff;
-  background-color: #006c5b;
+  background-color: rgb(189, 74, 51);
   height: 50px;
   padding-left: 15px;
   border-radius: 5px;
@@ -4413,14 +4457,16 @@ Contact Area CSS
   -moz-transition: 0.5s;
   transition: 0.5s;
 }
-.contact-form form input::placeholder, .contact-form form textarea::placeholder {
+.contact-form form input::placeholder,
+.contact-form form textarea::placeholder {
   color: #cdcdcd;
   transition: 0.5s;
 }
 .contact-form form input:focus::-moz-placeholder, .contact-form form textarea:focus::-moz-placeholder {
   color: transparent;
 }
-.contact-form form input:focus::placeholder, .contact-form form textarea:focus::placeholder {
+.contact-form form input:focus::placeholder,
+.contact-form form textarea:focus::placeholder {
   color: transparent;
 }
 .contact-form form textarea {
@@ -4436,7 +4482,7 @@ Contact Area CSS
   background-color: #ffffff;
 }
 .contact-form form .default-btn:hover {
-  color: #1cab94;
+  color: #e9492a;
 }
 .contact-form form .invalid-feedback {
   color: #ffffff;
@@ -4463,6 +4509,7 @@ Footer Area CSS
   margin-bottom: 30px;
 }
 .single-footer-widget .logo {
+  width: 120px;
   display: inline-block;
   margin-bottom: 20px;
 }
@@ -4489,7 +4536,7 @@ Footer Area CSS
   display: inline-block;
 }
 .single-footer-widget .footer-links-list li a:hover {
-  color: #1cab94;
+  color: #e9492a;
 }
 .single-footer-widget .footer-links-list li:last-child {
   margin-bottom: 0;
@@ -4528,7 +4575,7 @@ Footer Area CSS
   transform: translateY(-48%);
 }
 .single-footer-widget .social-link li a:hover {
-  background-color: #1cab94;
+  background-color: #e9492a;
   color: #ffffff;
 }
 .single-footer-widget .footer-contact-info {
@@ -4547,7 +4594,7 @@ Footer Area CSS
   display: inline-block;
 }
 .single-footer-widget .footer-contact-info li a:hover {
-  color: #1cab94;
+  color: #e9492a;
 }
 .single-footer-widget .footer-contact-info li:last-child {
   margin-bottom: 0;
@@ -4575,7 +4622,7 @@ Footer Area CSS
   top: 1.3px;
 }
 .footer-bottom-area p a {
-  color: #1cab94;
+  color: #e9492a;
   font-weight: 600;
 }
 .footer-bottom-area p a:hover {
@@ -4613,7 +4660,7 @@ Footer Area CSS
   color: #ededed;
 }
 .footer-bottom-area ul li a:hover {
-  color: #1cab94;
+  color: #e9492a;
 }
 
 .lines {
@@ -4699,7 +4746,7 @@ Go Top CSS
   margin-right: auto;
 }
 .go-top:hover {
-  background-color: #1cab94;
+  background-color: #e9492a;
   color: #ffffff;
   transition: 0.5s;
   transform: translateY(-10px);

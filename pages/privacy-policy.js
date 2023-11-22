@@ -32,7 +32,7 @@ export default function PrivacyPolicyPage({ user }) {
                     We collect certain data from you directly, like information
                     you enter yourself, data about your participation in
                     courses, and data from third-party platforms you connect
-                    with eLearniv. We also collect some data automatically, like
+                    with subtubes. We also collect some data automatically, like
                     information about your device and what parts of our Services
                     you interact with or spend time using.
                   </p>

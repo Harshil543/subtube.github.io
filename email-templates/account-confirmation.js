@@ -314,8 +314,8 @@ export const confirmEmailAddress = async (user) => {
 
                                     <p>
                                         Regards, <br />
-                                        eLearniv Support Team <br />
-                                        All Rights Reserved by eLearniv.com
+                                        subtubes Support Team <br />
+                                        All Rights Reserved by subtubes.com
                                     </p>
                                 </div>
                             </td>
@@ -334,7 +334,7 @@ export const confirmEmailAddress = async (user) => {
                             <tr>
                               <td style="text-align: center; padding-right: 0;">
                               <p style="text-align: center; margin-bottom: 0; margin-top: 5px">
-                                  <a href="http://eLearniv.com/" target="_blank" style="color: #3056de">www.eLearniv.com</a>
+                                  <a href="http://subtubes.com/" target="_blank" style="color: #3056de">www.subtubes.com</a>
                               </p>
                               </td>
                             </tr>
@@ -346,7 +346,7 @@ export const confirmEmailAddress = async (user) => {
                 </tr>
                 <tr>
                   <td class="bg_light" style="text-align: center;">
-                    <p>&copy;2022 eLearniv Support</p>
+                    <p>&copy;2022 subtubes Support</p>
                   </td>
                 </tr>
               </table>
@@ -360,7 +360,7 @@ export const confirmEmailAddress = async (user) => {
 
   try {
     await transport.sendMail(data);
-    console.log("Email send successfully");
+    console.log("Email send successfully")
     // res.status(200).send("Email send successfully")
   } catch (error) {
     console.log(error);
