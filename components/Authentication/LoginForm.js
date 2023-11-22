@@ -36,7 +36,7 @@ const LoginForm = () => {
       const url = `${baseUrl}/api/users/signin`;
       const payload = { ...user };
       const response = await axios.post(url, payload);
-    //   handleLogin(response.data.elarniv_users_token, router);
+      handleLogin(response.data.elarniv_users_token, router);
       toast.success(response.data.message, {
         style: {
           border: "1px solid #4BB543",
@@ -109,9 +109,7 @@ const LoginForm = () => {
           </div>
           <div className="col-lg-12 col-md-12 col-sm-12 remember-me-wrap">
             <Link href="/forgot-password">
-              <a className="lost-your-password">
-                Forgot Password?
-              </a>
+              <a className="lost-your-password">Forgot Password?</a>
             </Link>
           </div>
         </div>

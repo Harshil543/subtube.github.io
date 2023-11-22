@@ -2,6 +2,12 @@ import validate from "uuid-validate";
 import User from "database/models/user";
 
 export default async (req, res) => {
+  res.headers = {
+    "Access-Control-Allow-Credentials": true,
+    "Access-Control-Allow-Origin": "*",
+    "Content-Type": "application/json",
+    "Access-Control-Allow-Headers": "*",
+  };
   switch (req.method) {
     case "PUT":
       await userEmailConfirm(req, res);
@@ -12,6 +18,12 @@ export default async (req, res) => {
 };
 
 const userEmailConfirm = async (req, res) => {
+  res.headers = {
+    "Access-Control-Allow-Credentials": true,
+    "Access-Control-Allow-Origin": "*",
+    "Content-Type": "application/json",
+    "Access-Control-Allow-Headers": "*",
+  };
   let { token, decodedEmail } = req.body;
   const validUuid = validate(token);
   try {
