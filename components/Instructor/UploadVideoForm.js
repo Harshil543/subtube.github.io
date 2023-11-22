@@ -108,6 +108,7 @@ const UploadVideoForm = ({ courseId }) => {
 		data.append("file", video.video);
 		data.append("upload_preset", process.env.UPLOAD_PRESETS);
 		data.append("cloud_name", process.env.CLOUD_NAME);
+		data.append("folder", process.env.CLOUD_VIDEO_DIRECTORY);
 		let response;
 		if (video.video) {
 			response = await axios.post(process.env.CLOUDINARY_VIDEO_URL, data);
@@ -122,6 +123,7 @@ const UploadVideoForm = ({ courseId }) => {
 		data.append("file", video.thumb);
 		data.append("upload_preset", process.env.UPLOAD_PRESETS);
 		data.append("cloud_name", process.env.CLOUD_NAME);
+		data.append("folder", process.env.CLOUD_IMAGE_DIRECTORY);
 		let response;
 		if (video.thumb) {
 			response = await axios.post(process.env.CLOUDINARY_URL, data);

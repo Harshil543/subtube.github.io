@@ -65,6 +65,7 @@ const UploadAssetForm = ({ courseId, onFetchAssets }) => {
 		data.append("file", asset.lecture_file);
 		data.append("upload_preset", process.env.UPLOAD_PRESETS);
 		data.append("cloud_name", process.env.CLOUD_NAME);
+		data.append("folder", process.env.CLOUD_ZIP_DIRECTORY);
 		let response;
 		if (asset.lecture_file) {
 			response = await axios.post(process.env.CLOUDINARY_ZIP_URL, data);

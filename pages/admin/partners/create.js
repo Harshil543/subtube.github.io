@@ -64,6 +64,7 @@ const Create = ({ user }) => {
 		data.append("file", partner.partner_image);
 		data.append("upload_preset", process.env.UPLOAD_PRESETS);
 		data.append("cloud_name", process.env.CLOUD_NAME);
+		data.append("folder", process.env.CLOUD_IMAGE_DIRECTORY);
 		let response;
 		if (partner.partner_image) {
 			response = await axios.post(process.env.CLOUDINARY_URL, data);
