@@ -10,7 +10,7 @@ import { motion } from "framer-motion";
 
 const INITIAL_USER = {
   email: "",
-  password: "",
+  password: ""
 };
 
 const LoginForm = () => {
@@ -36,34 +36,34 @@ const LoginForm = () => {
       const url = `${baseUrl}/api/users/signin`;
       const payload = { ...user };
       const response = await axios.post(url, payload);
-    //   handleLogin(response.data.elarniv_users_token, router);
+      handleLogin(response.data.elarniv_users_token, router);
       toast.success(response.data.message, {
         style: {
           border: "1px solid #4BB543",
           padding: "16px",
-          color: "#4BB543",
+          color: "#4BB543"
         },
         iconTheme: {
           primary: "#4BB543",
-          secondary: "#FFFAEE",
-        },
+          secondary: "#FFFAEE"
+        }
       });
     } catch (err) {
       let {
         response: {
-          data: { message },
-        },
+          data: { message }
+        }
       } = err;
       toast.error(message, {
         style: {
           border: "1px solid #ff0033",
           padding: "16px",
-          color: "#ff0033",
+          color: "#ff0033"
         },
         iconTheme: {
           primary: "#ff0033",
-          secondary: "#FFFAEE",
-        },
+          secondary: "#FFFAEE"
+        }
       });
     } finally {
       setLoading(false);
@@ -71,61 +71,61 @@ const LoginForm = () => {
   };
 
   return (
-    <div className="login-form">
-      <h2>Login</h2>
+    <>
+      <div className="login-form">
+        <h2>Login</h2>
 
-      <form onSubmit={handleSubmit}>
-        <div className="form-group">
-          <label>Email</label>
-          <input
-            type="text"
-            className="form-control"
-            placeholder="Email"
-            name="email"
-            value={user.email}
-            onChange={handleChange}
-          />
-        </div>
-
-        <div className="form-group">
-          <label>Password</label>
-          <input
-            type="password"
-            className="form-control"
-            placeholder="Password"
-            name="password"
-            value={user.password}
-            onChange={handleChange}
-          />
-        </div>
-
-        <div className="row align-items-center">
-          <div className="col-lg-12 col-md-12 col-sm-12 remember-me-wrap">
-            <Link href="/send-confirmation-email">
-              <a className="lost-your-password">
-                Didn't receive a confirmation email?
-              </a>
-            </Link>
+        <form onSubmit={handleSubmit}>
+          <div className="form-group">
+            <label>Email</label>
+            <input
+              type="text"
+              className="form-control"
+              placeholder="Email"
+              name="email"
+              value={user.email}
+              onChange={handleChange}
+            />
           </div>
-          <div className="col-lg-12 col-md-12 col-sm-12 remember-me-wrap">
-            <Link href="/forgot-password">
-              <a className="lost-your-password">
-                Forgot Password?
-              </a>
-            </Link>
-          </div>
-        </div>
 
-        <motion.button
-          type="submit"
-          disabled={disabled}
-          whileTap={{ scale: 0.9 }}
-        >
-          Log In
-          {loading ? <LoadingSpinner /> : ""}
-        </motion.button>
-      </form>
-    </div>
+          <div className="form-group">
+            <label>Password</label>
+            <input
+              type="password"
+              className="form-control"
+              placeholder="Password"
+              name="password"
+              value={user.password}
+              onChange={handleChange}
+            />
+          </div>
+
+          <div className="row align-items-center">
+            <div className="col-lg-12 col-md-12 col-sm-12 remember-me-wrap">
+              <Link href="/send-confirmation-email">
+                <a className="lost-your-password">
+                  Didn't receive a confirmation email?
+                </a>
+              </Link>
+            </div>
+            <div className="col-lg-12 col-md-12 col-sm-12 remember-me-wrap">
+              <Link href="/forgot-password">
+                <a className="lost-your-password">Forgot Password?</a>
+              </Link>
+            </div>
+          </div>
+
+          <motion.button
+            type="submit"
+            disabled={loading}
+            whileTap={{ scale: 0.9 }}
+          >
+            Log In
+            {loading ? <LoadingSpinner /> : ""}
+          </motion.button>
+        </form>
+      </div>
+    </>
   );
 };
 

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Router from "next/router";
 import NProgress from "nprogress";
 import { motion } from "framer-motion";
@@ -7,11 +7,20 @@ import ProfileDropdown from "./ProfileDropdown";
 import Cart from "./Cart";
 import SearchForm from "./SearchForm";
 
-Router.onRouteChangeStart = () => NProgress.start();
-Router.onRouteChangeComplete = () => NProgress.done();
-Router.onRouteChangeError = () => NProgress.done();
-
 const Navbar = ({ user }) => {
+  // const [loading, setLoading] = useState(false);
+  Router.onRouteChangeStart = () => {
+    NProgress.start();
+    // setLoading(true);
+  };
+  Router.onRouteChangeComplete = () => {
+    NProgress.done();
+    // setLoading(false);
+  };
+  Router.onRouteChangeError = () => {
+    NProgress.done();
+    // setLoading(false);
+  };
   const [menu, setMenu] = React.useState(true);
 
   const toggleNavbar = () => {
