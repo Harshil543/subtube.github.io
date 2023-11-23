@@ -2,12 +2,7 @@ import jwt from "jsonwebtoken";
 import User from "database/models/user";
 
 export default async (req, res) => {
-  res.headers = {
-    "Access-Control-Allow-Credentials": true,
-    "Access-Control-Allow-Origin": "*",
-    "Content-Type": "application/json",
-    "Access-Control-Allow-Headers": "*",
-  };
+  
   if (!("authorization" in req.headers)) {
     return res.status(401).json({ message: "No autorization token" });
   }
@@ -23,12 +18,7 @@ export default async (req, res) => {
 };
 
 const userProfilePhoto = async (req, res) => {
-  res.headers = {
-    "Access-Control-Allow-Credentials": true,
-    "Access-Control-Allow-Origin": "*",
-    "Content-Type": "application/json",
-    "Access-Control-Allow-Headers": "*",
-  };
+  
   const { profile_photo } = req.body;
   try {
     const { userId } = jwt.verify(

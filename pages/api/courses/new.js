@@ -3,12 +3,7 @@ import { slugify } from "@/utils/auth";
 import Course from "database/models/course";
 
 export default async function handler(req, res) {
-  res.headers = {
-    "Access-Control-Allow-Credentials": true,
-    "Access-Control-Allow-Origin": "*",
-    "Content-Type": "application/json",
-    "Access-Control-Allow-Headers": "*",
-  };
+  
   if (!("authorization" in req.headers)) {
     return res.status(401).json({ message: "No autorization token" });
   }
@@ -27,12 +22,7 @@ export default async function handler(req, res) {
 }
 
 const handlePostRequest = async (req, res) => {
-  res.headers = {
-    "Access-Control-Allow-Credentials": true,
-    "Access-Control-Allow-Origin": "*",
-    "Content-Type": "application/json",
-    "Access-Control-Allow-Headers": "*",
-  };
+  
   const {
     title,
     short_desc,

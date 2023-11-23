@@ -1,12 +1,7 @@
 import Video from "database/models/video";
 
 export default async function handler(req, res) {
-  res.headers = {
-    "Access-Control-Allow-Credentials": true,
-    "Access-Control-Allow-Origin": "*",
-    "Content-Type": "application/json",
-    "Access-Control-Allow-Headers": "*",
-  };
+  
   if (!("authorization" in req.headers)) {
     return res.status(401).json({ message: "No autorization token" });
   }
@@ -25,12 +20,7 @@ export default async function handler(req, res) {
 }
 
 const handleGet = async (req, res) => {
-  res.headers = {
-    "Access-Control-Allow-Credentials": true,
-    "Access-Control-Allow-Origin": "*",
-    "Content-Type": "application/json",
-    "Access-Control-Allow-Headers": "*",
-  };
+  
 
   const { id } = req.query;
   try {
@@ -50,12 +40,7 @@ const handleGet = async (req, res) => {
 };
 
 const handleDelete = async (req, res) => {
-  res.headers = {
-    "Access-Control-Allow-Credentials": true,
-    "Access-Control-Allow-Origin": "*",
-    "Content-Type": "application/json",
-    "Access-Control-Allow-Headers": "*",
-  };
+  
   const { id } = req.query;
   try {
     const video = await Video.findOne({

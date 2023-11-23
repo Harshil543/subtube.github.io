@@ -1,16 +1,9 @@
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 import isEmail from "validator/lib/isEmail";
-
 import User from "database/models/user";
 
 export default async function handler(req, res) {
-  res.headers = {
-    "Access-Control-Allow-Credentials": true,
-    "Access-Control-Allow-Origin": "*",
-    "Content-Type": "application/json",
-    "Access-Control-Allow-Headers": "*",
-  };
   switch (req.method) {
     case "POST":
       await userSignin(req, res);
@@ -23,12 +16,6 @@ export default async function handler(req, res) {
 }
 
 const userSignin = async (req, res) => {
-  res.headers = {
-    "Access-Control-Allow-Credentials": true,
-    "Access-Control-Allow-Origin": "*",
-    "Content-Type": "application/json",
-    "Access-Control-Allow-Headers": "*",
-  };
   const { email, password } = req.body;
 
   try {

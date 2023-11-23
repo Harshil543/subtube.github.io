@@ -16,7 +16,7 @@ const CoursesList = ({ user }) => {
 		setLoading(true);
 
 		const response = await axios.get(`${baseUrl}/api/categories/${slug}`);
-		setCourses(response.data.courses.courses);
+		setCourses(response?.data?.courses?.courses);
 		setLoading(false);
 	};
 

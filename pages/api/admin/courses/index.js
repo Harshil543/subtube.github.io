@@ -1,12 +1,7 @@
 import { Course, User, Category, Video } from "database/models";
 
 export default async function handler(req, res) {
-  res.headers = {
-    "Access-Control-Allow-Credentials": true,
-    "Access-Control-Allow-Origin": "*",
-    "Content-Type": "application/json",
-    "Access-Control-Allow-Headers": "*",
-  };
+  
   if (!("authorization" in req.headers)) {
     return res.status(401).json({ message: "No autorization token" });
   }
@@ -25,12 +20,7 @@ export default async function handler(req, res) {
 }
 
 const handleGet = async (req, res) => {
-  res.headers = {
-    "Access-Control-Allow-Credentials": true,
-    "Access-Control-Allow-Origin": "*",
-    "Content-Type": "application/json",
-    "Access-Control-Allow-Headers": "*",
-  };
+  
   try {
     const courses = await Course.findAll({
       order: [["created_at", "DESC"]],
@@ -66,12 +56,7 @@ const handleGet = async (req, res) => {
 };
 
 const handlePut = async (req, res) => {
-  res.headers = {
-    "Access-Control-Allow-Credentials": true,
-    "Access-Control-Allow-Origin": "*",
-    "Content-Type": "application/json",
-    "Access-Control-Allow-Headers": "*",
-  };
+  
   try {
     const { courseId, apply } = req.body;
     if (apply) {

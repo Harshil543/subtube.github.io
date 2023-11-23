@@ -3,12 +3,7 @@ import User from "database/models/user";
 import { instructorRequest } from "../../../email-templates/instructor-request";
 
 export default async function handler(req, res) {
-  res.headers = {
-    "Access-Control-Allow-Credentials": true,
-    "Access-Control-Allow-Origin": "*",
-    "Content-Type": "application/json",
-    "Access-Control-Allow-Headers": "*",
-  };
+  
   if (!("authorization" in req.headers)) {
     return res.status(401).json({ message: "No autorization token" });
   }
@@ -25,12 +20,7 @@ export default async function handler(req, res) {
 }
 
 const handlePut = async (req, res) => {
-  res.headers = {
-    "Access-Control-Allow-Credentials": true,
-    "Access-Control-Allow-Origin": "*",
-    "Content-Type": "application/json",
-    "Access-Control-Allow-Headers": "*",
-  };
+  
   const { name, email, phone, instructor_subject, instructor_description } =
     req.body;
   try {

@@ -1,12 +1,7 @@
 import Coupon from "database/models/coupon";
 
 export default async function handler(req, res) {
-  res.headers = {
-    "Access-Control-Allow-Credentials": true,
-    "Access-Control-Allow-Origin": "*",
-    "Content-Type": "application/json",
-    "Access-Control-Allow-Headers": "*",
-  };
+  
   const { coupon } = req.body;
 
   try {

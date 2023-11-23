@@ -1,12 +1,7 @@
 import { Category, Course, User, Enrolment } from "database/models";
 
 export default async function handler(req, res) {
-  res.headers = {
-    "Access-Control-Allow-Credentials": true,
-    "Access-Control-Allow-Origin": "*",
-    "Content-Type": "application/json",
-    "Access-Control-Allow-Headers": "*",
-  };
+  
   const { slug } = req.query;
   try {
     const courses = await Category.findOne({

@@ -3,12 +3,7 @@ import User from "database/models/user";
 import { confirmEmailAddress } from "email-templates/account-confirmation";
 
 export default async function handler(req, res) {
-  res.headers = {
-    "Access-Control-Allow-Credentials": true,
-    "Access-Control-Allow-Origin": "*",
-    "Content-Type": "application/json",
-    "Access-Control-Allow-Headers": "*",
-  };
+  
   switch (req.method) {
     case "POST":
       await userConfirmationEmailSend(req, res);
@@ -21,12 +16,7 @@ export default async function handler(req, res) {
 }
 
 const userConfirmationEmailSend = async (req, res) => {
-  res.headers = {
-    "Access-Control-Allow-Credentials": true,
-    "Access-Control-Allow-Origin": "*",
-    "Content-Type": "application/json",
-    "Access-Control-Allow-Headers": "*",
-  };
+  
   let { email } = req.body;
   try {
     if (!isEmail(email)) {

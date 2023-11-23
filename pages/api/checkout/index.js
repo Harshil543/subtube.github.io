@@ -7,12 +7,7 @@ import { calculateCartTotal } from "@/utils/calculateCartTotal";
 const stripeSecret = Stripe(process.env.STRIPE_SECRET_KEY);
 
 export default async function handler(req, res) {
-  res.headers = {
-    "Access-Control-Allow-Credentials": true,
-    "Access-Control-Allow-Origin": "*",
-    "Content-Type": "application/json",
-    "Access-Control-Allow-Headers": "*",
-  };
+  
   switch (req.method) {
     case "POST":
       await handlePostRequest(req, res);
@@ -25,12 +20,7 @@ export default async function handler(req, res) {
 }
 
 const handlePostRequest = async (req, res) => {
-  res.headers = {
-    "Access-Control-Allow-Credentials": true,
-    "Access-Control-Allow-Origin": "*",
-    "Content-Type": "application/json",
-    "Access-Control-Allow-Headers": "*",
-  };
+  
   const { cartItems, userId, buyer_name, buyer_email, buyer_avatar } = req.body;
 
   const { stripeTotal } = calculateCartTotal(cartItems);

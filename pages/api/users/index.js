@@ -1,12 +1,7 @@
 import User from "database/models/user";
 
 export default async function handler(req, res) {
-  res.headers = {
-    "Access-Control-Allow-Credentials": true,
-    "Access-Control-Allow-Origin": "*",
-    "Content-Type": "application/json",
-    "Access-Control-Allow-Headers": "*",
-  };
+  
   try {
     const users = await User.findAll({
       attributes: ["first_name", "last_name", "email"],

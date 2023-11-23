@@ -1,12 +1,7 @@
 import { Video, Course_Progress } from "@/database/models";
 
 export default async function handler(req, res) {
-  res.headers = {
-    "Access-Control-Allow-Credentials": true,
-    "Access-Control-Allow-Origin": "*",
-    "Content-Type": "application/json",
-    "Access-Control-Allow-Headers": "*",
-  };
+  
   const { id, userId, courseId } = req.query;
   // console.log("###", req.query);
   try {

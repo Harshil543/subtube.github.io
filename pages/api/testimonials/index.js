@@ -1,12 +1,7 @@
 import Testimonial from "database/models/testimonial";
 
 export default async function handler(req, res) {
-  res.headers = {
-    "Access-Control-Allow-Credentials": true,
-    "Access-Control-Allow-Origin": "*",
-    "Content-Type": "application/json",
-    "Access-Control-Allow-Headers": "*",
-  };
+  
   switch (req.method) {
     case "GET":
       await handleGet(req, res);
@@ -20,12 +15,7 @@ export default async function handler(req, res) {
 }
 
 const handleGet = async (req, res) => {
-  res.headers = {
-    "Access-Control-Allow-Credentials": true,
-    "Access-Control-Allow-Origin": "*",
-    "Content-Type": "application/json",
-    "Access-Control-Allow-Headers": "*",
-  };
+  
   try {
     const testimonials = await Testimonial.findAll({
       order: [["created_at", "DESC"]],

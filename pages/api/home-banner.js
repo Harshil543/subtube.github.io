@@ -2,12 +2,7 @@ import Sequelize from "sequelize";
 import { Course, User, Enrolment } from "database/models";
 
 export default async function handler(req, res) {
-  res.headers = {
-    "Access-Control-Allow-Credentials": true,
-    "Access-Control-Allow-Origin": "*",
-    "Content-Type": "application/json",
-    "Access-Control-Allow-Headers": "*",
-  };
+  
   switch (req.method) {
     case "GET":
       await handleGetRequest(req, res);
@@ -20,12 +15,7 @@ export default async function handler(req, res) {
 }
 
 const handleGetRequest = async (req, res) => {
-  res.headers = {
-    "Access-Control-Allow-Credentials": true,
-    "Access-Control-Allow-Origin": "*",
-    "Content-Type": "application/json",
-    "Access-Control-Allow-Headers": "*",
-  };
+  
   try {
     const courses = await Course.findAll({
       order: Sequelize.literal("rand()"),

@@ -9,12 +9,7 @@ import User from "database/models/user";
 import { confirmEmailAddress } from "email-templates/account-confirmation";
 
 export default async function handler(req, res) {
-  res.headers = {
-    "Access-Control-Allow-Credentials": true,
-    "Access-Control-Allow-Origin": "*",
-    "Content-Type": "application/json",
-    "Access-Control-Allow-Headers": "*",
-  };
+  
   switch (req.method) {
     case "POST":
       await userSignup(req, res);
@@ -27,12 +22,7 @@ export default async function handler(req, res) {
 }
 
 const userSignup = async (req, res) => {
-  res.headers = {
-    "Access-Control-Allow-Credentials": true,
-    "Access-Control-Allow-Origin": "*",
-    "Content-Type": "application/json",
-    "Access-Control-Allow-Headers": "*",
-  };
+  
   const confirmToken = uuidv4();
   let { first_name, last_name, email, password } = req.body;
   try {

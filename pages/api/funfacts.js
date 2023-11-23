@@ -1,12 +1,7 @@
 import { Course, User, Enrolment, Video, Course_Asset } from "database/models";
 
 export default async function handler(req, res) {
-  res.headers = {
-    "Access-Control-Allow-Credentials": true,
-    "Access-Control-Allow-Origin": "*",
-    "Content-Type": "application/json",
-    "Access-Control-Allow-Headers": "*",
-  };
+  
   try {
     const students = await User.count({
       where: { role: "student" },

@@ -1,12 +1,7 @@
 import Course_Asset from "database/models/course_asset";
 
 export default async function handler(req, res) {
-  res.headers = {
-    "Access-Control-Allow-Credentials": true,
-    "Access-Control-Allow-Origin": "*",
-    "Content-Type": "application/json",
-    "Access-Control-Allow-Headers": "*",
-  };
+  
   const { id: courseId } = req.query;
   try {
     const assets = await Course_Asset.findAll({

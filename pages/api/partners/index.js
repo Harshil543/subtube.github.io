@@ -1,12 +1,7 @@
 import Partner from "database/models/partner";
 
 export default async function handler(req, res) {
-  res.headers = {
-    "Access-Control-Allow-Credentials": true,
-    "Access-Control-Allow-Origin": "*",
-    "Content-Type": "application/json",
-    "Access-Control-Allow-Headers": "*",
-  };
+  
 
   switch (req.method) {
     case "GET":
@@ -21,12 +16,7 @@ export default async function handler(req, res) {
 }
 
 const handleGet = async (req, res) => {
-  res.headers = {
-    "Access-Control-Allow-Credentials": true,
-    "Access-Control-Allow-Origin": "*",
-    "Content-Type": "application/json",
-    "Access-Control-Allow-Headers": "*",
-  };
+  
   try {
     const partners = await Partner.findAll({
       order: [["created_at", "DESC"]],

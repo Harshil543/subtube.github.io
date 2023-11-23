@@ -2,12 +2,7 @@ import { slugify } from "@/utils/auth";
 import Category from "database/models/category";
 
 export default async function handler(req, res) {
-  res.headers = {
-    "Access-Control-Allow-Credentials": true,
-    "Access-Control-Allow-Origin": "*",
-    "Content-Type": "application/json",
-    "Access-Control-Allow-Headers": "*",
-  };
+  
   if (!("authorization" in req.headers)) {
     return res.status(401).json({ message: "No autorization token" });
   }
@@ -29,12 +24,7 @@ export default async function handler(req, res) {
 }
 
 const categoryById = async (req, res) => {
-  res.headers = {
-    "Access-Control-Allow-Credentials": true,
-    "Access-Control-Allow-Origin": "*",
-    "Content-Type": "application/json",
-    "Access-Control-Allow-Headers": "*",
-  };
+  
   const { catId } = req.query;
   // console.log("####", catId);
   try {
@@ -52,12 +42,7 @@ const categoryById = async (req, res) => {
 };
 
 const createCategory = async (req, res) => {
-  res.headers = {
-    "Access-Control-Allow-Credentials": true,
-    "Access-Control-Allow-Origin": "*",
-    "Content-Type": "application/json",
-    "Access-Control-Allow-Headers": "*",
-  };
+  
   const { category } = req.body;
 
   try {
@@ -88,12 +73,7 @@ const createCategory = async (req, res) => {
 };
 
 const updateCategory = async (req, res) => {
-  res.headers = {
-    "Access-Control-Allow-Credentials": true,
-    "Access-Control-Allow-Origin": "*",
-    "Content-Type": "application/json",
-    "Access-Control-Allow-Headers": "*",
-  };
+  
   try {
     const { category, catId } = req.body;
 

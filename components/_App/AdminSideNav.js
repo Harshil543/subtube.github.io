@@ -5,7 +5,7 @@ import StickyBox from "react-sticky-box";
 import { motion } from "framer-motion";
 
 const AdminSideNav = ({ user }) => {
-  const isAdmin = user.role === "admin";
+  const isAdmin = user?.role === "admin";
   const router = useRouter();
   const currentRoute = router.pathname;
 

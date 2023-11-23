@@ -1,12 +1,7 @@
 import Subscription from "database/models/subscription";
 
 export default async function handler(req, res) {
-  res.headers = {
-    "Access-Control-Allow-Credentials": true,
-    "Access-Control-Allow-Origin": "*",
-    "Content-Type": "application/json",
-    "Access-Control-Allow-Headers": "*",
-  };
+  
   const { email } = req.body;
   try {
     const isEmailExist = await Subscription.findOne({

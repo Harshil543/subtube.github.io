@@ -1,12 +1,7 @@
 import Partner from "database/models/partner";
 
 export default async function handler(req, res) {
-  res.headers = {
-    "Access-Control-Allow-Credentials": true,
-    "Access-Control-Allow-Origin": "*",
-    "Content-Type": "application/json",
-    "Access-Control-Allow-Headers": "*",
-  };
+  
   switch (req.method) {
     case "POST":
       await createPartner(req, res);
@@ -22,12 +17,7 @@ export default async function handler(req, res) {
 }
 
 const createPartner = async (req, res) => {
-  res.headers = {
-    "Access-Control-Allow-Credentials": true,
-    "Access-Control-Allow-Origin": "*",
-    "Content-Type": "application/json",
-    "Access-Control-Allow-Headers": "*",
-  };
+  
   const { name, partner_image } = req.body;
 
   try {
@@ -49,12 +39,7 @@ const createPartner = async (req, res) => {
 };
 
 const handleDelete = async (req, res) => {
-  res.headers = {
-    "Access-Control-Allow-Credentials": true,
-    "Access-Control-Allow-Origin": "*",
-    "Content-Type": "application/json",
-    "Access-Control-Allow-Headers": "*",
-  };
+  
   const { partnerId } = req.query;
   try {
     const partner = await Partner.findOne({

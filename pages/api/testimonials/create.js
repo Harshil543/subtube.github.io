@@ -2,12 +2,7 @@ import { slugify } from "@/utils/auth";
 import Testimonial from "database/models/testimonial";
 
 export default async function handler(req, res) {
-  res.headers = {
-    "Access-Control-Allow-Credentials": true,
-    "Access-Control-Allow-Origin": "*",
-    "Content-Type": "application/json",
-    "Access-Control-Allow-Headers": "*",
-  };
+  
   if (!("authorization" in req.headers)) {
     return res.status(401).json({ message: "No autorization token" });
   }
@@ -32,12 +27,7 @@ export default async function handler(req, res) {
 }
 
 const testimonialById = async (req, res) => {
-  res.headers = {
-    "Access-Control-Allow-Credentials": true,
-    "Access-Control-Allow-Origin": "*",
-    "Content-Type": "application/json",
-    "Access-Control-Allow-Headers": "*",
-  };
+  
   const { testId } = req.query;
   // console.log("####", catId);
   try {
@@ -55,12 +45,7 @@ const testimonialById = async (req, res) => {
 };
 
 const createTestimonial = async (req, res) => {
-  res.headers = {
-    "Access-Control-Allow-Credentials": true,
-    "Access-Control-Allow-Origin": "*",
-    "Content-Type": "application/json",
-    "Access-Control-Allow-Headers": "*",
-  };
+  
   const { image_url, name, designation, description } = req.body;
 
   try {
@@ -84,12 +69,7 @@ const createTestimonial = async (req, res) => {
 };
 
 const updateTestimonial = async (req, res) => {
-  res.headers = {
-    "Access-Control-Allow-Credentials": true,
-    "Access-Control-Allow-Origin": "*",
-    "Content-Type": "application/json",
-    "Access-Control-Allow-Headers": "*",
-  };
+  
   try {
     const { testId, image_url, name, designation, description } = req.body;
 
@@ -117,12 +97,7 @@ const updateTestimonial = async (req, res) => {
 };
 
 const handleDelete = async (req, res) => {
-  res.headers = {
-    "Access-Control-Allow-Credentials": true,
-    "Access-Control-Allow-Origin": "*",
-    "Content-Type": "application/json",
-    "Access-Control-Allow-Headers": "*",
-  };
+  
   const { testId } = req.query;
   // console.log(testId);
   try {

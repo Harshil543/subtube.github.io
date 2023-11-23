@@ -2,12 +2,7 @@ import fs from "fs";
 let siteSettings = require("../../public/settings.json");
 
 export default async function handler(req, res) {
-  res.headers = {
-    "Access-Control-Allow-Credentials": true,
-    "Access-Control-Allow-Origin": "*",
-    "Content-Type": "application/json",
-    "Access-Control-Allow-Headers": "*",
-  };
+  
   const { site, image_url } = req.body;
 
   try {

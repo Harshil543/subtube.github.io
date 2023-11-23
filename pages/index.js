@@ -34,7 +34,7 @@ function Index({ courses, user }) {
 export async function getServerSideProps() {
 	// Fetch data from external API
 	const res = await fetch(`${baseUrl}/api/home-banner`);
-	const { courses } = await res.json();
+	const { courses } = await res?.json();
 
 	// Pass data to the page via props
 	return { props: { courses } };
