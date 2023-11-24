@@ -29,78 +29,75 @@ import "../styles/dashboard.css";
 import Layout from "../components/_App/Layout";
 
 function MyApp({ Component, pageProps }) {
-	const store = useStore(pageProps.initialReduxState);
-	return (
-		<Provider store={store}>
-			<Layout>
-				<Component {...pageProps} />
-			</Layout>
-		</Provider>
-	);
+  const store = useStore(pageProps.initialReduxState);
+  return (
+    <Provider store={store}>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </Provider>
+  );
 }
 
 MyApp.getInitialProps = async ({ Component, ctx }) => {
-	const { elarniv_users_token } = parseCookies(ctx);
-	let pageProps = {};
+  const { elarniv_users_token } = parseCookies(ctx);
+  let pageProps = {};
 
-	if (Component.getInitialProps) {
-		pageProps = await Component.getInitialProps(ctx);
-	}
+  if (Component.getInitialProps) {
+    pageProps = await Component.getInitialProps(ctx);
+  }
 
-	if (!elarniv_users_token) {
-		// if a user not logged in then user can't access those pages
-		const isProtectedRoute =
-			ctx.pathname === "/profile/basic-information" ||
-			ctx.pathname === "/profile/photo" ||
-			ctx.pathname === "/checkout" ||
-			ctx.pathname === "/become-an-instructor" ||
-			ctx.pathname === "/learning/my-courses" ||
-			ctx.pathname === "/instructor/courses" ||
-			ctx.pathname === "/admin" ||
-			ctx.pathname === "/admin/instructor" ||
-			ctx.pathname === "/admin/students" ||
-			ctx.pathname === "/admin/partners" ||
-			ctx.pathname === "/admin/testimonials" ||
-			ctx.pathname === "/admin/categories" ||
-			ctx.pathname === "/checkout" ||
-			ctx.pathname === "/learning/wishlist";
+  if (!elarniv_users_token) {
+    // if a user not logged in then user can't access those pages
+    const isProtectedRoute =
+      ctx.pathname === "/profile/basic-information" ||
+      ctx.pathname === "/profile/photo" ||
+      ctx.pathname === "/checkout" ||
+      ctx.pathname === "/become-an-instructor" ||
+      ctx.pathname === "/learning/my-courses" ||
+      ctx.pathname === "/instructor/courses" ||
+      ctx.pathname === "/admin" ||
+      ctx.pathname === "/admin/instructor" ||
+      ctx.pathname === "/admin/students" ||
+      ctx.pathname === "/admin/partners" ||
+      ctx.pathname === "/admin/testimonials" ||
+      ctx.pathname === "/admin/categories" ||
+      ctx.pathname === "/checkout" ||
+      ctx.pathname === "/learning/wishlist";
 
-		if (isProtectedRoute) {
-			redirectUser(ctx, "/authentication");
-		}
-	} else {
-		// if a user logged in then user can't access those pages
-		const ifLoggedIn =
-			ctx.pathname === "/authentication" ||
-			ctx.pathname === "/reset-password";
-		if (ifLoggedIn) {
-			redirectUser(ctx, "/");
-		}
+    if (isProtectedRoute) {
+      redirectUser(ctx, "/authentication");
+    }
+  } else {
+    const ifLoggedIn =
+      ctx.pathname === "/authentication" || ctx.pathname === "/reset-password";
+    if (ifLoggedIn) {
+      redirectUser(ctx, "/");
+    }
 
-		try {
-			const payload = { headers: { Authorization: elarniv_users_token } };
-			const url = `${baseUrl}/api/users/update`;
-			const response = await fetch(url, payload);
-			if (response.ok) {
-				const user = await response.json();
-				// console.log(user);
-				pageProps.user = user;
-			} else if (response.status === 404) {
-				console.error("User not found");
+    try {
+      const payload = { headers: { Authorization: elarniv_users_token } };
+      const url = `${baseUrl}/api/users/update`;
+      const response = await fetch(url, payload);
+      if (response.ok) {
+        const user = await response.json();
 
-				destroyCookie(ctx, "elarniv_users_token");
-				redirectUser(ctx, "/authentication");
-			} else {
-				console.error("Invalid token");
-			}
-		} catch (err) {
-			destroyCookie(ctx, "elarniv_users_token");
-			// redirectUser(ctx, "/");
-		}
-	}
-	return {
-		pageProps,
-	};
+        pageProps.user = user;
+      } else if (response.status === 404) {
+        console.error("User not found");
+
+        destroyCookie(ctx, "elarniv_users_token");
+        redirectUser(ctx, "/authentication");
+      } else {
+        console.error("Invalid token");
+      }
+    } catch (err) {
+      destroyCookie(ctx, "elarniv_users_token");
+    }
+  }
+  return {
+    pageProps
+  };
 };
 
 export default MyApp;

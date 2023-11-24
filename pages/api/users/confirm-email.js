@@ -2,7 +2,6 @@ import validate from "uuid-validate";
 import User from "database/models/user";
 
 export default async (req, res) => {
-  
   switch (req.method) {
     case "PUT":
       await userEmailConfirm(req, res);

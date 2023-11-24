@@ -4196,65 +4196,64 @@ Teacher Register Area CSS
   background-color: #eee1d8;
 }
 .teacher-register-box {
-  padding: 45px;
-  border-radius: 5px;
-  background: {
-    color: $main-color;
-    image: url(/images/register-shape-02.jpg);
-    position: center center;
-    size: cover;
-    repeat: no-repeat;
-  }
-  h2 {
-    margin-bottom: 0;
-    color: $white-color;
-    font: {
-      size: 33px;
+    padding: 45px;
+    border-radius: 5px;
+    background: {
+        color: $main-color;
+        image: url(/images/register-shape.jpg);
+        position: center center;
+        size: cover;
+        repeat: no-repeat;
+    };
+    h2 {
+        margin-bottom: 0;
+        color: $white-color;
+        font: {
+            size: 33px; 
+        };
     }
-  }
-  p {
-    color: $white-color;
-    margin: {
-      top: 10px;
-      bottom: 0;
+    p {
+        color: $white-color;
+        margin: {
+            top: 10px;
+            bottom: 0;
+        };
+        font-size: 15px;
     }
-    font-size: 15px;
-  }
-  form {
-    margin-top: 25px;
+    form {
+        margin-top: 25px;
 
-    input,
-    textarea {
-      display: block;
-      width: 100%;
-      border: none;
-      color: $white-color;
-      background-color: #b61b16;
-      height: 50px;
-      padding-left: 15px;
-      border-radius: 5px;
-      font: {
-        size: $font-size;
-        weight: 600;
-      }
-      &::placeholder {
-        color: #cdcdcd;
-        transition: $transition;
-      }
-      &:focus {
-        &::placeholder {
-          color: transparent;
+        input, textarea {
+            display: block;
+            width: 100%;
+            border: none;
+            color: $white-color;
+            background-color: #006c5b;
+            height: 50px;
+            padding-left: 15px;
+            border-radius: 5px;
+            font: {
+                size: $font-size;
+                weight: 600;
+            };
+            &::placeholder {
+                color: #cdcdcd;
+                transition: $transition;
+            }
+            &:focus {
+                &::placeholder {
+                    color: transparent;
+                }
+            }
         }
-      }
-    }
-    textarea {
-      height: auto !important;
-      padding-top: 15px;
-    }
-    .default-btn {
-      background-color: $black-color;
-      margin-top: 5px;
-      padding: 12px 30px;
+        textarea {
+            height: auto !important;
+            padding-top: 15px;
+        }
+        .default-btn {
+            background-color: $black-color;
+            margin-top: 5px;
+            padding: 12px 30px;
 
       span {
         background-color: $white-color;
