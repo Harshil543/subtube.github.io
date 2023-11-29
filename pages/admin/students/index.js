@@ -21,10 +21,12 @@ const Index = ({ user }) => {
 			const response = await axios.get(`${baseUrl}/api/students`);
 			setUsers(response.data.students);
 			setLoading(false);
-		} catch (err) {
+		}  catch (err) {
 			let {
 				response: {
-					data: { message },
+					data: {
+						error: { message },
+					},
 				},
 			} = err;
 			toast.error(message, {
@@ -71,10 +73,12 @@ const Index = ({ user }) => {
 				},
 			});
 			fetchData();
-		} catch (err) {
+		}  catch (err) {
 			let {
 				response: {
-					data: { message },
+					data: {
+						error: { message },
+					},
 				},
 			} = err;
 			toast.error(message, {

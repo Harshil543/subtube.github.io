@@ -61,10 +61,12 @@ const Create = ({ user }) => {
 				},
 			});
 			router.push("/admin/categories");
-		} catch (err) {
+		}  catch (err) {
 			let {
 				response: {
-					data: { message },
+					data: {
+						error: { message },
+					},
 				},
 			} = err;
 			toast.error(message, {

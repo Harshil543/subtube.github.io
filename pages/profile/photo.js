@@ -80,10 +80,12 @@ const Photo = ({ user }) => {
 			setLoading(false);
 			toast.success(response.data.message);
 			router.push("/");
-		} catch (err) {
+		}  catch (err) {
 			let {
 				response: {
-					data: { message },
+					data: {
+						error: { message },
+					},
 				},
 			} = err;
 			toast.error(message, {

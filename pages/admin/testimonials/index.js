@@ -27,10 +27,12 @@ const Index = ({ user }) => {
 			);
 			setTestimonials(response.data.testimonials);
 			setLoading(false);
-		} catch (err) {
+		}  catch (err) {
 			let {
 				response: {
-					data: { message },
+					data: {
+						error: { message },
+					},
 				},
 			} = err;
 			toast.error(message, {
@@ -75,10 +77,12 @@ const Index = ({ user }) => {
 				},
 			});
 			fetchData();
-		} catch (err) {
+		}  catch (err) {
 			let {
 				response: {
-					data: { message },
+					data: {
+						error: { message },
+					},
 				},
 			} = err;
 			toast.error(message, {

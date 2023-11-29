@@ -27,10 +27,12 @@ const Index = ({ user }) => {
 			);
 			setInstructors(response.data.instructors);
 			setLoading(false);
-		} catch (err) {
+		}  catch (err) {
 			let {
 				response: {
-					data: { message },
+					data: {
+						error: { message },
+					},
 				},
 			} = err;
 			toast.error(message, {
@@ -77,10 +79,12 @@ const Index = ({ user }) => {
 				},
 			});
 			fetchData();
-		} catch (err) {
+		}  catch (err) {
 			let {
 				response: {
-					data: { message },
+					data: {
+						error: { message },
+					},
 				},
 			} = err;
 			toast.error(message, {
@@ -123,10 +127,12 @@ const Index = ({ user }) => {
 				},
 			});
 			fetchData();
-		} catch (err) {
+		}  catch (err) {
 			let {
 				response: {
-					data: { message },
+					data: {
+						error: { message },
+					},
 				},
 			} = err;
 			toast.error(message, {

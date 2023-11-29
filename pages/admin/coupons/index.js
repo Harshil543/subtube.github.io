@@ -25,10 +25,12 @@ const index = ({ user }) => {
 			const response = await axios.get(`${baseUrl}/api/coupons`, payload);
 			setCoupons(response.data.coupons);
 			setLoading(false);
-		} catch (err) {
+		}  catch (err) {
 			let {
 				response: {
-					data: { message },
+					data: {
+						error: { message },
+					},
 				},
 			} = err;
 			toast.error(message, {
@@ -89,10 +91,12 @@ const index = ({ user }) => {
 				},
 			});
 			fetchData();
-		} catch (err) {
+		}  catch (err) {
 			let {
 				response: {
-					data: { message },
+					data: {
+						error: { message },
+					},
 				},
 			} = err;
 			toast.error(message, {

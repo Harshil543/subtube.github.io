@@ -28,10 +28,12 @@ const Index = ({ user }) => {
 			// console.log(response.data.courses);
 			setCourses(response.data.courses);
 			setLoading(false);
-		} catch (err) {
+		}  catch (err) {
 			let {
 				response: {
-					data: { message },
+					data: {
+						error: { message },
+					},
 				},
 			} = err;
 			toast.error(message, {
@@ -78,10 +80,12 @@ const Index = ({ user }) => {
 				},
 			});
 			fetchData();
-		} catch (err) {
+		}  catch (err) {
 			let {
 				response: {
-					data: { message },
+					data: {
+						error: { message },
+					},
 				},
 			} = err;
 			toast.error(message, {
@@ -125,10 +129,12 @@ const Index = ({ user }) => {
 				},
 			});
 			fetchData();
-		} catch (err) {
+		}  catch (err) {
 			let {
 				response: {
-					data: { message },
+					data: {
+						error: { message },
+					},
 				},
 			} = err;
 			toast.error(message, {
