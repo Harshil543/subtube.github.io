@@ -4,23 +4,21 @@ import { Enrolment, Instructor_Earning, Course } from "database/models";
 import { calculateCartTotal } from "@/utils/calculateCartTotal";
 // import { checkoutConfirmation } from "email-templates/checkout-confirmation";
 
-const stripeSecret = Stripe(process.env.STRIPE_SECRET_KEY);
+const stripeSecret = Stripe(process.env.NEXT_PUBLIC_STRIPE_SECRET_KEY);
 
 export default async function handler(req, res) {
-  
   switch (req.method) {
     case "POST":
       await handlePostRequest(req, res);
       break;
     default:
       res.status(405).json({
-        message: `Method ${req.method} not allowed`,
+        message: `Method ${req.method} not allowed`
       });
   }
 }
 
 const handlePostRequest = async (req, res) => {
-  
   const { cartItems, userId, buyer_name, buyer_email, buyer_avatar } = req.body;
 
   const { stripeTotal } = calculateCartTotal(cartItems);
@@ -32,10 +30,10 @@ const handlePostRequest = async (req, res) => {
         currency: "usd",
         source: "tok_mastercard",
         receipt_email: buyer_email,
-        description: `Checkout | ${buyer_email} | ${userId}`,
+        description: `Checkout | ${buyer_email} | ${userId}`
       },
       {
-        idempotencyKey: uuidv4(),
+        idempotencyKey: uuidv4()
       }
     );
 
@@ -48,18 +46,18 @@ const handlePostRequest = async (req, res) => {
         buyer_avatar: buyer_avatar,
         userId: userId,
         courseId: cart.id,
-        status: "paid",
+        status: "paid"
       });
 
       const courseInstractor = await Course.findOne({
         attributes: ["userId"],
-        where: { id: cart.id },
+        where: { id: cart.id }
       });
 
       await Instructor_Earning.create({
         earnings: cart.price,
         userId: courseInstractor.userId,
-        courseId: cart.id,
+        courseId: cart.id
       });
     });
 
@@ -68,12 +66,12 @@ const handlePostRequest = async (req, res) => {
     // checkoutConfirmation(cartItems, buyer_name, buyer_email);
 
     res.status(200).json({
-      message: "Enroled successfully.",
+      message: "Enroled successfully."
     });
   } catch (e) {
     res.status(400).json({
       error_code: "create_enroled",
-      message: e.message,
+      message: e.message
     });
   }
 };

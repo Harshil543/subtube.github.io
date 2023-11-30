@@ -73,7 +73,7 @@ const PlaceOrderBtn = ({ user, cartItems }) => {
       name="eLearniv"
       amount={stripeAmount}
       currency="USD"
-      stripeKey={process.env.STRIPE_PUBLISHABLE_KEY}
+      stripeKey={process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY}
       token={handleCheckout}
       triggerEvent="onClick"
     >

@@ -2,7 +2,6 @@ import jwt from "jsonwebtoken";
 import Video from "database/models/video";
 
 export default async function handler(req, res) {
-  
   if (!("authorization" in req.headers)) {
     return res.status(401).json({ message: "No autorization token" });
   }
@@ -18,13 +17,12 @@ export default async function handler(req, res) {
       break;
     default:
       res.status(405).json({
-        message: `Method ${req.method} not allowed`,
+        message: `Method ${req.method} not allowed`
       });
   }
 }
 
 const handlePost = async (req, res) => {
-  
   const {
     group_name,
     title,
@@ -33,12 +31,12 @@ const handlePost = async (req, res) => {
     video_length,
     is_preview,
     short_id,
-    courseId,
+    courseId
   } = req.body;
   try {
     const { userId } = jwt.verify(
       req.headers.authorization,
-      process.env.JWT_SECRET
+      process.env.NEXT_PUBLIC_JWT_SECRET
     );
 
     await Video.create({
@@ -50,14 +48,14 @@ const handlePost = async (req, res) => {
       is_preview,
       short_id,
       courseId,
-      userId,
+      userId
     });
 
     res.status(200).json({ message: "Video Uploaded Successfully." });
   } catch (e) {
     res.status(400).json({
       error_code: "upload_video",
-      message: e.message,
+      message: e.message
     });
   }
 };

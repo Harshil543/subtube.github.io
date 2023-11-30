@@ -355,12 +355,13 @@ export const confirmEmailAddress = async (user) => {
           </center>
         </body>
         </html>
-        `,
+        `
   };
 
   try {
+    debugger;
     await transport.sendMail(data);
-    console.log("Email send successfully")
+    console.log("Email send successfully");
     // res.status(200).send("Email send successfully")
   } catch (error) {
     console.log(error);

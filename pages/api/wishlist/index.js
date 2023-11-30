@@ -2,7 +2,6 @@ import jwt from "jsonwebtoken";
 import { Course, User, Favourite } from "database/models";
 
 export default async function handler(req, res) {
-  
   if (!("authorization" in req.headers)) {
     return res.status(401).json({ message: "No autorization token" });
   }
@@ -12,17 +11,16 @@ export default async function handler(req, res) {
       break;
     default:
       res.status(405).json({
-        message: `Method ${req.method} not allowed`,
+        message: `Method ${req.method} not allowed`
       });
   }
 }
 
 const handleGetRequest = async (req, res) => {
-  
   try {
     const { userId } = jwt.verify(
       req.headers.authorization,
-      process.env.JWT_SECRET
+      process.env.NEXT_PUBLIC_JWT_SECRET
     );
 
     const courses = await Favourite.findAll({
@@ -35,21 +33,21 @@ const handleGetRequest = async (req, res) => {
             {
               model: User,
               as: "user",
-              attributes: ["first_name", "last_name", "profile_photo"],
-            },
-          ],
-        },
+              attributes: ["first_name", "last_name", "profile_photo"]
+            }
+          ]
+        }
       ],
-      where: { userId: userId },
+      where: { userId: userId }
     });
 
     res.status(200).json({
-      courses,
+      courses
     });
   } catch (e) {
     res.status(400).json({
       error_code: "get_my_courses",
-      message: e.message,
+      message: e.message
     });
   }
 };

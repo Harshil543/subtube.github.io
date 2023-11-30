@@ -30,7 +30,7 @@ import Layout from "../components/_App/Layout";
 
 function MyApp({ Component, pageProps }) {
   console.log("********************");
-  console.log(process.env.NEXT_PUBLIC_XYZ);
+  console.log(process.env.NEXT_PUBLIC_DB_USERNAME);
   console.log("********************");
   const store = useStore(pageProps.initialReduxState);
   return (
