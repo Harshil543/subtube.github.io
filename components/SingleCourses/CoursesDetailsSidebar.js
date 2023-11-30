@@ -27,7 +27,7 @@ const CoursesDetailsSidebar = ({ current_user, course, onCoupon }) => {
     courseExist && setAdd(true);
     if (current_user && course && course.id) {
       const payload = {
-        params: { userId: current_user.id, courseId: course.id },
+        params: { userId: current_user.id, courseId: course.id }
       };
       const url = `${baseUrl}/api/courses/course/exist`;
       axios.get(url, payload).then((result) => {
@@ -53,7 +53,7 @@ const CoursesDetailsSidebar = ({ current_user, course, onCoupon }) => {
     ] = `${courseCart.user.first_name} ${courseCart.user.last_name}`;
     dispatch({
       type: "ADD_TO_CART",
-      data: courseObj,
+      data: courseObj
     });
   };
 
@@ -74,36 +74,36 @@ const CoursesDetailsSidebar = ({ current_user, course, onCoupon }) => {
         data: calculateDiscount(
           response.data.discount.discount,
           course.latest_price
-        ),
+        )
       });
 
       toast.success(response.data.message, {
         style: {
           border: "1px solid #4BB543",
           padding: "16px",
-          color: "#4BB543",
+          color: "#4BB543"
         },
         iconTheme: {
           primary: "#4BB543",
-          secondary: "#FFFAEE",
-        },
+          secondary: "#FFFAEE"
+        }
       });
     } catch (err) {
       let {
         response: {
-          data: { message },
-        },
+          data: { message }
+        }
       } = err;
       toast.error(message, {
         style: {
           border: "1px solid #ff0033",
           padding: "16px",
-          color: "#ff0033",
+          color: "#ff0033"
         },
         iconTheme: {
           primary: "#ff0033",
-          secondary: "#FFFAEE",
-        },
+          secondary: "#FFFAEE"
+        }
       });
     }
   };

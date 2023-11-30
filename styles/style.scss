@@ -3373,7 +3373,7 @@ Courses Details Area CSS
         right: 0;
         top: 0;
         height: 48px;
-        background-color: #1cab94;
+        background-color: $main-color;
         border: none;
         color: #fff;
         border-radius: 5px;
@@ -4202,6 +4202,7 @@ Teacher Register Area CSS
     color: $main-color;
     // image: url(/images/register-shape-02.jpg);
     image: url(/images/MicrosoftTeams-image.png);
+
     position: center center;
     size: cover;
     repeat: no-repeat;
@@ -4212,16 +4213,17 @@ Teacher Register Area CSS
     font: {
       size: 33px;
     }
-    p {
-        color: $white-color;
-        margin: {
-            top: 10px;
-            bottom: 0;
-        };
-        font-size: 15px;
+  }
+  p {
+    color: $white-color;
+    margin: {
+      top: 10px;
+      bottom: 0;
     }
-    form {
-        margin-top: 25px;
+    font-size: 15px;
+  }
+  form {
+    margin-top: 25px;
 
     input,
     textarea {
@@ -4247,14 +4249,16 @@ Teacher Register Area CSS
         &::placeholder {
           color: transparent;
         }
-        textarea {
-            height: auto !important;
-            padding-top: 15px;
-        }
-        .default-btn {
-            background-color: $black-color;
-            margin-top: 5px;
-            padding: 12px 30px;
+      }
+    }
+    textarea {
+      height: auto !important;
+      padding-top: 15px;
+    }
+    .default-btn {
+      background-color: $black-color;
+      margin-top: 5px;
+      padding: 12px 30px;
 
       span {
         background-color: $white-color;

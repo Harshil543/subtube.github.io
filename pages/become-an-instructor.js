@@ -9,36 +9,36 @@ import Footer from "@/components/_App/Footer";
 import { useRouter } from "next/router";
 
 export default function BecomeAInstructorPage({ user }) {
-	const router = useRouter();
+  const router = useRouter();
 
-	useEffect(() => {
-		if (!user) {
-			router.push("/authentication");
-		}
-	}, []);
+  useEffect(() => {
+    if (!user) {
+      router.push("/authentication");
+    }
+  }, []);
 
-	return (
-		<>
-			<Navbar user={user} />
+  return (
+    <>
+      <Navbar user={user} />
 
-			<PageBanner
-				pageTitle="Become An Instructor"
-				homePageUrl="/"
-				homePageText="Home"
-				activePageText="Become An Instructor"
-			/>
+      <PageBanner
+        pageTitle="Become An Instructor"
+        homePageUrl="/"
+        homePageText="Home"
+        activePageText="Become An Instructor"
+      />
 
-			<RegisterForm user={user} />
+      <RegisterForm user={user} />
 
-			<ApplyAsInstructor />
+      <ApplyAsInstructor />
 
-			<div className="pb-100">
-				<FunFactsThree />
-			</div>
+      <div className="pb-100">
+        <FunFactsThree />
+      </div>
 
-			<SubscribeForm />
+      <SubscribeForm />
 
-			<Footer />
-		</>
-	);
+      <Footer />
+    </>
+  );
 }

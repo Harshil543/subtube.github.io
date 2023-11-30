@@ -1,5 +1,5 @@
-import React from 'react'
-import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
+import React from "react";
+import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 
 const ApplyAsInstructor = () => {
   return (
@@ -26,22 +26,22 @@ const ApplyAsInstructor = () => {
                   <TabPanel>
                     <h3>Course Description</h3>
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                      do eiusmod tempor incididunt ut labore et dolore magna
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
                       aliqua. Quis ipsum suspendisse ultrices gravida. Risus
                       commodo viverra maecenas accumsan lacus vel facilisis.
                     </p>
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                      do eiusmod tempor incididunt ut labore et dolore magna
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
                       aliqua. Quis ipsum suspendisse ultrices gravida. Risus
-                      commodo viverra maecenas accumsan lacus vel facilisis. Lorem
-                      ipsum dolor sit amet, consectetur adipiscing elit.
+                      commodo viverra maecenas accumsan lacus vel facilisis.
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     </p>
                     <h3>Certification</h3>
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                      do eiusmod tempor incididunt ut labore et dolore magna
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
                       aliqua. Quis ipsum suspendisse ultrices gravida. Risus
                       commodo viverra maecenas accumsan lacus vel facilisis.
                     </p>
@@ -70,29 +70,30 @@ const ApplyAsInstructor = () => {
                       At vero eos et accusamus et iusto odio dignissimos ducimus
                       qui blanditiis praesentium voluptatum deleniti atque
                       corrupti quos dolores et quas molestias excepturi sint
-                      occaecati cupiditate non providrum facilis est et expedita.
+                      occaecati cupiditate non providrum facilis est et
+                      expedita.
                     </p>
                   </TabPanel>
 
                   <TabPanel>
                     <h3>Course Description</h3>
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                      do eiusmod tempor incididunt ut labore et dolore magna
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
                       aliqua. Quis ipsum suspendisse ultrices gravida. Risus
                       commodo viverra maecenas accumsan lacus vel facilisis.
                     </p>
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                      do eiusmod tempor incididunt ut labore et dolore magna
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
                       aliqua. Quis ipsum suspendisse ultrices gravida. Risus
-                      commodo viverra maecenas accumsan lacus vel facilisis. Lorem
-                      ipsum dolor sit amet, consectetur adipiscing elit.
+                      commodo viverra maecenas accumsan lacus vel facilisis.
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     </p>
                     <h3>Certification</h3>
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                      do eiusmod tempor incididunt ut labore et dolore magna
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
                       aliqua. Quis ipsum suspendisse ultrices gravida. Risus
                       commodo viverra maecenas accumsan lacus vel facilisis.
                     </p>
@@ -104,7 +105,7 @@ const ApplyAsInstructor = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default ApplyAsInstructor
+export default ApplyAsInstructor;
