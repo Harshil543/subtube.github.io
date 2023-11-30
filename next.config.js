@@ -27,16 +27,16 @@ const nextConfig = {
       "https://api.cloudinary.com/v1_1/dtgvsgfvk/video/upload",
     CLOUDINARY_ZIP_URL: "https://api.cloudinary.com/v1_1/dtgvsgfvk/raw/upload",
     STRIPE_SECRET_KEY: "sk_test_2DqyjEwaU0Nq0PpEMVQ3qSAw00zgrbnfPk",
-    STRIPE_PUBLISHABLE_KEY: "pk_test_ZaZZWZGlvdIn12yFleIqyjSI00G4e18Kf7",
-    DB_USERNAME: "admin",
-    DB_PASSWORD: "mysql3RkV7yZ",
-    DB_PASSWORD_PROD: "mysql3RkV7yZ",
-    DB_NAME_DEVELOPMENT: "subtubes",
-    DB_NAME_PRODUCTION: "subtubes",
-    DB_NAME: "subtubes",
-    DB_HOSTNAME: "subtubes.cll4zdbcwlks.us-east-1.rds.amazonaws.com",
-    DB_PORT: "3306",
-    DB_PORT_PROD: "3306"
+    STRIPE_PUBLISHABLE_KEY: "pk_test_ZaZZWZGlvdIn12yFleIqyjSI00G4e18Kf7"
+    // DB_USERNAME: "admin",
+    // DB_PASSWORD: "mysql3RkV7yZ",
+    // DB_PASSWORD_PROD: "mysql3RkV7yZ",
+    // DB_NAME_DEVELOPMENT: "subtubes",
+    // DB_NAME_PRODUCTION: "subtubes",
+    // DB_NAME: "subtubes",
+    // DB_HOSTNAME: "subtubes.cll4zdbcwlks.us-east-1.rds.amazonaws.com",
+    // DB_PORT: "3306",
+    // DB_PORT_PROD: "3306"
   }
 };
 

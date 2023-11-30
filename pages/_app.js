@@ -29,6 +29,9 @@ import "../styles/dashboard.css";
 import Layout from "../components/_App/Layout";
 
 function MyApp({ Component, pageProps }) {
+  console.log("********************");
+  console.log(process.env.XYZ);
+  console.log("********************");
   const store = useStore(pageProps.initialReduxState);
   return (
     <Provider store={store}>
